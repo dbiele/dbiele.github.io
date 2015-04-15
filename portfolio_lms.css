@@ -53,16 +53,18 @@
     font-family: 'Museo Sans 300';
 }
 
+/* portfolio_lms.css (56, 9) */
 #input {
     float: none;
     height: 21px;
     font-size: 1em;
+    min-width: 150px;
     margin-left: auto;
     margin-top: 17px;
     clear: none;
-    width: 33.334658%;
+    width: 33.33%;
     margin-right: auto;
-    font-family: 'Museo Sans 700';
+    font-family: "Museo Sans 700";
     font-weight: 700;
     text-transform: uppercase;
     border-top-left-radius: 0px;
@@ -80,6 +82,7 @@
     border-bottom-color: rgb(0, 0, 0);
     border-left-color: rgb(0, 0, 0);
 }
+
 
 #input:active {
     display: block;
