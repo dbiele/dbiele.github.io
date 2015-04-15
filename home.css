@@ -7,29 +7,27 @@
 }
 
 #portfolio_images {
-    float: left;
+    float: none;
     height: auto;
-    margin: 0px;
+    margin: 30px 25%;
     clear: none;
-    width: 100%;
-    min-height: 0px;
+    min-height: 0;
     display: block;
     position: relative;
-    top: 0px;
-    left: 0px;
-    padding: 30px 0px 35px;
+    top: 0;
+    left: 0;
+    padding: 30px 0 35px;
 }
 
 #image1_grid1 {
-    float: left;
+    float: none;
     width: auto;
     max-width: 100%;
     height: auto;
-    margin-left: 0%;
-    margin-top: 0px;
+    margin-left: 0;
     clear: both;
     color: rgb(0, 0, 0);
-    padding: 0px;
+    padding: 0;
     display: block;
 }
 
@@ -38,27 +36,18 @@
     width: auto;
     max-width: 50%;
     height: auto;
-    margin-left: 0%;
-    margin-top: 0px;
+    margin-left: 0;
+    margin-top: 0;
     clear: none;
     color: rgb(0, 0, 0);
-    padding: 0px;
+    padding: 0;
     display: block;
 }
 
 #image2-grid2 {
-    float: none;
     width: auto;
     max-width: 50%;
-    height: auto;
-    margin: 0px 0px 0px 50%;
-    clear: none;
-    color: rgb(0, 0, 0);
-    position: relative;
-    top: 0px;
-    left: 0px;
-    padding: 0px;
-    display: block;
+    padding: 0;
 }
 
 #image1-port2-grid1 {
@@ -66,24 +55,22 @@
     width: auto;
     max-width: 100%;
     height: auto;
-    margin-left: 0%;
-    margin-top: 0px;
+    margin-left: 0;
+    margin-top: 0;
     clear: both;
     color: rgb(0, 0, 0);
-    padding: 0px;
-    display: block;
 }
 
 #Portfolio {
     float: left;
     height: auto;
-    margin: 0px;
+    margin: 0;
     clear: none;
     width: 100%;
     display: block;
     position: relative;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
 }
 
 #text4 {
@@ -94,7 +81,7 @@
     text-align: center;
     font-weight: normal;
     line-height: 1em;
-    margin-left: 0%;
+    margin-left: 0;
     margin-top: 28px;
     clear: none;
     min-height: 27px;
@@ -105,8 +92,8 @@
 #centerbox {
     float: left;
     height: 23px;
-    margin-left: 0%;
-    margin-top: 0px;
+    margin-left: 0;
+    margin-top: 0;
     clear: both;
     width: 100%;
 }
@@ -117,7 +104,7 @@
     max-width: 100%;
     height: auto;
     margin-left: auto;
-    margin-top: 0px;
+    margin-top: 0;
     clear: none;
     color: rgb(0, 0, 0);
     margin-right: auto;
@@ -131,10 +118,10 @@
     text-align: center;
     font-weight: normal;
     line-height: 1em;
-    margin-left: 0%;
+    margin-left: 0;
     margin-top: 12px;
     clear: both;
-    min-height: 0px;
+    min-height: 0;
     color: rgb(108, 108, 108);
     font-family: 'Museo Sans 300';
 }
@@ -144,35 +131,35 @@
     height: 37px;
     font-size: 1.5em;
     margin-left: auto;
-    margin-top: 0px;
+    margin-top: 0;
     clear: none;
-    width: 33.426184%;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-bottom-left-radius: 0px;
+    width: 40%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
     background-color: rgb(255, 255, 255);
     border-width: 2px;
     position: relative;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     margin-right: auto;
     min-width: 260px;
-    max-width: 360px;
+    max-width: 380px;
     font-family: 'Museo Sans 700';
 }
 
 #about-me {
     float: left;
     height: auto;
-    margin: 30px 0px 0px;
+    margin: 30px 0 0;
     clear: none;
     width: 100%;
     background-color: rgb(239, 195, 55);
     display: block;
     position: relative;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
 }
 
 #ABOUT_ME {
@@ -183,11 +170,11 @@
     text-align: center;
     font-weight: normal;
     line-height: 1.5em;
-    margin-left: 0%;
+    margin-left: 0;
     margin-top: 14px;
     clear: none;
     min-height: 24px;
-    padding: 0px 20px;
+    padding: 0 20px;
 }
 
 #bullet-box {
@@ -207,8 +194,8 @@
     text-align: left;
     font-weight: normal;
     line-height: 1em;
-    margin-left: 0%;
-    margin-top: 0px;
+    margin-left: 0;
+    margin-top: 0;
     clear: none;
     min-height: 24px;
     font-family: 'Museo Sans 300';
@@ -222,13 +209,13 @@
     text-align: left;
     font-weight: normal;
     line-height: 1em;
-    margin-left: 0%;
+    margin-left: 0;
     margin-top: 10px;
     clear: both;
     min-height: 25px;
     position: static;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     font-family: 'Museo Sans 300';
 }
 
@@ -240,13 +227,13 @@
     text-align: left;
     font-weight: normal;
     line-height: 1em;
-    margin-left: 0%;
+    margin-left: 0;
     margin-top: 10px;
     clear: both;
     min-height: 20px;
     position: static;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     font-family: 'Museo Sans 300';
 }
 
@@ -258,7 +245,7 @@
     text-align: left;
     font-weight: normal;
     line-height: 1em;
-    margin-left: 0%;
+    margin-left: 0;
     margin-top: 10px;
     clear: both;
     min-height: 20px;
@@ -273,7 +260,7 @@
     text-align: left;
     font-weight: normal;
     line-height: 1em;
-    margin-left: 0%;
+    margin-left: 0;
     margin-top: 10px;
     clear: both;
     min-height: 19px;
@@ -288,7 +275,7 @@
     text-align: left;
     font-weight: normal;
     line-height: 1em;
-    margin-left: 0%;
+    margin-left: 0;
     margin-top: 10px;
     clear: both;
     min-height: 20px;
@@ -303,7 +290,7 @@
     text-align: left;
     font-weight: normal;
     line-height: 1em;
-    margin-left: 0%;
+    margin-left: 0;
     margin-top: 10px;
     clear: both;
     min-height: 20px;
@@ -318,7 +305,7 @@
     text-align: left;
     font-weight: normal;
     line-height: 1em;
-    margin-left: 0%;
+    margin-left: 0;
     margin-top: 10px;
     clear: both;
     min-height: 18px;
@@ -333,7 +320,7 @@
     text-align: left;
     font-weight: normal;
     line-height: 1em;
-    margin-left: 0%;
+    margin-left: 0;
     margin-top: 10px;
     clear: both;
     min-height: 21px;
@@ -343,20 +330,20 @@
 #lets-talk {
     float: left;
     height: auto;
-    margin: 0px;
+    margin: 0;
     clear: none;
     width: 100%;
     display: block;
     position: relative;
-    top: 0px;
-    left: 0px;
-    padding: 0px;
+    top: 0;
+    left: 0;
+    padding: 0;
     max-width: 100%;
     background-image:url("img/front_door.png");
     background-attachment: scroll;
     -webkit-background-size: auto;
     background-size: auto;
-    background-position: 0% 0%;
+    background-position: 0 0;
     background-repeat: repeat repeat;
 }
 
@@ -367,7 +354,7 @@
     margin-top: 40px;
     clear: none;
     width: 100%;
-    padding: 0px 20px;
+    padding: 0 20px;
     margin-right: auto;
 }
 
@@ -379,10 +366,10 @@
     text-align: center;
     font-weight: normal;
     line-height: 1em;
-    margin-left: 0%;
+    margin-left: 0;
     margin-top: 106px;
     clear: both;
-    min-height: 0px;
+    min-height: 0;
     font-family: 'Museo Sans 500';
     color: rgb(255, 255, 255);
 }
@@ -395,7 +382,7 @@
     text-align: center;
     font-weight: normal;
     line-height: 1em;
-    margin-left: 0%;
+    margin-left: 0;
     margin-top: 31px;
     clear: none;
     min-height: 51px;
@@ -405,31 +392,31 @@
 #wrapper_1 {
     float: left;
     height: 100%;
-    margin: 0px 20px;
+    margin: 0 20px;
     clear: none;
     width: 100%;
-    min-width: 0px;
+    min-width: 0;
     position: relative;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     padding-bottom: 45px;
-    min-height: 0px;
+    min-height: 0;
 }
 
 #Header {
     float: left;
     height: auto;
-    margin-left: 0%;
-    margin-top: 0px;
+    margin-left: 0;
+    margin-top: 0;
     clear: none;
     width: 100%;
-    min-width: 0px;
+    min-width: 0;
     min-height: 165px;
     overflow: visible;
     background-color: rgb(240, 238, 229);
     position: relative;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     z-index: 1;
     display: none;
 }
@@ -442,10 +429,10 @@
     text-align: center;
     font-weight: normal;
     line-height: 1em;
-    margin: 18px 0px 0px;
+    margin: 18px 0 0;
     clear: none;
     min-height: 30px;
-    min-width: 0px;
+    min-width: 0;
 }
 
 #text3 {
@@ -456,7 +443,7 @@
     text-align: center;
     font-weight: normal;
     line-height: 1em;
-    margin-left: 0%;
+    margin-left: 0;
     margin-top: 56px;
     clear: none;
     min-height: 38px;
@@ -478,57 +465,53 @@
 #wrapper-images {
     float: none;
     height: auto;
-    margin: 0px 10%;
     clear: none;
-    width: auto;
-    padding-right: 0px;
-    padding-left: 0px;
-    padding-bottom: 0px;
-    position: relative;
-    top: 0px;
-    left: 0px;
-    max-width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+    top: 0;
+    left: 0;
 }
 
 #portfolio-grid1 {
     float: none;
     height: auto;
-    margin-left: 0%;
-    margin-top: 0px;
+    margin-left: 0;
+    margin-top: 0;
     clear: both;
     width: auto;
-    margin-right: 0px;
-    padding: 0px;
+    margin-right: 0;
+    padding: 0;
     max-width: 100%;
 }
 
 #grid1-row-1 {
-    float: left;
+    float: none;
     height: auto;
-    margin: 0px 0px 0px 0%;
+    margin: 0 0 0 0;
     clear: none;
     width: auto;
     position: relative;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
 }
 
 #grid1-row-2 {
     float: none;
     height: auto;
-    margin: 0px 0px 0px 0%;
+    margin: 0 0 0 0;
     clear: both;
     width: auto;
     position: relative;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
 }
 
 #portfolio-grid2 {
-    float: left;
+    float: none;
     height: auto;
-    margin-left: 0%;
-    margin-top: 0px;
+    margin-left: 0;
+    margin-top: 0;
     clear: none;
     width: auto;
 }
@@ -536,26 +519,14 @@
 #grid2-row-1 {
     float: none;
     height: auto;
-    margin-left: 0%;
-    margin-top: 0px;
     clear: none;
     width: auto;
     position: relative;
-    top: 0px;
-    left: 0px;
-    margin-right: 0px;
 }
 
 #home_website {
-    float: left;
-    height: auto;
-    margin-left: 0%;
-    margin-top: 0px;
-    clear: none;
-    width: 100%;
-    margin-right: 0%;
-    max-width: none;
-    position: relative;
+    width: auto;
+    max-width: 100%;
 }
 
 #home_content {
@@ -566,7 +537,7 @@
     max-width: 100%;
     position: absolute;
     top: 80px;
-    left: 0px;
+    left: 0;
     padding-right: 30px;
     padding-left: 30px;
     z-index: 1;
@@ -581,27 +552,27 @@
     text-align: left;
     font-weight: normal;
     line-height: 1em;
-    margin-left: 0%;
+    margin-left: 0;
     margin-top: 17px;
     clear: both;
     min-height: 147px;
-    margin-right: 0px;
+    margin-right: 0;
     font-family: 'Playfair Display';
     color: rgb(108, 108, 108);
-    min-width: 0px;
+    min-width: 0;
 }
 
 #box {
     float: none;
     height: auto;
-    margin: 0px;
+    margin: 0;
     clear: both;
     width: auto;
     max-width: none;
-    min-width: 0px;
+    min-width: 0;
     position: static;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
 }
 
 #image {
@@ -609,14 +580,14 @@
     width: auto;
     max-width: 100%;
     height: auto;
-    margin-left: 0%;
-    margin-top: 0px;
+    margin-left: 0;
+    margin-top: 0;
     clear: both;
     color: rgb(0, 0, 0);
-    margin-right: 0px;
+    margin-right: 0;
     position: static;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
 }
 
 #text {
@@ -627,7 +598,7 @@
     text-align: left;
     font-weight: normal;
     line-height: 1em;
-    margin: 17px 0px 0px 0%;
+    margin: 17px 0 0 0;
     clear: none;
     min-height: 71px;
     font-family: 'Playfair Display';
@@ -654,6 +625,7 @@
     font-weight: 700;
     color: rgb(255, 255, 255);
     display: block;
+    max-width:300px;
 }
 
 #textspan9 {
@@ -667,7 +639,7 @@
 }
 
 #textspan11 {
-    color: rgb(189, 178, 178);
+    color: rgb(240, 238, 229);
 }
 
 #textspan13 {
@@ -705,9 +677,21 @@
     font-size: 1.5em;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 778px) {
+    #portfolio_images {
+        float: left;
+        height: auto;
+        margin: 30px 25%;
+        clear: none;
+        min-height: 0;
+        display: block;
+        position: relative;
+        top: 0;
+        left: 0;
+        padding: 30px 0 35px;
+    }
     #text2 {
-        margin: 18px 0px 0px;
+        margin: 18px 0 0;
         width: 100%;
         font-size: 2em;
         color: rgb(108, 108, 108);
@@ -721,10 +705,10 @@
         width: 100%;
         margin-top: 38px;
         position: static;
-        top: 0px;
-        left: 0px;
-        margin-left: 0%;
-        margin-right: 0px;
+        top: 0;
+        left: 0;
+        margin-left: 0;
+        margin-right: 0;
         float: left;
         clear: none;
         font-family: 'Playfair Display';
@@ -732,11 +716,11 @@
 
     #Header {
         height: auto;
-        min-width: 0px;
+        min-width: 0;
         width: 100%;
         position: relative;
-        top: 0px;
-        left: 0px;
+        top: 0;
+        left: 0;
         z-index: 1;
         display: block;
     }
@@ -749,8 +733,8 @@
     #input {
         width: 65.865072%;
         height: 45px;
-        margin-top: 0px;
-        margin-left: 0px;
+        margin-top: 0;
+        margin-left: 0;
         clear: both;
         position: absolute;
         top: auto;
@@ -762,25 +746,25 @@
     }
 
     #portfolio_images {
-        padding: 30px 0px 35px;
-        margin-left: 0px;
+        padding: 30px 0 35px;
+        margin-left: 0;
         background-color: rgb(255, 255, 255);
         height: auto;
-        min-height: 0px;
+        min-height: 0;
         width: 100%;
         position: relative;
-        top: 0px;
-        left: 0px;
+        top: 0;
+        left: 0;
         display: block;
     }
 
     #Portfolio {
         position: relative;
-        top: 0px;
-        left: 0px;
+        top: 0;
+        left: 0;
         width: 100%;
         height: auto;
-        margin: 0px 0px 0px 0%;
+        margin: 0 0 0 0;
         clear: none;
         display: block;
     }
@@ -814,12 +798,12 @@
 
     #about-me {
         position: relative;
-        top: 0px;
-        left: 0px;
+        top: 0;
+        left: 0;
         width: 100%;
-        margin: 30px 0px 0px;
+        margin: 30px 0 0;
         height: auto;
-        padding: 0px 0px 30px;
+        padding: 0 0 30px;
         display: block;
     }
 
@@ -847,7 +831,7 @@
         font-weight: 300;
         font-family: 'Museo Sans 300';
         margin-top: 10px;
-        margin-left: 0%;
+        margin-left: 0;
         clear: both;
     }
 
@@ -857,7 +841,7 @@
         font-weight: 300;
         font-family: 'Museo Sans 300';
         margin-top: 4px;
-        margin-left: 0%;
+        margin-left: 0;
         clear: both;
     }
 
@@ -867,7 +851,7 @@
         font-weight: 300;
         font-family: 'Museo Sans 300';
         margin-top: 10px;
-        margin-left: 0%;
+        margin-left: 0;
         clear: both;
     }
 
@@ -877,7 +861,7 @@
         font-weight: 300;
         font-family: 'Museo Sans 300';
         margin-top: 10px;
-        margin-left: 0%;
+        margin-left: 0;
         clear: both;
     }
 
@@ -887,7 +871,7 @@
         font-weight: 300;
         font-family: 'Museo Sans 300';
         margin-top: 10px;
-        margin-left: 0%;
+        margin-left: 0;
         clear: both;
     }
 
@@ -897,7 +881,7 @@
         font-weight: 300;
         font-family: 'Museo Sans 300';
         margin-top: 10px;
-        margin-left: 0%;
+        margin-left: 0;
         clear: both;
     }
 
@@ -907,7 +891,7 @@
         font-weight: 300;
         font-family: 'Museo Sans 300';
         margin-top: 10px;
-        margin-left: 0%;
+        margin-left: 0;
         clear: both;
     }
 
@@ -917,22 +901,22 @@
         font-weight: 300;
         font-family: 'Museo Sans 300';
         margin-top: 10px;
-        margin-left: 0%;
+        margin-left: 0;
         clear: both;
     }
 
     #lets-talk {
         position: relative;
-        top: 0px;
-        left: 0px;
+        top: 0;
+        left: 0;
         width: 100%;
-        padding: 10px 0px 40px;
+        padding: 10px 0 40px;
         height: auto;
         background-image:url("img/front_door_medium.png");
         background-attachment: scroll;
         -webkit-background-size: cover;
         background-size: cover;
-        background-position: 0% 0%;
+        background-position: 0 0;
         background-repeat: repeat repeat;
     }
 
@@ -963,43 +947,37 @@
     }
 
     #portfolio-grid1 {
-        margin-left: 0%;
-        margin-right: 0px;
+        margin-left: 0;
+        margin-right: 0;
         float: none;
         clear: both;
-        padding: 0px;
     }
 
     #grid1-row-1 {
         clear: none;
-        margin: 0px 0px 0px 0%;
-        float: left;
+        margin: 0 0 0 0;
     }
 
     #image1_grid1 {
-        padding: 0px;
-        margin-left: 0%;
-        margin-right: 0px;
+        padding: 0;
+        margin-left: 0;
         float: left;
         clear: both;
-        margin-top: 0px;
+        margin-top: 0;
         position: static;
-        top: 0px;
-        left: 0px;
+        left: 0;
         max-width: 100%;
         max-height: none;
         width: auto;
-        min-width: 0px;
-        min-height: 0px;
         height: auto;
         display: block;
     }
 
     #grid1-row-2 {
-        margin: 0px 0px 0px 0%;
+        margin: 0 0 0 0;
         position: relative;
-        top: 0px;
-        left: 0px;
+        top: 0;
+        left: 0;
         width: auto;
         float: none;
         clear: both;
@@ -1008,13 +986,12 @@
 
     #image1-grid2 {
         clear: none;
-        padding: 0px 0px 0px 20px;
         display: block;
     }
 
     #image2-grid2 {
-        margin: 0px 0px 0px 50%;
-        padding: 0px;
+        margin: 0 0 0 50%;
+        padding: 0;
         float: none;
         clear: none;
         display: block;
@@ -1030,7 +1007,7 @@
         margin-right: 20px;
         float: none;
         clear: none;
-        margin-top: 0px;
+        margin-top: 0;
     }
 
     #image1-portfolio-center {
@@ -1039,8 +1016,8 @@
         float: none;
         clear: none;
         position: static;
-        top: 0px;
-        left: 0px;
+        top: 0;
+        left: 0;
     }
 
     #textspan4 {
@@ -1090,12 +1067,10 @@
     #textspan11 {
         float: none;
         line-height: 1em;
-        color: rgb(156, 153, 153);
+        color: rgb(240, 238, 229);
     }
 
     #image1-port2-grid1 {
-        padding: 0px;
-        display: block;
     }
 
     #textspan3 {
@@ -1112,15 +1087,15 @@
     #portfolio_images {
         float: left;
         height: auto;
-        margin-left: 0px;
-        margin-top: 0px;
+        margin-left: 0;
+        margin-top: 0;
         clear: both;
         width: 100%;
-        min-height: 0px;
+        min-height: 0;
         position: relative;
-        top: 0px;
-        left: 0px;
-        margin-bottom: 0px;
+        top: 0;
+        left: 0;
+        margin-bottom: 0;
         background-color: rgb(255, 255, 255);
         padding-bottom: 35px;
         padding-top: 30px;
@@ -1132,18 +1107,10 @@
         width: auto;
         max-width: 100%;
         height: auto;
-        margin-left: 0%;
-        margin-top: 0px;
+        margin-left: 0;
+        margin-top: 0;
         clear: both;
         color: rgb(0, 0, 0);
-        padding-right: 0px;
-        padding-left: 0px;
-        margin-right: 0px;
-        position: static;
-        top: 0px;
-        left: 0px;
-        max-height: none;
-        min-width: 0px;
     }
 
     #image1-grid2 {
@@ -1151,13 +1118,13 @@
         width: auto;
         max-width: 50%;
         height: auto;
-        margin: 0px 0px 0px 0%;
+        margin: 0 0 0 0;
         clear: none;
         color: rgb(0, 0, 0);
-        padding-left: 0px;
+        padding-left: 0;
         position: static;
-        top: 0px;
-        left: 0px;
+        top: 0;
+        left: 0;
     }
 
     #image2-grid2 {
@@ -1165,39 +1132,38 @@
         width: auto;
         max-width: 50%;
         height: auto;
-        margin: 0px 0px 0px 50%;
+        margin: 0 0 0 50%;
         clear: none;
         color: rgb(0, 0, 0);
         position: relative;
-        top: 0px;
-        left: 0px;
-        padding-right: 0px;
+        top: 0;
+        left: 0;
+        padding-right: 0;
     }
 
     #image1-port2-grid1 {
-        float: left;
+        float: none;
         width: auto;
         max-width: 100%;
         height: auto;
-        margin-left: 0%;
-        margin-top: 0px;
+        margin-left: 0;
+        margin-top: 0;
         clear: both;
         color: rgb(0, 0, 0);
-        padding: 0px;
     }
 
     #Portfolio {
         float: left;
         height: auto;
-        margin-left: 0%;
-        margin-top: 0px;
+        margin-left: 0;
+        margin-top: 0;
         clear: both;
         width: 100%;
         position: relative;
-        top: 0px;
-        left: 0px;
+        top: 0;
+        left: 0;
         display: block;
-        padding-bottom: 0px;
+        padding-bottom: 0;
     }
 
     #text4 {
@@ -1208,7 +1174,7 @@
         text-align: center;
         font-weight: normal;
         line-height: 1em;
-        margin-left: 0%;
+        margin-left: 0;
         margin-top: 28px;
         clear: none;
         min-height: 27px;
@@ -1225,8 +1191,8 @@
     #centerbox {
         float: left;
         height: 23px;
-        margin-left: 0%;
-        margin-top: 0px;
+        margin-left: 0;
+        margin-top: 0;
         clear: both;
         width: 100%;
     }
@@ -1237,7 +1203,7 @@
         max-width: 100%;
         height: auto;
         margin-left: 25.761719%;
-        margin-top: 0px;
+        margin-top: 0;
         clear: none;
         color: rgb(0, 0, 0);
     }
@@ -1250,10 +1216,10 @@
         text-align: center;
         font-weight: normal;
         line-height: 1em;
-        margin-left: 0%;
+        margin-left: 0;
         margin-top: 12px;
         clear: both;
-        min-height: 0px;
+        min-height: 0;
         color: rgb(108, 108, 108);
     }
 
@@ -1269,18 +1235,18 @@
         height: 37px;
         font-size: 1em;
         margin-left: auto;
-        margin-top: 0px;
+        margin-top: 0;
         clear: none;
         width: 81.25%;
-        border-top-left-radius: 0px;
-        border-top-right-radius: 0px;
-        border-bottom-right-radius: 0px;
-        border-bottom-left-radius: 0px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
         background-color: rgb(255, 255, 255);
         border-width: 2px;
         position: static;
-        top: 0px;
-        left: 0px;
+        top: 0;
+        left: 0;
         margin-right: auto;
         min-width: 160px;
         max-width: 260px;
@@ -1289,14 +1255,14 @@
     #about-me {
         float: left;
         height: auto;
-        margin-left: 0px;
+        margin-left: 0;
         margin-top: 30px;
         clear: both;
         width: 100%;
         background-color: rgb(239, 195, 55);
         position: relative;
-        top: 0px;
-        left: 0px;
+        top: 0;
+        left: 0;
         padding-bottom: 30px;
     }
 
@@ -1308,12 +1274,12 @@
         text-align: center;
         font-weight: normal;
         line-height: 1em;
-        margin-left: 0%;
+        margin-left: 0;
         margin-top: 14px;
         clear: none;
         min-height: 24px;
-        padding-right: 0px;
-        padding-left: 0px;
+        padding-right: 0;
+        padding-left: 0;
     }
 
     #textspan3 {
@@ -1365,8 +1331,8 @@
         text-align: left;
         font-weight: normal;
         line-height: 1em;
-        margin-left: 0%;
-        margin-top: 0px;
+        margin-left: 0;
+        margin-top: 0;
         clear: none;
         min-height: 24px;
     }
@@ -1379,13 +1345,13 @@
         text-align: left;
         font-weight: normal;
         line-height: 1em;
-        margin-left: 0%;
+        margin-left: 0;
         margin-top: 10px;
         clear: both;
         min-height: 25px;
         position: static;
-        top: 0px;
-        left: 0px;
+        top: 0;
+        left: 0;
     }
 
     #text8 {
@@ -1396,13 +1362,13 @@
         text-align: left;
         font-weight: normal;
         line-height: 1em;
-        margin-left: 0%;
+        margin-left: 0;
         margin-top: 2px;
         clear: both;
         min-height: 20px;
         position: static;
-        top: 0px;
-        left: 0px;
+        top: 0;
+        left: 0;
     }
 
     #text9 {
@@ -1413,7 +1379,7 @@
         text-align: left;
         font-weight: normal;
         line-height: 1em;
-        margin-left: 0%;
+        margin-left: 0;
         margin-top: 10px;
         clear: both;
         min-height: 20px;
@@ -1427,7 +1393,7 @@
         text-align: left;
         font-weight: normal;
         line-height: 1em;
-        margin-left: 0%;
+        margin-left: 0;
         margin-top: 10px;
         clear: both;
         min-height: 19px;
@@ -1441,7 +1407,7 @@
         text-align: left;
         font-weight: normal;
         line-height: 1em;
-        margin-left: 0%;
+        margin-left: 0;
         margin-top: 10px;
         clear: both;
         min-height: 20px;
@@ -1455,7 +1421,7 @@
         text-align: left;
         font-weight: normal;
         line-height: 1em;
-        margin-left: 0%;
+        margin-left: 0;
         margin-top: 10px;
         clear: both;
         min-height: 20px;
@@ -1469,7 +1435,7 @@
         text-align: left;
         font-weight: normal;
         line-height: 1em;
-        margin-left: 0%;
+        margin-left: 0;
         margin-top: 10px;
         clear: both;
         min-height: 18px;
@@ -1483,7 +1449,7 @@
         text-align: left;
         font-weight: normal;
         line-height: 1em;
-        margin-left: 0%;
+        margin-left: 0;
         margin-top: 10px;
         clear: both;
         min-height: 21px;
@@ -1492,8 +1458,8 @@
     #lets-talk {
         float: left;
         height: auto;
-        margin-left: 0%;
-        margin-top: 0px;
+        margin-left: 0;
+        margin-top: 0;
         clear: both;
         width: 100%;
         background-image:url("img/front_door_small.png");
@@ -1501,9 +1467,9 @@
         -webkit-background-size: cover;
         background-size: cover;
         position: relative;
-        top: 0px;
-        left: 0px;
-        padding: 10px 0px 40px;
+        top: 0;
+        left: 0;
+        padding: 10px 0 40px;
         background-position: 50% 50%;
         background-repeat: no-repeat no-repeat;
     }
@@ -1511,11 +1477,11 @@
     #lets-talk_box {
         float: left;
         height: 296px;
-        margin-left: 0%;
+        margin-left: 0;
         margin-top: 40px;
         clear: none;
         width: 100%;
-        padding: 0px 20px;
+        padding: 0 20px;
         display: block;
     }
 
@@ -1527,10 +1493,10 @@
         text-align: center;
         font-weight: 500;
         line-height: 1.25em;
-        margin-left: 0%;
+        margin-left: 0;
         margin-top: 106px;
         clear: both;
-        min-height: 0px;
+        min-height: 0;
     }
 
     #textspan12 {
@@ -1557,7 +1523,7 @@
         text-align: center;
         font-weight: normal;
         line-height: 1em;
-        margin-left: 0%;
+        margin-left: 0;
         margin-top: 31px;
         clear: none;
         min-height: 51px;
@@ -1582,29 +1548,29 @@
     #wrapper_1 {
         float: left;
         height: auto;
-        margin: 0px 20px;
+        margin: 0 20px;
         clear: none;
         width: 87%;
-        min-width: 0px;
+        min-width: 0;
         position: relative;
-        top: 0px;
-        left: 0px;
+        top: 0;
+        left: 0;
         padding-bottom: 45px;
     }
 
     #Header {
         float: left;
         height: auto;
-        margin-left: 0%;
-        margin-top: 0px;
+        margin-left: 0;
+        margin-top: 0;
         clear: both;
         width: 100%;
-        min-width: 0px;
+        min-width: 0;
         min-height: 165px;
         overflow: visible;
         position: relative;
-        top: 0px;
-        left: 0px;
+        top: 0;
+        left: 0;
         background-color: rgb(240, 238, 229);
         z-index: 1;
     }
@@ -1617,12 +1583,12 @@
         text-align: center;
         font-weight: normal;
         line-height: 1em;
-        margin-left: 0%;
+        margin-left: 0;
         margin-top: 18px;
         clear: none;
-        min-height: 0px;
+        min-height: 0;
         color: rgb(108, 108, 108);
-        margin-right: 0%;
+        margin-right: 0;
     }
 
     #text3 {
@@ -1633,7 +1599,7 @@
         text-align: center;
         font-weight: normal;
         line-height: 1em;
-        margin-left: 0%;
+        margin-left: 0;
         margin-top: 38px;
         clear: both;
         min-height: 31px;
@@ -1644,76 +1610,68 @@
         float: none;
         height: 45px;
         font-size: 1em;
-        margin-left: 0px;
-        margin-top: 0px;
+        margin-left: 0;
+        margin-top: 0;
         clear: both;
         width: 65.864955%;
         color: rgb(255, 255, 255);
         position: absolute;
         top: auto;
         left: 20.147679%;
-        padding: 0px;
+        padding: 0;
         bottom: -24px;
     }
 
     #wrapper-images {
-        float: left;
         height: auto;
-        margin: 0px 20px;
+        margin: 0 20px;
         clear: none;
         width: auto;
-        padding-right: 0px;
-        padding-left: 0px;
-        padding-bottom: 0px;
+        padding-right: 0;
+        padding-left: 0;
+        padding-bottom: 0;
         position: relative;
-        top: 0px;
-        left: 0px;
+        top: 0;
+        left: 0;
     }
+
 
     #portfolio-grid1 {
         float: none;
         height: auto;
-        margin: 0px 0%;
+        margin: 0 0;
         clear: none;
         width: auto;
-        padding-bottom: 0px;
         position: static;
-        top: 0px;
-        left: 0px;
+        top: 0;
+        left: 0;
     }
 
     #grid1-row-1 {
         float: none;
         height: auto;
-        margin-left: 0%;
         margin-top: 26px;
         clear: none;
         width: auto;
-        margin-right: 0px;
         position: relative;
-        top: 0px;
-        left: 0px;
-        max-height: none;
     }
 
     #grid1-row-2 {
         float: none;
         height: auto;
-        margin-left: 0%;
-        margin-top: 0px;
+        margin-left: 0;
+        margin-top: 0;
         clear: none;
         width: auto;
         position: relative;
-        top: 0px;
-        left: 0px;
-        margin-right: 0px;
+        top: 0;
+        left: 0;
+        margin-right: 0;
     }
 
     #portfolio-grid2 {
-        float: left;
+        float: none;
         height: auto;
-        margin-left: 0%;
-        margin-top: 0px;
         clear: none;
         width: auto;
     }
@@ -1721,14 +1679,9 @@
     #grid2-row-1 {
         float: none;
         height: auto;
-        margin-left: 0%;
-        margin-top: 0px;
         clear: none;
         width: auto;
         position: relative;
-        top: 0px;
-        left: 0px;
-        margin-right: 0px;
     }
 
     #textspan5 {
@@ -1742,7 +1695,7 @@
         font-size: 1em;
         line-height: 1em;
         font-family: 'Museo Sans 500';
-        color: rgb(255, 255, 255);
+        color: rgb(128, 128, 128);
     }
 }
 
