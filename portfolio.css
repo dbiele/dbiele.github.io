@@ -142,3 +142,77 @@
     font-family: 'Museo Sans 300';
 }
 
+#password {
+    float: none;
+    height: 116px;
+    margin-left: auto;
+    margin-top: 41px;
+    clear: none;
+    width: 33.994193%;
+    margin-right: auto;
+    background-color: rgb(255, 255, 255);
+}
+
+#text1 {
+    float: none;
+    font-size: 2em;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: auto;
+    margin-top: 13px;
+    clear: none;
+    min-height: 24px;
+    min-width: 0px;
+    margin-right: auto;
+    font-family: 'Playfair Display';
+    color: rgb(51, 51, 51);
+    display: block;
+}
+
+#input:active {
+    display: block;
+}
+
+#input {
+    float: none;
+    height: 21px;
+    font-size: 1em;
+    margin: 6px auto 0px;
+    clear: none;
+    width: 50.206633%;
+    font-family: 'Museo Sans 700';
+    font-weight: 700;
+    text-transform: uppercase;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    color: rgb(255, 255, 255);
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    display: block;
+    background-color: rgb(51, 51, 51);
+}
+
+#text2 {
+    float: none;
+    font-size: 1em;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    font-weight: 300;
+    line-height: 1em;
+    margin-left: auto;
+    margin-top: 12px;
+    clear: none;
+    min-height: 20px;
+    margin-right: auto;
+    font-family: 'Museo Sans 300';
+    display: block;
+    background-color: rgb(255, 255, 255);
+    min-width: 0px;
+}
+
