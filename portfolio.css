@@ -20,7 +20,7 @@
     padding: 1px 0px 0px;
     overflow: hidden;
     min-width: 0px;
-    background-image:url("img/portfolio_home.png");
+    background-image:url("img/portfolio_home.jpg");
     background-attachment: scroll;
     -webkit-background-size: auto;
     background-size: auto;
@@ -2626,7 +2626,7 @@
 
     #background_image {
         width: 100%;
-        background-image:url("img/portfolio_home_small.png");
+        background-image:url("img/portfolio_home_small.jpg");
         background-attachment: scroll;
         -webkit-background-size: auto;
         background-size: auto;
