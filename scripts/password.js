@@ -4,7 +4,7 @@ var AccessHandler = (function () {
         this.displayPassword = function () {
             //show the password dive 
             _this.setContentWindows();
-            _this.hideContent();
+            _this.hidePortfolioGallery();
             _this._passwordWindow.style.visibility = "visible";
             /* change visibility of the follow to false.
             * custom_elearning_content
@@ -21,7 +21,7 @@ var AccessHandler = (function () {
             var currentUserEntry = passwordTextField.value;
             if (currentUserEntry == "DeanBiele") {
                 _this.hidePassWordWindow();
-                _this.showContent();
+                _this.showPortfolioGallery();
             }
         };
         this.setContentWindows = function () {
@@ -34,14 +34,14 @@ var AccessHandler = (function () {
         this.hidePassWordWindow = function () {
             _this._passwordWindow.style.visibility = "hidden";
         };
-        this.showContent = function () {
+        this.showPortfolioGallery = function () {
             _this._customWindow.style.visibility = "visible";
             _this._authoringtoolWindow.style.visibility = "visible";
             _this._lmsWindow.style.visibility = "visible";
             _this._codeWindow.style.visibility = "visible";
-            _this._customWindow.style.margin = "-100px 0 0";
+            _this._customWindow.style.margin = "-100px auto 0px";
         };
-        this.hideContent = function () {
+        this.hidePortfolioGallery = function () {
             _this._customWindow.style.visibility = "hidden";
             _this._authoringtoolWindow.style.visibility = "hidden";
             _this._lmsWindow.style.visibility = "hidden";
@@ -50,7 +50,6 @@ var AccessHandler = (function () {
     }
     return AccessHandler;
 })();
-/* turn off the content div's and show the password. */
 window.onload = function () {
     var checkAccess = new AccessHandler();
     checkAccess.displayPassword();
