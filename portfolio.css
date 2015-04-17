@@ -24,6 +24,7 @@
     background-attachment: scroll;
     -webkit-background-size: auto;
     background-size: auto;
+    display: block;
     background-position: 50% 0%;
     background-repeat: repeat repeat;
 }
@@ -54,6 +55,7 @@
     min-width: 0px;
     bottom: auto;
     right: 0px;
+    display: block;
 }
 
 #Dean_Biele_Title {
@@ -142,15 +144,17 @@
     font-family: 'Museo Sans 300';
 }
 
-#password {
+#password_window {
     float: none;
     height: 116px;
-    margin-left: auto;
-    margin-top: 41px;
     clear: none;
-    width: 33.994193%;
-    margin-right: auto;
+    width: 33.993293%;
     background-color: rgb(255, 255, 255);
+    display: block;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    margin: 0px 0px 0px 33%;
 }
 
 #text1 {
@@ -172,17 +176,17 @@
     display: block;
 }
 
-#input:active {
+#password_button:active {
     display: block;
 }
 
-#input {
+#password_button {
     float: none;
     height: 21px;
     font-size: 1em;
     margin: 6px auto 0px;
     clear: none;
-    width: 50.206633%;
+    width: 50.204638%;
     font-family: 'Museo Sans 700';
     font-weight: 700;
     text-transform: uppercase;
@@ -197,7 +201,7 @@
     background-color: rgb(51, 51, 51);
 }
 
-#text2 {
+#password_txt {
     float: none;
     font-size: 1em;
     width: 100%;
@@ -214,5 +218,896 @@
     display: block;
     background-color: rgb(255, 255, 255);
     min-width: 0px;
+}
+
+#custom_elearning_content {
+    float: none;
+    height: auto;
+    margin: 20px auto 0px;
+    clear: none;
+    width: 1180px;
+    display: block;
+}
+
+#row_1_title {
+    float: left;
+    font-size: 2em;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    font-weight: 700;
+    line-height: 1em;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: none;
+    min-height: 33px;
+    font-family: 'Playfair Display';
+    font-style: italic;
+}
+
+#row1_div {
+    float: left;
+    height: auto;
+    margin: 20px 0px 0px 0%;
+    clear: both;
+    width: 100%;
+}
+
+#column_1 {
+    float: left;
+    height: 400px;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: none;
+    width: 33.33%;
+    padding: 0px 18px;
+    background-color: rgb(242, 242, 242);
+    display: block;
+}
+
+#text2 {
+    float: left;
+    font-size: 2em;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 0%;
+    margin-top: 20px;
+    clear: both;
+    min-height: 36px;
+    font-family: 'Playfair Display';
+}
+
+#Technology_History {
+    float: left;
+    font-size: 1em;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: both;
+    min-height: 19px;
+    font-family: 'Playfair Display';
+}
+
+#break {
+    float: left;
+    height: 1px;
+    margin: 20px 0px 0px;
+    clear: both;
+    width: 50px;
+    background-color: rgb(6, 0, 0);
+}
+
+#view_project {
+    float: left;
+    font-size: 0.75em;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    font-weight: 300;
+    line-height: 1em;
+    margin: 20px 0px 0px;
+    clear: both;
+    min-height: 0px;
+    font-family: 'Museo Sans 300';
+    min-width: 0px;
+    color: rgb(156, 153, 153);
+    font-style: normal;
+}
+
+#box1 {
+    float: left;
+    height: 170px;
+    margin: 0px;
+    clear: none;
+    width: 100%;
+    min-width: 0px;
+    background-color: rgb(255, 255, 255);
+    padding: 0px 20px;
+}
+
+#column_2 {
+    float: left;
+    height: 400px;
+    margin: 0px;
+    clear: none;
+    width: 33.33%;
+    padding: 0px 18px;
+}
+
+#image {
+    float: left;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+}
+
+#image1 {
+    float: left;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+    display: block;
+}
+
+#box2 {
+    float: left;
+    height: 170px;
+    margin: 0px;
+    clear: none;
+    width: 100%;
+    min-width: 0px;
+    padding: 0px 20px;
+    display: block;
+    background-color: rgb(255, 255, 255);
+}
+
+#text3 {
+    float: left;
+    font-size: 2em;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 0%;
+    margin-top: 20px;
+    clear: both;
+    min-height: 36px;
+    font-family: 'Playfair Display';
+}
+
+#Technology_History1 {
+    float: left;
+    font-size: 1em;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: both;
+    min-height: 19px;
+    font-family: 'Playfair Display';
+}
+
+#break1 {
+    float: left;
+    height: 1px;
+    margin: 20px 0px 0px;
+    clear: both;
+    width: 50px;
+    background-color: rgb(6, 0, 0);
+}
+
+#view_project1 {
+    float: left;
+    font-size: 0.75em;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    margin: 20px 0px 0px;
+    clear: both;
+    min-height: 0px;
+    font-family: 'Museo Sans 300';
+    min-width: 0px;
+    color: rgb(156, 153, 153);
+}
+
+#column_3 {
+    float: left;
+    height: 400px;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: none;
+    width: 33.33%;
+    padding: 0px 18px;
+}
+
+#image2 {
+    float: left;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+    display: block;
+}
+
+#box3 {
+    float: left;
+    height: 170px;
+    margin: 0px;
+    clear: both;
+    width: 100%;
+    min-width: 0px;
+    padding: 0px 20px;
+    display: block;
+    background-color: rgb(255, 255, 255);
+}
+
+#text4 {
+    float: left;
+    font-size: 2em;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 0%;
+    margin-top: 20px;
+    clear: both;
+    min-height: 36px;
+    font-family: 'Playfair Display';
+}
+
+#Technology_History2 {
+    float: left;
+    font-size: 1em;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: both;
+    min-height: 19px;
+    font-family: 'Playfair Display';
+}
+
+#break2 {
+    float: left;
+    height: 1px;
+    margin: 20px 0px 0px;
+    clear: both;
+    width: 50px;
+    background-color: rgb(6, 0, 0);
+}
+
+#view_project2 {
+    float: left;
+    font-size: 0.75em;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    font-weight: 300;
+    line-height: 1em;
+    margin: 20px 0px 0px;
+    clear: both;
+    min-height: 0px;
+    font-family: 'Museo Sans 300';
+    min-width: 0px;
+    color: rgb(156, 153, 153);
+}
+
+#lms_content {
+    float: none;
+    height: auto;
+    margin: 20px auto 0px;
+    clear: none;
+    width: 1180px;
+    display: block;
+}
+
+#row_1_title2 {
+    float: left;
+    font-size: 2em;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    font-weight: 700;
+    line-height: 1em;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: none;
+    min-height: 33px;
+    font-family: 'Playfair Display';
+    font-style: italic;
+}
+
+#row1_div2 {
+    float: left;
+    height: auto;
+    margin: 20px 0px 0px 0%;
+    clear: both;
+    width: 100%;
+}
+
+#column_12 {
+    float: left;
+    height: 400px;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: none;
+    width: 33.33%;
+    padding: 0px 18px;
+    display: block;
+    background-color: rgb(242, 242, 242);
+}
+
+#image6 {
+    float: left;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+}
+
+#box7 {
+    float: left;
+    height: 170px;
+    margin: 0px;
+    clear: none;
+    width: 100%;
+    min-width: 0px;
+    padding: 0px 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+#text8 {
+    float: left;
+    font-size: 2em;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 0%;
+    margin-top: 20px;
+    clear: both;
+    min-height: 36px;
+    font-family: 'Playfair Display';
+}
+
+#Technology_History6 {
+    float: left;
+    font-size: 1em;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: both;
+    min-height: 19px;
+    font-family: 'Playfair Display';
+}
+
+#break6 {
+    float: left;
+    height: 1px;
+    margin: 20px 0px 0px;
+    clear: both;
+    width: 50px;
+    background-color: rgb(6, 0, 0);
+}
+
+#view_project6 {
+    float: left;
+    font-size: 0.75em;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    font-weight: 300;
+    line-height: 1em;
+    margin: 20px 0px 0px;
+    clear: both;
+    min-height: 0px;
+    font-family: 'Museo Sans 300';
+    min-width: 0px;
+    color: rgb(156, 153, 153);
+    font-style: normal;
+}
+
+#column_22 {
+    float: left;
+    height: 400px;
+    margin: 0px;
+    clear: none;
+    width: 33.33%;
+    padding: 0px 18px;
+}
+
+#image7 {
+    float: left;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+    display: block;
+}
+
+#box8 {
+    float: left;
+    height: 170px;
+    margin: 0px;
+    clear: none;
+    width: 100%;
+    min-width: 0px;
+    padding: 0px 20px;
+    display: block;
+    background-color: rgb(255, 255, 255);
+}
+
+#text9 {
+    float: left;
+    font-size: 2em;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 0%;
+    margin-top: 20px;
+    clear: both;
+    min-height: 36px;
+    font-family: 'Playfair Display';
+}
+
+#Technology_History7 {
+    float: left;
+    font-size: 1em;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: both;
+    min-height: 19px;
+    font-family: 'Playfair Display';
+}
+
+#break7 {
+    float: left;
+    height: 1px;
+    margin: 20px 0px 0px;
+    clear: both;
+    width: 50px;
+    background-color: rgb(6, 0, 0);
+}
+
+#view_project7 {
+    float: left;
+    font-size: 0.75em;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    margin: 20px 0px 0px;
+    clear: both;
+    min-height: 0px;
+    font-family: 'Museo Sans 300';
+    min-width: 0px;
+    color: rgb(156, 153, 153);
+}
+
+#column_32 {
+    float: left;
+    height: 400px;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: none;
+    width: 33.33%;
+    padding: 0px 18px;
+}
+
+#image8 {
+    float: left;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+    display: block;
+}
+
+#box9 {
+    float: left;
+    height: 170px;
+    margin: 0px;
+    clear: both;
+    width: 100%;
+    min-width: 0px;
+    padding: 0px 20px;
+    display: block;
+    background-color: rgb(255, 255, 255);
+}
+
+#text10 {
+    float: left;
+    font-size: 2em;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 0%;
+    margin-top: 20px;
+    clear: both;
+    min-height: 36px;
+    font-family: 'Playfair Display';
+}
+
+#Technology_History8 {
+    float: left;
+    font-size: 1em;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: both;
+    min-height: 19px;
+    font-family: 'Playfair Display';
+}
+
+#break8 {
+    float: left;
+    height: 1px;
+    margin: 20px 0px 0px;
+    clear: both;
+    width: 50px;
+    background-color: rgb(6, 0, 0);
+}
+
+#view_project8 {
+    float: left;
+    font-size: 0.75em;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    font-weight: 300;
+    line-height: 1em;
+    margin: 20px 0px 0px;
+    clear: both;
+    min-height: 0px;
+    font-family: 'Museo Sans 300';
+    min-width: 0px;
+    color: rgb(156, 153, 153);
+}
+
+#authoring_tools_content {
+    float: none;
+    height: auto;
+    margin: 20px auto 0px;
+    clear: none;
+    width: 1180px;
+    display: block;
+}
+
+#row_1_title1 {
+    float: left;
+    font-size: 2em;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    font-weight: 700;
+    line-height: 1em;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: none;
+    min-height: 33px;
+    font-family: 'Playfair Display';
+    font-style: italic;
+}
+
+#row1_div1 {
+    float: left;
+    height: auto;
+    margin: 20px 0px 0px 0%;
+    clear: both;
+    width: 100%;
+}
+
+#column_11 {
+    float: left;
+    height: 400px;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: none;
+    width: 33.33%;
+    padding: 0px 18px;
+    display: block;
+    background-color: rgb(242, 242, 242);
+}
+
+#image3 {
+    float: left;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+}
+
+#box4 {
+    float: left;
+    height: 170px;
+    margin: 0px;
+    clear: none;
+    width: 100%;
+    min-width: 0px;
+    padding: 0px 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+#text5 {
+    float: left;
+    font-size: 2em;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 0%;
+    margin-top: 20px;
+    clear: both;
+    min-height: 36px;
+    font-family: 'Playfair Display';
+}
+
+#Technology_History3 {
+    float: left;
+    font-size: 1em;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: both;
+    min-height: 19px;
+    font-family: 'Playfair Display';
+}
+
+#break3 {
+    float: left;
+    height: 1px;
+    margin: 20px 0px 0px;
+    clear: both;
+    width: 50px;
+    background-color: rgb(6, 0, 0);
+}
+
+#view_project3 {
+    float: left;
+    font-size: 0.75em;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    font-weight: 300;
+    line-height: 1em;
+    margin: 20px 0px 0px;
+    clear: both;
+    min-height: 0px;
+    font-family: 'Museo Sans 300';
+    min-width: 0px;
+    color: rgb(156, 153, 153);
+    font-style: normal;
+}
+
+#column_21 {
+    float: left;
+    height: 400px;
+    margin: 0px;
+    clear: none;
+    width: 33.33%;
+    padding: 0px 18px;
+}
+
+#image4 {
+    float: left;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+    display: block;
+}
+
+#box5 {
+    float: left;
+    height: 170px;
+    margin: 0px;
+    clear: none;
+    width: 100%;
+    min-width: 0px;
+    padding: 0px 20px;
+    display: block;
+    background-color: rgb(255, 255, 255);
+}
+
+#text6 {
+    float: left;
+    font-size: 2em;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 0%;
+    margin-top: 20px;
+    clear: both;
+    min-height: 36px;
+    font-family: 'Playfair Display';
+}
+
+#Technology_History4 {
+    float: left;
+    font-size: 1em;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: both;
+    min-height: 19px;
+    font-family: 'Playfair Display';
+}
+
+#break4 {
+    float: left;
+    height: 1px;
+    margin: 20px 0px 0px;
+    clear: both;
+    width: 50px;
+    background-color: rgb(6, 0, 0);
+}
+
+#view_project4 {
+    float: left;
+    font-size: 0.75em;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    margin: 20px 0px 0px;
+    clear: both;
+    min-height: 0px;
+    font-family: 'Museo Sans 300';
+    min-width: 0px;
+    color: rgb(156, 153, 153);
+}
+
+#column_31 {
+    float: left;
+    height: 400px;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: none;
+    width: 33.33%;
+    padding: 0px 18px;
+}
+
+#image5 {
+    float: left;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+    display: block;
+}
+
+#box6 {
+    float: left;
+    height: 170px;
+    margin: 0px;
+    clear: both;
+    width: 100%;
+    min-width: 0px;
+    padding: 0px 20px;
+    display: block;
+    background-color: rgb(255, 255, 255);
+}
+
+#text7 {
+    float: left;
+    font-size: 2em;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 0%;
+    margin-top: 20px;
+    clear: both;
+    min-height: 36px;
+    font-family: 'Playfair Display';
+}
+
+#Technology_History5 {
+    float: left;
+    font-size: 1em;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: both;
+    min-height: 19px;
+    font-family: 'Playfair Display';
+}
+
+#break5 {
+    float: left;
+    height: 1px;
+    margin: 20px 0px 0px;
+    clear: both;
+    width: 50px;
+    background-color: rgb(6, 0, 0);
+}
+
+#view_project5 {
+    float: left;
+    font-size: 0.75em;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    font-weight: 300;
+    line-height: 1em;
+    margin: 20px 0px 0px;
+    clear: both;
+    min-height: 0px;
+    font-family: 'Museo Sans 300';
+    min-width: 0px;
+    color: rgb(156, 153, 153);
 }
 
