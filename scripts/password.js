@@ -1,8 +1,6 @@
 var AccessHandler = (function () {
     function AccessHandler() {
         var _this = this;
-        this.test = function () {
-        };
         this.displayPassword = function () {
             //show the password dive 
             _this.setContentWindows();
@@ -15,7 +13,7 @@ var AccessHandler = (function () {
             */
             //add password handler
             var passwordWindowButton = document.getElementById("password_button");
-            passwordWindowButton.addEventListener("pointerdown", _this.passwordButtonPress, true);
+            passwordWindowButton.addEventListener("click", _this.passwordButtonPress, true);
         };
         this.passwordButtonPress = function (event) {
             //pull the text from the entry and compare.

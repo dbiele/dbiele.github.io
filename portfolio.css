@@ -2382,6 +2382,23 @@
         margin-right: auto;
         float: none;
         clear: none;
+        display: none;
+    }
+
+    #row_1_title {
+        font-style: normal;
+    }
+
+    #row_1_title1 {
+        font-style: normal;
+    }
+
+    #row_1_title2 {
+        font-style: normal;
+    }
+
+    #row_1_title3 {
+        font-style: normal;
     }
 }
 
@@ -2609,10 +2626,19 @@
 
     #background_image {
         width: 100%;
+        background-image:url("img/portfolio_home_small.png");
+        background-attachment: scroll;
+        -webkit-background-size: auto;
+        background-size: auto;
+        height: 460px;
+        background-position: 50% 0%;
+        background-repeat: repeat repeat;
     }
 
     #box {
-        width: 445px;
+        width: 100%;
+        max-width: 445px;
+        min-width: 320px;
     }
 }
 
