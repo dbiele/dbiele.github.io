@@ -31,6 +31,7 @@ var AccessHandler = (function () {
             _this._customWindow = document.getElementById("custom_elearning_content");
             _this._authoringtoolWindow = document.getElementById("authoring_tools_content");
             _this._lmsWindow = document.getElementById("lms_content");
+            _this._codeWindow = document.getElementById("code_content");
         };
         this.hidePassWordWindow = function () {
             _this._passwordWindow.style.visibility = "hidden";
@@ -39,11 +40,14 @@ var AccessHandler = (function () {
             _this._customWindow.style.visibility = "visible";
             _this._authoringtoolWindow.style.visibility = "visible";
             _this._lmsWindow.style.visibility = "visible";
+            _this._codeWindow.style.visibility = "visible";
+            _this._customWindow.style.margin = "-100px 0 0";
         };
         this.hideContent = function () {
             _this._customWindow.style.visibility = "hidden";
             _this._authoringtoolWindow.style.visibility = "hidden";
             _this._lmsWindow.style.visibility = "hidden";
+            _this._codeWindow.style.visibility = "hidden";
         };
     }
     return AccessHandler;
