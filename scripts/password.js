@@ -20,7 +20,7 @@ var AccessHandler = (function () {
             var passwordTextField = document.getElementById("password_txt");
             var currentUserEntry = passwordTextField.value;
             if (currentUserEntry == "DeanBiele") {
-                _this.hidePassWordWindow();
+                _this.hidePasswordWindow();
                 _this.showPortfolioGallery();
             }
         };
@@ -31,15 +31,15 @@ var AccessHandler = (function () {
             _this._lmsWindow = document.getElementById("lms_content");
             _this._codeWindow = document.getElementById("code_content");
         };
-        this.hidePassWordWindow = function () {
-            _this._passwordWindow.style.visibility = "hidden";
+        this.hidePasswordWindow = function () {
+            //this._passwordWindow.style.visibility = "hidden";
+            _this._passwordWindow.style.display = "none";
         };
         this.showPortfolioGallery = function () {
             _this._customWindow.style.visibility = "visible";
             _this._authoringtoolWindow.style.visibility = "visible";
             _this._lmsWindow.style.visibility = "visible";
             _this._codeWindow.style.visibility = "visible";
-            _this._customWindow.style.margin = "-100px auto 0px";
         };
         this.hidePortfolioGallery = function () {
             _this._customWindow.style.visibility = "hidden";
