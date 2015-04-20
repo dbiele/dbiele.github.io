@@ -23,6 +23,9 @@ var AccessHandler = (function () {
                 _this.hidePasswordWindow();
                 _this.showPortfolioGallery();
             }
+            else {
+                _this.showPasswordError();
+            }
         };
         this.setContentWindows = function () {
             _this._passwordWindow = document.getElementById("password_window");
@@ -30,10 +33,14 @@ var AccessHandler = (function () {
             _this._authoringtoolWindow = document.getElementById("authoring_tools_content");
             _this._lmsWindow = document.getElementById("lms_content");
             _this._codeWindow = document.getElementById("code_content");
+            _this._passwordWindowError = document.getElementById("password_error");
         };
         this.hidePasswordWindow = function () {
             //this._passwordWindow.style.visibility = "hidden";
             _this._passwordWindow.style.display = "none";
+        };
+        this.showPasswordError = function () {
+            _this._passwordWindowError.style.visibility = "visible";
         };
         this.showPortfolioGallery = function () {
             _this._customWindow.style.visibility = "visible";
