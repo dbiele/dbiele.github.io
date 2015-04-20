@@ -342,7 +342,7 @@
     padding: 0px 18px;
 }
 
-#image {
+#image2 {
     float: left;
     width: auto;
     max-width: 100%;
@@ -352,7 +352,7 @@
     color: rgb(0, 0, 0);
 }
 
-#image1 {
+#image3 {
     float: left;
     width: auto;
     max-width: 100%;
@@ -440,7 +440,7 @@
     padding: 0px 18px;
 }
 
-#image2 {
+#image4 {
     float: left;
     width: auto;
     max-width: 100%;
@@ -563,7 +563,7 @@
     background-color: rgb(242, 242, 242);
 }
 
-#image13 {
+#image15 {
     float: left;
     width: auto;
     max-width: 100%;
@@ -650,7 +650,7 @@
     padding: 0px 18px;
 }
 
-#image14 {
+#image16 {
     float: left;
     width: auto;
     max-width: 100%;
@@ -738,7 +738,7 @@
     padding: 0px 18px;
 }
 
-#image15 {
+#image17 {
     float: left;
     width: auto;
     max-width: 100%;
@@ -863,7 +863,7 @@
     background-color: rgb(242, 242, 242);
 }
 
-#image6 {
+#image8 {
     float: left;
     width: auto;
     max-width: 100%;
@@ -950,7 +950,7 @@
     padding: 0px 18px;
 }
 
-#image7 {
+#image9 {
     float: left;
     width: auto;
     max-width: 100%;
@@ -1039,7 +1039,7 @@
     padding: 0px 18px;
 }
 
-#image8 {
+#image10 {
     float: left;
     width: auto;
     max-width: 100%;
@@ -1162,7 +1162,7 @@
     background-color: rgb(242, 242, 242);
 }
 
-#image17 {
+#image19 {
     float: left;
     width: auto;
     max-width: 100%;
@@ -1249,7 +1249,7 @@
     padding: 0px 18px;
 }
 
-#image18 {
+#image20 {
     float: left;
     width: auto;
     max-width: 100%;
@@ -1338,7 +1338,7 @@
     padding: 0px 18px;
 }
 
-#image19 {
+#image21 {
     float: left;
     width: auto;
     max-width: 100%;
@@ -1426,7 +1426,7 @@
     padding: 0px 18px;
 }
 
-#image3 {
+#image5 {
     float: left;
     width: auto;
     max-width: 100%;
@@ -1514,7 +1514,7 @@
     padding: 0px 18px;
 }
 
-#image4 {
+#image6 {
     float: left;
     width: auto;
     max-width: 100%;
@@ -1602,7 +1602,7 @@
     padding: 0px 18px;
 }
 
-#image5 {
+#image7 {
     float: left;
     width: auto;
     max-width: 100%;
@@ -1690,7 +1690,7 @@
     padding: 0px 18px;
 }
 
-#image9 {
+#image11 {
     float: left;
     width: auto;
     max-width: 100%;
@@ -1778,7 +1778,7 @@
     padding: 0px 18px;
 }
 
-#image10 {
+#image12 {
     float: left;
     width: auto;
     max-width: 100%;
@@ -1866,7 +1866,7 @@
     padding: 0px 18px;
 }
 
-#image11 {
+#image13 {
     float: left;
     width: auto;
     max-width: 100%;
@@ -1954,7 +1954,7 @@
     padding: 0px 18px;
 }
 
-#image12 {
+#image14 {
     float: left;
     width: auto;
     max-width: 100%;
@@ -2042,7 +2042,7 @@
     padding: 0px 18px;
 }
 
-#image16 {
+#image18 {
     float: left;
     width: auto;
     max-width: 100%;
@@ -2130,7 +2130,7 @@
     padding: 0px 18px;
 }
 
-#image20 {
+#image22 {
     float: left;
     width: auto;
     max-width: 100%;
@@ -2218,7 +2218,7 @@
     padding: 0px 18px;
 }
 
-#image21 {
+#image23 {
     float: left;
     width: auto;
     max-width: 100%;
@@ -2295,6 +2295,41 @@
     min-width: 0px;
     color: rgb(156, 153, 153);
     display: block;
+}
+
+#password_error {
+    float: left;
+    height: 64px;
+    margin: -44px 0px 0px 74.892928%;
+    clear: none;
+    width: 69px;
+    position: static;
+    top: 0px;
+    left: 0px;
+    display: block;
+    visibility: hidden;
+}
+
+#image {
+    float: left;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+    display: block;
+}
+
+#image1 {
+    float: none;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0px auto;
+    clear: none;
+    color: rgb(0, 0, 0);
+    display: none;
 }
 
 @media only screen and (max-width: 1179px) {
@@ -2400,6 +2435,10 @@
     #row_1_title3 {
         font-style: normal;
     }
+
+    #image1 {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 1038px) {
@@ -2408,6 +2447,27 @@
         margin-right: auto;
         float: none;
         clear: none;
+    }
+
+    #password_error {
+        margin: -44px 0px 0px 74.89%;
+        width: 69px;
+        height: 64px;
+        clear: none;
+    }
+
+    #image {
+        float: left;
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        margin: 0px;
+        clear: none;
+        color: rgb(0, 0, 0);
+    }
+
+    #image1 {
+        display: none;
     }
 }
 
@@ -2521,6 +2581,15 @@
         margin-right: auto;
         float: none;
         clear: none;
+        display: block;
+    }
+
+    #password_error {
+        margin: -44px 0px 0px 74.89%;
+    }
+
+    #image1 {
+        display: none;
     }
 }
 
@@ -2631,9 +2700,9 @@
         background-attachment: scroll;
         -webkit-background-size: auto;
         background-size: auto;
-        height: 440px;
+        height: 420px;
         display: block;
-        background-position: 50% 0%;
+        background-position: 50% 100%;
         background-repeat: repeat repeat;
     }
 
@@ -2645,6 +2714,13 @@
 
     #row_1_title {
         font-style: normal;
+        margin: 0px auto;
+        clear: none;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        float: none;
     }
 
     #Navigation {
@@ -2657,6 +2733,56 @@
 
     #text {
         font-size: 2.2em;
+    }
+
+    #custom_elearning_content {
+        display: block;
+        margin: 0px auto;
+    }
+
+    #authoring_tools_content {
+        display: block;
+    }
+
+    #lms_content {
+        display: block;
+    }
+
+    #code_content {
+        display: block;
+    }
+
+    #password_error {
+        float: left;
+        height: 33px;
+        margin: -27px 0px 0px 74.885417%;
+        clear: none;
+        width: 14.333333%;
+        position: static;
+        top: 0px;
+        left: 0px;
+        display: block;
+    }
+
+    #image1 {
+        float: none;
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        margin: 0px auto;
+        clear: none;
+        color: rgb(0, 0, 0);
+        display: block;
+    }
+
+    #row1_div {
+        margin-top: 20px;
+        margin-left: 0%;
+        clear: none;
+    }
+
+    #image {
+        display: block;
     }
 }
 
