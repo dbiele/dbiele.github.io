@@ -1,0 +1,472 @@
+.primaryContainer {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+#navigation {
+    float: none;
+    height: auto;
+    clear: none;
+    width: 100%;
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    bottom: auto;
+    z-index: 100;
+    display: block;
+}
+
+#Dean_Biele {
+    float: left;
+    font-size: 3em;
+    width: 300px;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    clear: none;
+    min-height: 0px;
+    font-family: 'Playfair Display';
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 0px;
+    bottom: auto;
+    right: auto;
+    left: 0px;
+}
+
+#project_header_container {
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: absolute;
+}
+
+#navigation_wrapper {
+    float: left;
+    height: 50px;
+    margin: 0px 0% 0px 7.125891%;
+    clear: none;
+    width: 300px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    max-width: none;
+}
+
+#background_figure {
+    background-image:url("img/project_header.png");
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    z-index: 0;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#header_text {
+    float: none;
+    height: 100%;
+    clear: none;
+    width: 100%;
+    min-width: 0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: auto;
+    min-height: 0px;
+}
+
+#floater {
+    float: left;
+    height: 40%;
+    clear: none;
+    width: 100%;
+    min-width: 0px;
+    position: static;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+}
+
+#text_wrapper {
+    float: left;
+    height: auto;
+    clear: none;
+    width: 100%;
+    min-width: 0px;
+    display: block;
+    position: static;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+}
+
+#project_name {
+    float: left;
+    font-size: 3.5em;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1em;
+    margin: 0px;
+    clear: none;
+    min-height: 0px;
+    max-width: none;
+    display: block;
+    position: static;
+    top: 0px;
+    left: 0px;
+    font-family: 'Playfair Display';
+    color: rgb(255, 255, 255);
+}
+
+#project_keywords {
+    float: left;
+    font-size: 2em;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1em;
+    margin: 0px 0px 20px;
+    clear: none;
+    min-height: 0px;
+    min-width: 0px;
+    display: block;
+    font-family: 'Playfair Display';
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
+#project_description {
+    float: left;
+    font-size: 1.2em;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-weight: 300;
+    line-height: 1em;
+    margin: 0px 0px 10px;
+    clear: none;
+    min-height: 0px;
+    min-width: 0px;
+    font-family: 'Museo Sans 300';
+    color: rgb(255, 255, 255);
+}
+
+#box {
+    float: none;
+    height: 1px;
+    margin: 0px auto 20px;
+    clear: both;
+    width: 150px;
+    background-color: rgb(255, 255, 255);
+    position: static;
+    top: 0px;
+    left: 0px;
+}
+
+#image_gallery_wrapper {
+    float: none;
+    height: auto;
+    margin: 0px auto;
+    clear: both;
+    width: 100%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    padding: 40px 0px 0px;
+    background-color: rgb(242, 242, 242);
+}
+
+#image_container_grid {
+    float: none;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    width: auto;
+    max-width: none;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+#row1 {
+    float: left;
+    height: auto;
+    margin: 0px 0px 20px 0%;
+    clear: both;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    padding: 0px 10px;
+    min-width: 0px;
+}
+
+#row_item1_1 {
+    float: left;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    width: 100%;
+    background-image:url("img/medium_1.png");
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    background-size: cover;
+    min-width: 0px;
+    min-height: 0px;
+    padding: 0px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat no-repeat;
+}
+
+#Image1_1 {
+    float: left;
+    width: 100%;
+    max-width: none;
+    height: auto;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+    margin-right: 0%;
+    min-width: 0px;
+    display: block;
+}
+
+#row2 {
+    float: left;
+    height: auto;
+    margin: 0px 0px 20px 0%;
+    clear: both;
+    width: 100%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    padding: 0px 10px;
+    max-width: 100%;
+    min-width: 0px;
+}
+
+#row_item2_2 {
+    float: left;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    width: 50%;
+    padding: 0px 0px 0px 10px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+#row_item2_1 {
+    float: left;
+    height: auto;
+    clear: none;
+    width: 50%;
+    padding: 0px 10px 0px 0px;
+    margin: 0px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+#Image2_1 {
+    float: left;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0px 0px 0px 0%;
+    clear: none;
+    color: rgb(0, 0, 0);
+    min-width: 0px;
+}
+
+#Image2_2 {
+    float: left;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+    min-width: 0px;
+}
+
+#row3 {
+    float: left;
+    height: auto;
+    margin: 0px 0px 20px;
+    clear: both;
+    width: 100%;
+    min-width: 0px;
+    padding: 0px 10px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+#row_item3_1 {
+    float: left;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    width: 100%;
+    min-width: 0px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+#Image3_1 {
+    float: left;
+    width: 100%;
+    max-width: none;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+    min-width: 0px;
+}
+
+#row5 {
+    float: left;
+    height: auto;
+    margin: 0px 0px 20px;
+    clear: both;
+    width: 100%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    padding: 0px 10px;
+    min-width: 0px;
+    display: block;
+}
+
+#row_item5_1 {
+    float: left;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    width: 66.657072%;
+    padding: 0px 10px 0px 0px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+#Image5_1 {
+    float: none;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    clear: none;
+    color: rgb(0, 0, 0);
+    min-width: 0px;
+    position: static;
+    top: 0px;
+    left: 0px;
+    margin-right: 0px;
+    margin-left: 0%;
+}
+
+#row_item5_2 {
+    float: left;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    width: 33.329221%;
+    padding: 0px 0px 0px 10px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+#Image5_2 {
+    float: left;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+    min-width: 0px;
+}
+
+#row_item5_3 {
+    float: left;
+    height: auto;
+    margin: 10px 0px 0px;
+    clear: none;
+    width: 33.329221%;
+    padding: 0px 0px 0px 10px;
+    min-width: 0px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+#Image5_3 {
+    float: left;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+}
+
+#row6 {
+    float: left;
+    height: auto;
+    margin: 0px 0px 20px;
+    clear: both;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0px;
+    padding: 0px 10px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    display: block;
+}
+
+#row_item6_1 {
+    float: left;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    width: 100%;
+    min-width: 0px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+#Image6_1 {
+    float: left;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+    min-width: 0px;
+}
+
