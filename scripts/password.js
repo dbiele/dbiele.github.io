@@ -1,10 +1,35 @@
 var AccessHandler = (function () {
     function AccessHandler() {
+        // wait for the page to load.
+        //alert("constructor loaded");
         var _this = this;
-        this.displayPassword = function () {
-            //show the password dive 
+        this.domLoadedEvent = function () {
+            //alert("dom loaded");
+            //localStorage.setItem(AccessHandler.PASSWORD_STORAGE_ID, "clear");
             _this.setContentWindows();
+            _this.hidePasswordWindow();
             _this.hidePortfolioGallery();
+        };
+        this.checkPassword = function () {
+            if (typeof (Storage) !== "undefined") {
+                // if password exists, display the page.
+                var localStoragePassword = localStorage.getItem(AccessHandler.PASSWORD_STORAGE_ID);
+                if (localStoragePassword === AccessHandler.PASSWORD) {
+                    // remove the password window and display content
+                    _this.displayPortfolio();
+                }
+                else {
+                    _this.displayPassword();
+                }
+            }
+            else {
+                _this.displayPassword();
+            }
+        };
+        this.displayPassword = function () {
+            //show the password div 
+            _this.hidePortfolioGallery();
+            _this._passwordWindow.style.display = "block";
             _this._passwordWindow.style.visibility = "visible";
             /* change visibility of the follow to false.
             * custom_elearning_content
@@ -19,13 +44,17 @@ var AccessHandler = (function () {
             //pull the text from the entry and compare.
             var passwordTextField = document.getElementById("password_txt");
             var currentUserEntry = passwordTextField.value;
-            if (currentUserEntry == "DeanBiele") {
-                _this.hidePasswordWindow();
-                _this.showPortfolioGallery();
+            if (currentUserEntry == AccessHandler.PASSWORD) {
+                _this.savePasswordLocally();
+                _this.displayPortfolio();
             }
             else {
                 _this.showPasswordError();
             }
+        };
+        this.displayPortfolio = function () {
+            _this.hidePasswordWindow();
+            _this.showPortfolioGallery();
         };
         this.setContentWindows = function () {
             _this._passwordWindow = document.getElementById("password_window");
@@ -54,13 +83,21 @@ var AccessHandler = (function () {
             _this._lmsWindow.style.visibility = "hidden";
             _this._codeWindow.style.visibility = "hidden";
         };
+        window.onload = function () {
+            //alert("window loaded");
+            _this.checkPassword();
+        };
+        document.addEventListener("DOMContentLoaded", this.domLoadedEvent, false);
     }
+    AccessHandler.prototype.savePasswordLocally = function () {
+        //alert("saving local variable");
+        localStorage.setItem(AccessHandler.PASSWORD_STORAGE_ID, AccessHandler.PASSWORD);
+    };
+    AccessHandler.PASSWORD = "DeanBiele";
+    AccessHandler.PASSWORD_STORAGE_ID = "portfolio_password";
     return AccessHandler;
 })();
-window.onload = function () {
-    var checkAccess = new AccessHandler();
-    checkAccess.displayPassword();
-};
+var checkAccess = new AccessHandler();
 /*Check if password has been stored/saved
  * If the password is saved, do nothing.
  *
