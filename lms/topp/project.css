@@ -218,13 +218,9 @@
 #row_item1_1 {
     float: left;
     height: auto;
-    margin: 0px;
+    margin: 0 auto;
     clear: none;
     width: 100%;
-    background-image:url("img/medium_1.png");
-    background-attachment: scroll;
-    -webkit-background-size: cover;
-    background-size: cover;
     min-width: 0px;
     min-height: 0px;
     padding: 0px;
@@ -236,17 +232,10 @@
 }
 
 #Image1_1 {
-    float: left;
-    width: 100%;
-    max-width: none;
-    height: auto;
-    margin-left: 0%;
-    margin-top: 0px;
-    clear: none;
-    color: rgb(0, 0, 0);
-    margin-right: 0%;
-    min-width: 0px;
-    display: block;
+	display: block;
+	margin: 0 auto;
+	max-width: 1000px;
+	width: 100%;
 }
 
 #row2 {
@@ -288,25 +277,15 @@
 }
 
 #Image2_1 {
-    float: left;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    margin: 0px 0px 0px 0%;
-    clear: none;
-    color: rgb(0, 0, 0);
-    min-width: 0px;
+	margin: 0 auto;
+	max-width: 387px;
+	width: 100%;
 }
 
 #Image2_2 {
-    float: left;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    margin: 0px;
-    clear: none;
-    color: rgb(0, 0, 0);
-    min-width: 0px;
+	margin: 0 auto;
+	max-width: 387px;
+	width: 100%;
 }
 
 #row3 {
@@ -335,14 +314,10 @@
 }
 
 #Image3_1 {
-    float: left;
-    width: 100%;
-    max-width: none;
-    height: auto;
-    margin: 0px;
-    clear: none;
-    color: rgb(0, 0, 0);
-    min-width: 0px;
+	display: block;
+	margin: 0 auto;
+	max-width: 1000px;
+	width: 100%;
 }
 
 #row5 {
@@ -460,14 +435,10 @@
 }
 
 #Image6_1 {
-    float: left;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    margin: 0px;
-    clear: none;
-    color: rgb(0, 0, 0);
-    min-width: 0px;
+	display: block;
+	margin: 0 auto;
+	max-width: 1000px;
+	width: 100%;
 }
 
 #contact_info_wrapper {
