@@ -42,10 +42,10 @@ var AccessHandler = (function () {
         };
         this.passwordButtonPress = function (event) {
             //pull the text from the entry and compare.
-            alert("submit button pressed");
             var passwordTextField = document.getElementById("password_txt");
             var currentUserEntry = passwordTextField.value;
-            if (currentUserEntry == AccessHandler.PASSWORD) {
+            alert("submit button pressed currentUserEntry = " + currentUserEntry + " AccessHandler.PASSWORD = " + AccessHandler.PASSWORD);
+            if (currentUserEntry === AccessHandler.PASSWORD) {
                 _this.savePasswordLocally();
                 _this.displayPortfolio();
             }
