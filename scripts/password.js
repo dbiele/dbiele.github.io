@@ -44,7 +44,7 @@ var AccessHandler = (function () {
             //pull the text from the entry and compare.
             var passwordTextField = document.getElementById("password_txt");
             var currentUserEntry = passwordTextField.value;
-            alert("submit button pressed currentUserEntry = " + currentUserEntry + " AccessHandler.PASSWORD = " + AccessHandler.PASSWORD);
+            alert("submit button pressed currentUserEntry = -" + currentUserEntry + "- AccessHandler.PASSWORD = -" + AccessHandler.PASSWORD + "-");
             if (currentUserEntry == AccessHandler.PASSWORD) {
                 alert("entry is the same");
                 _this.displayPortfolio();
