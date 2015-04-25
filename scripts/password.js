@@ -45,9 +45,10 @@ var AccessHandler = (function () {
             var passwordTextField = document.getElementById("password_txt");
             var currentUserEntry = passwordTextField.value;
             alert("submit button pressed currentUserEntry = " + currentUserEntry + " AccessHandler.PASSWORD = " + AccessHandler.PASSWORD);
-            if (currentUserEntry === AccessHandler.PASSWORD) {
-                _this.savePasswordLocally();
+            if (currentUserEntry == AccessHandler.PASSWORD) {
+                alert("entry is the same");
                 _this.displayPortfolio();
+                _this.savePasswordLocally();
             }
             else {
                 _this.showPasswordError();
