@@ -42,6 +42,7 @@ var AccessHandler = (function () {
         };
         this.passwordButtonPress = function (event) {
             //pull the text from the entry and compare.
+            alert("submit button pressed");
             var passwordTextField = document.getElementById("password_txt");
             var currentUserEntry = passwordTextField.value;
             if (currentUserEntry == AccessHandler.PASSWORD) {
@@ -72,11 +73,11 @@ var AccessHandler = (function () {
             _this._passwordWindowError.style.visibility = "visible";
         };
         this.showPortfolioGallery = function () {
+            alert("show portfolio gallery2");
             _this._customWindow.style.visibility = "visible";
             _this._authoringtoolWindow.style.visibility = "visible";
             _this._lmsWindow.style.visibility = "visible";
             _this._codeWindow.style.visibility = "visible";
-            alert("show portfolio gallery");
         };
         this.hidePortfolioGallery = function () {
             _this._customWindow.style.visibility = "hidden";
