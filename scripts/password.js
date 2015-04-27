@@ -72,7 +72,6 @@ var AccessHandler = (function () {
             _this._passwordWindowError.style.visibility = "visible";
         };
         this.showPortfolioGallery = function () {
-            alert("show portfolio gallery2");
             _this._customWindow.style.visibility = "visible";
             _this._authoringtoolWindow.style.visibility = "visible";
             _this._lmsWindow.style.visibility = "visible";
