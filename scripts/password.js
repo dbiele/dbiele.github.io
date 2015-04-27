@@ -44,9 +44,7 @@ var AccessHandler = (function () {
             //pull the text from the entry and compare.
             var passwordTextField = document.getElementById("password_txt");
             var currentUserEntry = passwordTextField.value;
-            alert("submit button pressed currentUserEntry = -" + currentUserEntry + "- AccessHandler.PASSWORD = -" + AccessHandler.PASSWORD + "-");
             if (currentUserEntry == AccessHandler.PASSWORD) {
-                alert("entry is the same");
                 _this.displayPortfolio();
                 _this.savePasswordLocally();
             }
@@ -93,7 +91,6 @@ var AccessHandler = (function () {
         document.addEventListener("DOMContentLoaded", this.domLoadedEvent, false);
     }
     AccessHandler.prototype.savePasswordLocally = function () {
-        //alert("saving local variable");
         localStorage.setItem(AccessHandler.PASSWORD_STORAGE_ID, AccessHandler.PASSWORD);
     };
     AccessHandler.PASSWORD = "DeanBiele";
