@@ -1,0 +1,457 @@
+.primaryContainer {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+#navigation {
+    float: none;
+    height: auto;
+    clear: none;
+    width: 100%;
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    bottom: auto;
+    z-index: 100;
+    display: block;
+}
+
+#Dean_Biele {
+    float: left;
+    font-size: 3em;
+    width: 300px;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    clear: none;
+    min-height: 0px;
+    font-family: 'Playfair Display';
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 0px;
+    bottom: auto;
+    right: auto;
+    left: 0px;
+}
+
+#project_header_container {
+    float: left;
+    height: 500px;
+    clear: none;
+    width: 100%;
+    min-width: 0px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    margin-top: 0px;
+    margin-left: 0%;
+}
+
+#navigation_wrapper {
+    float: left;
+    height: 50px;
+    margin: 0px 0% 0px 7.125891%;
+    clear: none;
+    width: 300px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    max-width: none;
+}
+
+#background_figure {
+    float: none;
+    height: 100%;
+    clear: both;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0px;
+    background-image:url("img/project_header.png");
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    min-height: 0px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat no-repeat;
+}
+
+#header_text {
+    float: none;
+    height: 100%;
+    clear: none;
+    width: 100%;
+    min-width: 0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: auto;
+    min-height: 0px;
+}
+
+#floater {
+    float: left;
+    height: 40%;
+    clear: none;
+    width: 100%;
+    min-width: 0px;
+    position: static;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+}
+
+#text_wrapper {
+    float: left;
+    height: auto;
+    clear: none;
+    width: 100%;
+    min-width: 0px;
+    display: block;
+    position: static;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+}
+
+#project_name {
+    float: left;
+    font-size: 3.5em;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1em;
+    margin: 0px;
+    clear: none;
+    min-height: 0px;
+    max-width: none;
+    display: block;
+    position: static;
+    top: 0px;
+    left: 0px;
+    font-family: 'Museo Sans 300';
+    color: rgb(255, 255, 255);
+}
+
+#project_keywords {
+    float: left;
+    font-size: 2em;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1em;
+    margin: 0px 0px 20px;
+    clear: none;
+    min-height: 0px;
+    min-width: 0px;
+    display: block;
+    font-family: 'Museo Sans 300';
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
+#project_description {
+    float: left;
+    font-size: 1.2em;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-weight: 300;
+    line-height: 1em;
+    margin: 0px 0px 10px;
+    clear: none;
+    min-height: 0px;
+    min-width: 0px;
+    font-family: 'Museo Sans 300';
+    color: rgb(255, 255, 255);
+}
+
+#github_description {
+    float: left;
+    font-size: 1.2em;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-weight: 300;
+    line-height: 1em;
+    margin: 0px 0px 10px;
+    clear: none;
+    min-height: 0px;
+    min-width: 0px;
+    font-family: 'Museo Sans 300';
+    color: rgb(0, 0, 0);
+}
+
+#box {
+    float: none;
+    height: 1px;
+    margin: 0px auto 20px;
+    clear: both;
+    width: 150px;
+    background-color: rgb(255, 255, 255);
+    position: static;
+    top: 0px;
+    left: 0px;
+}
+
+#image_gallery_wrapper {
+    float: none;
+    height: auto;
+    margin: 0px auto;
+    clear: both;
+    width: 100%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    padding: 40px 0px 0px;
+    background-color: rgb(242, 242, 242);
+}
+
+#image_container_grid {
+    float: none;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    width: auto;
+    max-width: none;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+#row1 {
+    float: left;
+    height: auto;
+    margin: 0px 0px 20px 0%;
+    clear: both;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    padding: 0px 10px;
+    min-width: 0px;
+}
+
+#row_item1_1 {
+    float: left;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    width: 100%;
+    min-width: 0px;
+    min-height: 0px;
+    padding: 0px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+#Image1_1 {
+    float: none;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    margin-left: auto;
+    margin-top: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+    margin-right: auto;
+    min-width: 0px;
+    display: block;
+}
+
+#row6 {
+    float: left;
+    height: 200px;
+    margin: 0px 0px 20px;
+    clear: both;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0px;
+    padding: 0px 10px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    display: block;
+}
+
+#contact_info_wrapper {
+    float: left;
+    height: 100px;
+    margin: 0px;
+    clear: none;
+    width: 100%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background-color: rgb(32, 31, 29);
+    min-width: 0px;
+}
+
+
+
+#text1 {
+    float: left;
+    font-size: 1em;
+    width: 50%;
+    height: auto;
+    text-align: right;
+    font-weight: 500;
+    line-height: 1.3em;
+    clear: none;
+    min-height: 0px;
+    position: absolute;
+    top: 14px;
+    left: auto;
+    bottom: auto;
+    right: 10px;
+    font-family: 'Museo Sans 500';
+    display: block;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
+#box1 {
+    float: left;
+    height: 34px;
+    margin-left: -0.9354537%;
+    margin-top: 0px;
+    clear: none;
+    width: 100%;
+    min-width: 0px;
+}
+
+#box2 {
+    float: none;
+    height: auto;
+    margin-left: auto;
+    margin-top: 0px;
+    clear: none;
+    width: 42.001871%;
+    margin-right: auto;
+    background-color: rgb(239, 195, 55);
+    display: block;
+}
+
+#textbutton {
+    float: left;
+    font-size: 2em;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 0%;
+    margin-top: 10px;
+    clear: none;
+    min-height: 22px;
+    font-family: 'Playfair Display';
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 416px) {
+    #text {
+        font-size: 1em;
+    }
+
+    #box2 {
+        width: 70%;
+    }
+
+    #box1 {
+        height: auto;
+    }
+
+    #row6 {
+        height: auto;
+    }
+}
+
+/*Added for footer*/
+
+#contact_info_wrapper {
+    float: left;
+    height: 76px;
+    margin: 0px;
+    clear: none;
+    width: 100%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background-color: rgb(32, 31, 29);
+}
+
+#text {
+    float: left;
+    font-size: 0.85em;
+    width: 50%;
+    height: auto;
+    text-align: right;
+    font-weight: 500;
+    line-height: 1.2em;
+    clear: none;
+    min-height: 0px;
+    position: absolute;
+    top: 14px;
+    left: auto;
+    bottom: auto;
+    right: 14px;
+    font-family: 'Museo Sans 500';
+    display: block;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
+#deanbiele {
+    float: left;
+    font-size: 0.85em;
+    width: 50%;
+    height: auto;
+    text-align: left;
+    font-weight: 500;
+    line-height: 1.2em;
+    clear: none;
+    min-height: 0px;
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    font-family: 'Museo Sans 500';
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    right: auto;
+}
+
+#twitter_span {
+    float: none;
+    font-size: 1em;
+    line-height: 1em;
+    color: rgb(103, 123, 249);
+}
+
+#email_span {
+    float: none;
+    font-size: 1em;
+    line-height: 1em;
+    color: rgb(239, 195, 55);
+}
+
+#white_line {
+    float: none;
+    height: 1px;
+    margin: 90px auto 0px;
+    clear: none;
+    width: 90%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background-color: rgb(255, 255, 255);
+}
