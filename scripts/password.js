@@ -1,14 +1,18 @@
+/// <reference path="greensock.d.ts" />
 var AccessHandler = (function () {
     function AccessHandler() {
-        // wait for the page to load.
-        //alert("constructor loaded");
         var _this = this;
+        /** @function domLoadEvent
+        * triggers when the page document model is ready.  Now is the time to interact with content, styles, structure of page. */
         this.domLoadedEvent = function () {
-            //alert("dom loaded");
             //localStorage.setItem(AccessHandler.PASSWORD_STORAGE_ID, "clear");
             _this.setContentWindows();
             _this.hidePasswordWindow();
             _this.hidePortfolioGallery();
+        };
+        this.removeLoadingCover = function () {
+            var loadingCoverDiv = document.getElementById("loading_background");
+            loadingCoverDiv.style.display = "none";
         };
         this.checkPassword = function () {
             if (typeof (Storage) !== "undefined") {
@@ -17,6 +21,7 @@ var AccessHandler = (function () {
                 if (localStoragePassword === AccessHandler.PASSWORD) {
                     // remove the password window and display content
                     _this.displayPortfolio();
+                    _this.scrollBrowser();
                 }
                 else {
                     _this.displayPassword();
@@ -25,6 +30,33 @@ var AccessHandler = (function () {
             else {
                 _this.displayPassword();
             }
+        };
+        this.scrollBrowser = function () {
+            // get the anchor tag from the URL
+            var anchorTag = location.href.split("#");
+            // if anchor tag exists, scroll it down.
+            if (anchorTag[1] != undefined) {
+                switch (anchorTag[1]) {
+                    case "custom_elearning_content":
+                        _this.scrollBrowserTo("custom_elearning_content");
+                        break;
+                    case "authoring":
+                        _this.scrollBrowserTo("authoring_tools_content");
+                        break;
+                    case "lms":
+                        _this.scrollBrowserTo("lms_content");
+                        break;
+                    case "code":
+                        _this.scrollBrowserTo("code_content");
+                        break;
+                    default:
+                        break;
+                }
+            }
+        };
+        this.scrollBrowserTo = function (divName) {
+            var divElement = document.getElementById(divName);
+            TweenLite.to(window, 2, { scrollTo: { y: divElement.offsetTop }, ease: Power2.easeOut });
         };
         this.displayPassword = function () {
             //show the password div 
@@ -47,6 +79,7 @@ var AccessHandler = (function () {
             if (currentUserEntry == AccessHandler.PASSWORD) {
                 _this.displayPortfolio();
                 _this.savePasswordLocally();
+                _this.scrollBrowser();
             }
             else {
                 _this.showPasswordError();
@@ -83,8 +116,10 @@ var AccessHandler = (function () {
             _this._lmsWindow.style.visibility = "hidden";
             _this._codeWindow.style.visibility = "hidden";
         };
+        /** @function window.onload
+        * wait for the entire page to load. Everything on the page has been download and displayed. */
         window.onload = function () {
-            //alert("window loaded");
+            _this.removeLoadingCover();
             _this.checkPassword();
         };
         document.addEventListener("DOMContentLoaded", this.domLoadedEvent, false);
