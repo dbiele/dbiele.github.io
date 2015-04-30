@@ -1,4 +1,4 @@
-/// <reference path="greensock.d.ts" />
+/// <reference path="typings/greensock/greensock.d.ts" />
 var AccessHandler = (function () {
     function AccessHandler() {
         var _this = this;
