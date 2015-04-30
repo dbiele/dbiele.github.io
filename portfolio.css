@@ -8,6 +8,58 @@
     background-color: rgb(242, 242, 242);
 }
 
+/**css for loading*/
+
+#img_deanbiele {
+    float: none;
+    width: auto;
+    max-width: none;
+    height: auto;
+    margin: 0px auto;
+    clear: none;
+    color: rgb(0, 0, 0);
+}
+
+#loading_background {
+    float: left;
+    height: 100%;
+    clear: none;
+    width: 100%;
+    background-color: rgb(10, 126, 210);
+    position: fixed;
+    min-height: 0px;
+    z-index: 1000;
+    top: 0px;
+    left: 0px;
+}
+
+#loading_content {
+    float: left;
+    height: auto;
+    clear: none;
+    width: 100%;
+    min-width: 0px;
+    position: fixed;
+    top: 50%;
+    left: 0%;
+    bottom: auto;
+}
+
+#img_loading_animation {
+    float: none;
+    width: 40px;
+    max-width: none;
+    height: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    clear: none;
+    color: rgb(0, 0, 0);
+    margin-right: auto;
+}
+
+
+/*-------------------------------------------*/
+
 #background_image {
     float: none;
     height: 593px;
