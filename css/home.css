@@ -339,7 +339,7 @@
     left: 0;
     padding: 0;
     max-width: 100%;
-    background-image:url("images/front_door.png");
+    background-image:url("/images/front_door.png");
     background-attachment: scroll;
     -webkit-background-size: auto;
     background-size: auto;
@@ -912,7 +912,7 @@
         width: 100%;
         padding: 10px 0 40px;
         height: auto;
-        background-image:url("images/front_door_medium.png");
+        background-image:url("/images/front_door_medium.png");
         background-attachment: scroll;
         -webkit-background-size: cover;
         background-size: cover;
@@ -1462,7 +1462,7 @@
         margin-top: 0;
         clear: both;
         width: 100%;
-        background-image:url("images/front_door_small.png");
+        background-image:url("/images/front_door_small.png");
         background-attachment: fixed;
         -webkit-background-size: cover;
         background-size: cover;
