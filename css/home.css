@@ -1,0 +1,1701 @@
+.primaryContainer {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100%;
+    width: 100%;
+}
+
+#portfolio_images {
+    float: none;
+    height: auto;
+    margin: 30px 25%;
+    clear: none;
+    min-height: 0;
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 30px 0 35px;
+}
+
+#image1_grid1 {
+    float: none;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin-left: 0;
+    clear: both;
+    color: rgb(0, 0, 0);
+    padding: 0;
+    display: block;
+}
+
+#image1-grid2 {
+    float: left;
+    width: auto;
+    max-width: 50%;
+    height: auto;
+    margin-left: 0;
+    margin-top: 0;
+    clear: none;
+    color: rgb(0, 0, 0);
+    padding: 0;
+    display: block;
+}
+
+#image2-grid2 {
+    width: auto;
+    max-width: 50%;
+    padding: 0;
+}
+
+#image1-port2-grid1 {
+    float: left;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin-left: 0;
+    margin-top: 0;
+    clear: both;
+    color: rgb(0, 0, 0);
+}
+
+#Portfolio {
+    float: left;
+    height: auto;
+    margin: 0;
+    clear: none;
+    width: 100%;
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#text4 {
+    float: left;
+    font-size: 2em;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 0;
+    margin-top: 28px;
+    clear: none;
+    min-height: 27px;
+    color: rgb(108, 108, 108);
+    font-family: 'Playfair Display';
+}
+
+#centerbox {
+    float: left;
+    height: 23px;
+    margin-left: 0;
+    margin-top: 0;
+    clear: both;
+    width: 100%;
+}
+
+#image1-portfolio-center {
+    float: none;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-top: 0;
+    clear: none;
+    color: rgb(0, 0, 0);
+    margin-right: auto;
+}
+
+#text5 {
+    float: left;
+    font-size: 1.5em;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 0;
+    margin-top: 12px;
+    clear: both;
+    min-height: 0;
+    color: rgb(108, 108, 108);
+    font-family: 'Museo Sans 300';
+}
+
+#input1 {
+    float: none;
+    height: 37px;
+    font-size: 1.5em;
+    margin-left: auto;
+    margin-top: 0;
+    clear: none;
+    width: 40%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: rgb(255, 255, 255);
+    border-width: 2px;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-right: auto;
+    min-width: 260px;
+    max-width: 380px;
+    font-family: 'Museo Sans 700';
+}
+
+#about-me {
+    float: left;
+    height: auto;
+    margin: 30px 0 0;
+    clear: none;
+    width: 100%;
+    background-color: rgb(239, 195, 55);
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#ABOUT_ME {
+    float: left;
+    font-size: 1em;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1.5em;
+    margin-left: 0;
+    margin-top: 14px;
+    clear: none;
+    min-height: 24px;
+    padding: 0 20px;
+}
+
+#bullet-box {
+    float: left;
+    height: 292px;
+    margin-left: 25.599176%;
+    margin-top: 16px;
+    clear: both;
+    width: 69.730734%;
+}
+
+#text6 {
+    float: left;
+    font-size: 1.2em;
+    width: 89.99609%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 0;
+    margin-top: 0;
+    clear: none;
+    min-height: 24px;
+    font-family: 'Museo Sans 300';
+}
+
+#text7 {
+    float: left;
+    font-size: 1.2em;
+    width: 89.99949%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 0;
+    margin-top: 10px;
+    clear: both;
+    min-height: 25px;
+    position: static;
+    top: 0;
+    left: 0;
+    font-family: 'Museo Sans 300';
+}
+
+#text8 {
+    float: left;
+    font-size: 1.2em;
+    width: 89.99949%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 0;
+    margin-top: 10px;
+    clear: both;
+    min-height: 20px;
+    position: static;
+    top: 0;
+    left: 0;
+    font-family: 'Museo Sans 300';
+}
+
+#text9 {
+    float: left;
+    font-size: 1.2em;
+    width: 89.99949%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 0;
+    margin-top: 10px;
+    clear: both;
+    min-height: 20px;
+    font-family: 'Museo Sans 300';
+}
+
+#text10 {
+    float: left;
+    font-size: 1.2em;
+    width: 89.99949%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 0;
+    margin-top: 10px;
+    clear: both;
+    min-height: 19px;
+    font-family: 'Museo Sans 300';
+}
+
+#text11 {
+    float: left;
+    font-size: 1.2em;
+    width: 89.99949%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 0;
+    margin-top: 10px;
+    clear: both;
+    min-height: 20px;
+    font-family: 'Museo Sans 300';
+}
+
+#text12 {
+    float: left;
+    font-size: 1.2em;
+    width: 89.99949%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 0;
+    margin-top: 10px;
+    clear: both;
+    min-height: 20px;
+    font-family: 'Museo Sans 300';
+}
+
+#text13 {
+    float: left;
+    font-size: 1.2em;
+    width: 89.99949%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 0;
+    margin-top: 10px;
+    clear: both;
+    min-height: 18px;
+    font-family: 'Museo Sans 300';
+}
+
+#text14 {
+    float: left;
+    font-size: 1.2em;
+    width: 89.99949%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 0;
+    margin-top: 10px;
+    clear: both;
+    min-height: 21px;
+    font-family: 'Museo Sans 300';
+}
+
+#lets-talk {
+    float: left;
+    height: auto;
+    margin: 0;
+    clear: none;
+    width: 100%;
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 0;
+    max-width: 100%;
+    background-image:url("images/front_door.png");
+    background-attachment: scroll;
+    -webkit-background-size: auto;
+    background-size: auto;
+    background-position: 0 0;
+    background-repeat: repeat repeat;
+}
+
+#lets-talk_box {
+    float: none;
+    height: 296px;
+    margin-left: auto;
+    margin-top: 40px;
+    clear: none;
+    width: 100%;
+    padding: 0 20px;
+    margin-right: auto;
+}
+
+#text16 {
+    float: left;
+    font-size: 1em;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 0;
+    margin-top: 106px;
+    clear: both;
+    min-height: 0;
+    font-family: 'Museo Sans 500';
+    color: rgb(255, 255, 255);
+}
+
+#text15 {
+    float: left;
+    font-size: 1em;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 0;
+    margin-top: 31px;
+    clear: none;
+    min-height: 51px;
+    color: rgb(255, 255, 255);
+}
+
+#wrapper_1 {
+    float: left;
+    height: 100%;
+    margin: 0 20px;
+    clear: none;
+    width: 100%;
+    min-width: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-bottom: 45px;
+    min-height: 0;
+}
+
+#Header {
+    float: left;
+    height: auto;
+    margin-left: 0;
+    margin-top: 0;
+    clear: none;
+    width: 100%;
+    min-width: 0;
+    min-height: 165px;
+    overflow: visible;
+    background-color: rgb(240, 238, 229);
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+
+#text2 {
+    float: left;
+    font-size: 1em;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1em;
+    margin: 18px 0 0;
+    clear: none;
+    min-height: 30px;
+    min-width: 0;
+}
+
+#text3 {
+    float: left;
+    font-size: 1em;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 0;
+    margin-top: 56px;
+    clear: none;
+    min-height: 38px;
+}
+
+#input {
+    float: left;
+    height: 45px;
+    font-size: 1em;
+    clear: both;
+    width: 350px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(239, 195, 55);
+    position: absolute;
+    top: 166px;
+    left: 430.796875px;
+}
+
+#wrapper-images {
+    float: none;
+    height: auto;
+    clear: none;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+    top: 0;
+    left: 0;
+}
+
+#portfolio-grid1 {
+    float: none;
+    height: auto;
+    margin-left: 0;
+    margin-top: 0;
+    clear: both;
+    width: auto;
+    margin-right: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+#grid1-row-1 {
+    float: none;
+    height: auto;
+    margin: 0 0 0 0;
+    clear: none;
+    width: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#grid1-row-2 {
+    float: none;
+    height: auto;
+    margin: 0 0 0 0;
+    clear: both;
+    width: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#portfolio-grid2 {
+    float: none;
+    height: auto;
+    margin-left: 0;
+    margin-top: 0;
+    clear: none;
+    width: auto;
+}
+
+#grid2-row-1 {
+    float: none;
+    height: auto;
+    clear: none;
+    width: auto;
+    position: relative;
+}
+
+#home_website {
+    width: auto;
+    max-width: 100%;
+}
+
+#home_content {
+    float: none;
+    height: 368px;
+    clear: none;
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    padding-right: 30px;
+    padding-left: 30px;
+    z-index: 1;
+    bottom: auto;
+}
+
+#text1 {
+    float: left;
+    font-size: 2em;
+    width: 46%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 0;
+    margin-top: 17px;
+    clear: both;
+    min-height: 147px;
+    margin-right: 0;
+    font-family: 'Playfair Display';
+    color: rgb(108, 108, 108);
+    min-width: 0;
+}
+
+#box {
+    float: none;
+    height: auto;
+    margin: 0;
+    clear: both;
+    width: auto;
+    max-width: none;
+    min-width: 0;
+    position: static;
+    top: 0;
+    left: 0;
+}
+
+#image {
+    float: none;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin-left: 0;
+    margin-top: 0;
+    clear: both;
+    color: rgb(0, 0, 0);
+    margin-right: 0;
+    position: static;
+    top: 0;
+    left: 0;
+}
+
+#text {
+    float: left;
+    font-size: 3em;
+    width: 45%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    margin: 17px 0 0 0;
+    clear: none;
+    min-height: 71px;
+    font-family: 'Playfair Display';
+    color: rgb(108, 108, 108);
+}
+
+#textspan {
+    float: none;
+    font-size: 1em;
+    line-height: 1em;
+    font-family: 'Museo Sans 300';
+}
+
+#MY_PORTFOLIO_BUTTON {
+    float: left;
+    height: 44px;
+    font-size: 1em;
+    margin-left: 0.62931034%;
+    margin-top: 20px;
+    clear: both;
+    width: 28.810737%;
+    background-color: rgb(239, 195, 55);
+    font-family: 'Museo Sans 700';
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    display: block;
+    max-width:300px;
+}
+
+#textspan9 {
+    font-family: 'Playfair Display';
+    font-size: 2em;
+}
+
+#textspan10 {
+    font-family: 'Museo Sans 300';
+    font-size: 1.5em;
+}
+
+#textspan11 {
+    color: rgb(240, 238, 229);
+}
+
+#textspan13 {
+    color: rgb(239, 195, 55);
+}
+
+#textspan3 {
+    font-family: 'Playfair Display';
+}
+
+#textspan4 {
+    font-family: 'Museo Sans 300';
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+#textspan5 {
+    font-family: 'Museo Sans 300';
+    font-size: 1.5em;
+}
+
+#textspan6 {
+    font-family: 'Museo Sans 300';
+    font-size: 1.5em;
+}
+
+#textspan7 {
+    font-family: 'Museo Sans 300';
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+#textspan8 {
+    font-family: 'Museo Sans 300';
+    font-size: 1.5em;
+}
+
+@media only screen and (max-width: 778px) {
+    #portfolio_images {
+        float: left;
+        height: auto;
+        margin: 30px 25%;
+        clear: none;
+        min-height: 0;
+        display: block;
+        position: relative;
+        top: 0;
+        left: 0;
+        padding: 30px 0 35px;
+    }
+    #text2 {
+        margin: 18px 0 0;
+        width: 100%;
+        font-size: 2em;
+        color: rgb(108, 108, 108);
+        font-family: 'Museo Sans 700';
+        font-weight: 300;
+    }
+
+    #text3 {
+        color: rgb(108, 108, 108);
+        font-size: 1.81em;
+        width: 100%;
+        margin-top: 38px;
+        position: static;
+        top: 0;
+        left: 0;
+        margin-left: 0;
+        margin-right: 0;
+        float: left;
+        clear: none;
+        font-family: 'Playfair Display';
+    }
+
+    #Header {
+        height: auto;
+        min-width: 0;
+        width: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        display: block;
+    }
+
+    #wrapper_1 {
+        width: 100%;
+        height: 100%;
+    }
+
+    #input {
+        width: 65.865072%;
+        height: 45px;
+        margin-top: 0;
+        margin-left: 0;
+        clear: both;
+        position: absolute;
+        top: auto;
+        left: 13.448079%;
+        bottom: -24px;
+        display: block;
+        text-transform: uppercase;
+        font-family: 'Museo Sans 700';
+    }
+
+    #portfolio_images {
+        padding: 30px 0 35px;
+        margin-left: 0;
+        background-color: rgb(255, 255, 255);
+        height: auto;
+        min-height: 0;
+        width: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+        display: block;
+    }
+
+    #Portfolio {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        margin: 0 0 0 0;
+        clear: none;
+        display: block;
+    }
+
+    #text4 {
+        width: 100%;
+        font-size: 2em;
+        font-family: 'Playfair Display';
+    }
+
+    #centerbox {
+        width: 100%;
+        height: 23px;
+    }
+
+    #text5 {
+        width: 100%;
+        font-size: 1.25em;
+        font-family: 'Museo Sans 300';
+        font-weight: 300;
+    }
+
+    #input1 {
+        width: 81.25%;
+        height: 37px;
+        font-size: 1.5em;
+        display: block;
+        font-family: 'Museo Sans 700';
+        font-weight: 700;
+    }
+
+    #about-me {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        margin: 30px 0 0;
+        height: auto;
+        padding: 0 0 30px;
+        display: block;
+    }
+
+    #ABOUT_ME {
+        width: 100%;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    #bullet-box {
+        width: 85.331217%;
+        height: 292px;
+    }
+
+    #text6 {
+        width: 89.995708%;
+        font-size: 1.25em;
+        font-weight: 300;
+        font-family: 'Museo Sans 300';
+    }
+
+    #text7 {
+        width: 89.998093%;
+        font-size: 1.25em;
+        font-weight: 300;
+        font-family: 'Museo Sans 300';
+        margin-top: 10px;
+        margin-left: 0;
+        clear: both;
+    }
+
+    #text8 {
+        width: 89.998093%;
+        font-size: 1.25em;
+        font-weight: 300;
+        font-family: 'Museo Sans 300';
+        margin-top: 4px;
+        margin-left: 0;
+        clear: both;
+    }
+
+    #text9 {
+        width: 89.998093%;
+        font-size: 1.25em;
+        font-weight: 300;
+        font-family: 'Museo Sans 300';
+        margin-top: 10px;
+        margin-left: 0;
+        clear: both;
+    }
+
+    #text10 {
+        width: 89.998093%;
+        font-size: 1.25em;
+        font-weight: 300;
+        font-family: 'Museo Sans 300';
+        margin-top: 10px;
+        margin-left: 0;
+        clear: both;
+    }
+
+    #text11 {
+        width: 89.998093%;
+        font-size: 1.25em;
+        font-weight: 300;
+        font-family: 'Museo Sans 300';
+        margin-top: 10px;
+        margin-left: 0;
+        clear: both;
+    }
+
+    #text12 {
+        width: 89.998093%;
+        font-size: 1.25em;
+        font-weight: 300;
+        font-family: 'Museo Sans 300';
+        margin-top: 10px;
+        margin-left: 0;
+        clear: both;
+    }
+
+    #text13 {
+        width: 89.998093%;
+        font-size: 1.25em;
+        font-weight: 300;
+        font-family: 'Museo Sans 300';
+        margin-top: 10px;
+        margin-left: 0;
+        clear: both;
+    }
+
+    #text14 {
+        width: 89.998093%;
+        font-size: 1.25em;
+        font-weight: 300;
+        font-family: 'Museo Sans 300';
+        margin-top: 10px;
+        margin-left: 0;
+        clear: both;
+    }
+
+    #lets-talk {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px 0 40px;
+        height: auto;
+        background-image:url("images/front_door_medium.png");
+        background-attachment: scroll;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: 0 0;
+        background-repeat: repeat repeat;
+    }
+
+    #lets-talk_box {
+        width: 100%;
+        height: 296px;
+        margin-right: auto;
+        margin-left: auto;
+        float: none;
+        clear: none;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    #text15 {
+        width: 100%;
+        line-height: 1.25em;
+        color: rgb(255, 255, 255);
+    }
+
+    #text16 {
+        width: 100%;
+        font-size: 1em;
+        color: rgb(255, 255, 255);
+        line-height: 1.25em;
+        font-family: 'Museo Sans 500';
+        font-weight: 500;
+    }
+
+    #portfolio-grid1 {
+        margin-left: 0;
+        margin-right: 0;
+        float: none;
+        clear: both;
+    }
+
+    #grid1-row-1 {
+        clear: none;
+        margin: 0 0 0 0;
+    }
+
+    #image1_grid1 {
+        padding: 0;
+        margin-left: 0;
+        float: left;
+        clear: both;
+        margin-top: 0;
+        position: static;
+        left: 0;
+        max-width: 100%;
+        max-height: none;
+        width: auto;
+        height: auto;
+        display: block;
+    }
+
+    #grid1-row-2 {
+        margin: 0 0 0 0;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: auto;
+        float: none;
+        clear: both;
+        height: auto;
+    }
+
+    #image1-grid2 {
+        clear: none;
+        display: block;
+    }
+
+    #image2-grid2 {
+        margin: 0 0 0 50%;
+        padding: 0;
+        float: none;
+        clear: none;
+        display: block;
+    }
+
+    #portfolio-grid2 {
+        display: block;
+    }
+
+    #wrapper-images {
+        display: block;
+        margin-left: 20px;
+        margin-right: 20px;
+        float: none;
+        clear: none;
+        margin-top: 0;
+    }
+
+    #image1-portfolio-center {
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        clear: none;
+        position: static;
+        top: 0;
+        left: 0;
+    }
+
+    #textspan4 {
+        font-size: 2em;
+        font-style: italic;
+        font-family: 'Playfair Display';
+    }
+
+    #textspan6 {
+        font-size: 2em;
+        font-family: 'Playfair Display';
+    }
+
+    #textspan7 {
+        font-size: 2em;
+        font-style: italic;
+        font-family: 'Playfair Display';
+    }
+
+    #textspan8 {
+        font-size: 2em;
+        font-family: 'Playfair Display';
+    }
+
+    #textspan5 {
+        float: none;
+        font-size: 2em;
+        line-height: 1em;
+        font-style: italic;
+        font-family: 'Playfair Display';
+    }
+
+    #textspan9 {
+        font-family: 'Playfair Display';
+        font-size: 2em;
+    }
+
+    #textspan10 {
+        font-family: 'Museo Sans 300';
+        font-size: 1.1em;
+    }
+
+    #textspan13 {
+        color: rgb(239, 195, 55);
+    }
+
+    #textspan11 {
+        float: none;
+        line-height: 1em;
+        color: rgb(240, 238, 229);
+    }
+
+    #image1-port2-grid1 {
+    }
+
+    #textspan3 {
+        font-family: 'Museo Sans 700';
+        font-weight: 700;
+    }
+
+    #home_website {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    #portfolio_images {
+        float: left;
+        height: auto;
+        margin-left: 0;
+        margin-top: 0;
+        clear: both;
+        width: 100%;
+        min-height: 0;
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-bottom: 0;
+        background-color: rgb(255, 255, 255);
+        padding-bottom: 35px;
+        padding-top: 30px;
+        display: block;
+    }
+
+    #image1_grid1 {
+        float: none;
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-top: 0;
+        clear: both;
+        color: rgb(0, 0, 0);
+    }
+
+    #image1-grid2 {
+        float: left;
+        width: auto;
+        max-width: 50%;
+        height: auto;
+        margin: 0 0 0 0;
+        clear: none;
+        color: rgb(0, 0, 0);
+        padding-left: 0;
+        position: static;
+        top: 0;
+        left: 0;
+    }
+
+    #image2-grid2 {
+        float: none;
+        width: auto;
+        max-width: 50%;
+        height: auto;
+        margin: 0 0 0 50%;
+        clear: none;
+        color: rgb(0, 0, 0);
+        position: relative;
+        top: 0;
+        left: 0;
+        padding-right: 0;
+    }
+
+    #image1-port2-grid1 {
+        float: none;
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-top: 0;
+        clear: both;
+        color: rgb(0, 0, 0);
+    }
+
+    #Portfolio {
+        float: left;
+        height: auto;
+        margin-left: 0;
+        margin-top: 0;
+        clear: both;
+        width: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+        display: block;
+        padding-bottom: 0;
+    }
+
+    #text4 {
+        float: left;
+        font-size: 1.5em;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        font-weight: normal;
+        line-height: 1em;
+        margin-left: 0;
+        margin-top: 28px;
+        clear: none;
+        min-height: 27px;
+        color: rgb(108, 108, 108);
+    }
+
+    #textspan1 {
+        float: none;
+        font-size: 1em;
+        line-height: 1em;
+        font-style: italic;
+    }
+
+    #centerbox {
+        float: left;
+        height: 23px;
+        margin-left: 0;
+        margin-top: 0;
+        clear: both;
+        width: 100%;
+    }
+
+    #image1-portfolio-center {
+        float: left;
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        margin-left: 25.761719%;
+        margin-top: 0;
+        clear: none;
+        color: rgb(0, 0, 0);
+    }
+
+    #text5 {
+        float: left;
+        font-size: 1em;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        font-weight: normal;
+        line-height: 1em;
+        margin-left: 0;
+        margin-top: 12px;
+        clear: both;
+        min-height: 0;
+        color: rgb(108, 108, 108);
+    }
+
+    #textspan2 {
+        float: none;
+        font-size: 1em;
+        line-height: 1em;
+        font-family: 'Museo Sans 300';
+    }
+
+    #input1 {
+        float: none;
+        height: 37px;
+        font-size: 1em;
+        margin-left: auto;
+        margin-top: 0;
+        clear: none;
+        width: 81.25%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        background-color: rgb(255, 255, 255);
+        border-width: 2px;
+        position: static;
+        top: 0;
+        left: 0;
+        margin-right: auto;
+        min-width: 160px;
+        max-width: 260px;
+    }
+
+    #about-me {
+        float: left;
+        height: auto;
+        margin-left: 0;
+        margin-top: 30px;
+        clear: both;
+        width: 100%;
+        background-color: rgb(239, 195, 55);
+        position: relative;
+        top: 0;
+        left: 0;
+        padding-bottom: 30px;
+    }
+
+    #ABOUT_ME {
+        float: left;
+        font-size: 1em;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        font-weight: normal;
+        line-height: 1em;
+        margin-left: 0;
+        margin-top: 14px;
+        clear: none;
+        min-height: 24px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    #textspan3 {
+        float: none;
+        font-size: 0.65em;
+        line-height: 1em;
+    }
+
+    #textspan6 {
+        float: none;
+        font-size: 1.25em;
+        line-height: 1em;
+    }
+
+    #textspan4 {
+        float: none;
+        font-size: 1.25em;
+        line-height: 1em;
+        font-style: italic;
+    }
+
+    #textspan8 {
+        float: none;
+        font-size: 1.25em;
+        line-height: 1em;
+    }
+
+    #textspan7 {
+        float: none;
+        font-size: 1.25em;
+        line-height: 1em;
+        font-style: italic;
+    }
+
+    #bullet-box {
+        float: left;
+        height: auto;
+        margin-left: 10%;
+        margin-top: 16px;
+        clear: none;
+        width: 85.332031%;
+    }
+
+    #text6 {
+        float: left;
+        font-size: 1em;
+        width: 89.997711%;
+        height: auto;
+        text-align: left;
+        font-weight: normal;
+        line-height: 1em;
+        margin-left: 0;
+        margin-top: 0;
+        clear: none;
+        min-height: 24px;
+    }
+
+    #text7 {
+        float: left;
+        font-size: 1em;
+        width: 89.997711%;
+        height: auto;
+        text-align: left;
+        font-weight: normal;
+        line-height: 1em;
+        margin-left: 0;
+        margin-top: 10px;
+        clear: both;
+        min-height: 25px;
+        position: static;
+        top: 0;
+        left: 0;
+    }
+
+    #text8 {
+        float: left;
+        font-size: 1em;
+        width: 89.997711%;
+        height: auto;
+        text-align: left;
+        font-weight: normal;
+        line-height: 1em;
+        margin-left: 0;
+        margin-top: 2px;
+        clear: both;
+        min-height: 20px;
+        position: static;
+        top: 0;
+        left: 0;
+    }
+
+    #text9 {
+        float: left;
+        font-size: 1em;
+        width: 89.997711%;
+        height: auto;
+        text-align: left;
+        font-weight: normal;
+        line-height: 1em;
+        margin-left: 0;
+        margin-top: 10px;
+        clear: both;
+        min-height: 20px;
+    }
+
+    #text10 {
+        float: left;
+        font-size: 1em;
+        width: 89.997711%;
+        height: auto;
+        text-align: left;
+        font-weight: normal;
+        line-height: 1em;
+        margin-left: 0;
+        margin-top: 10px;
+        clear: both;
+        min-height: 19px;
+    }
+
+    #text11 {
+        float: left;
+        font-size: 1em;
+        width: 89.997711%;
+        height: auto;
+        text-align: left;
+        font-weight: normal;
+        line-height: 1em;
+        margin-left: 0;
+        margin-top: 10px;
+        clear: both;
+        min-height: 20px;
+    }
+
+    #text12 {
+        float: left;
+        font-size: 1em;
+        width: 89.997711%;
+        height: auto;
+        text-align: left;
+        font-weight: normal;
+        line-height: 1em;
+        margin-left: 0;
+        margin-top: 10px;
+        clear: both;
+        min-height: 20px;
+    }
+
+    #text13 {
+        float: left;
+        font-size: 1em;
+        width: 89.997711%;
+        height: auto;
+        text-align: left;
+        font-weight: normal;
+        line-height: 1em;
+        margin-left: 0;
+        margin-top: 10px;
+        clear: both;
+        min-height: 18px;
+    }
+
+    #text14 {
+        float: left;
+        font-size: 1em;
+        width: 89.997711%;
+        height: auto;
+        text-align: left;
+        font-weight: normal;
+        line-height: 1em;
+        margin-left: 0;
+        margin-top: 10px;
+        clear: both;
+        min-height: 21px;
+    }
+
+    #lets-talk {
+        float: left;
+        height: auto;
+        margin-left: 0;
+        margin-top: 0;
+        clear: both;
+        width: 100%;
+        background-image:url("images/front_door_small.png");
+        background-attachment: fixed;
+        -webkit-background-size: cover;
+        background-size: cover;
+        position: relative;
+        top: 0;
+        left: 0;
+        padding: 10px 0 40px;
+        background-position: 50% 50%;
+        background-repeat: no-repeat no-repeat;
+    }
+
+    #lets-talk_box {
+        float: left;
+        height: 296px;
+        margin-left: 0;
+        margin-top: 40px;
+        clear: none;
+        width: 100%;
+        padding: 0 20px;
+        display: block;
+    }
+
+    #text16 {
+        float: left;
+        font-size: 1em;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        font-weight: 500;
+        line-height: 1.25em;
+        margin-left: 0;
+        margin-top: 106px;
+        clear: both;
+        min-height: 0;
+    }
+
+    #textspan12 {
+        float: none;
+        font-size: 1em;
+        line-height: 1em;
+        font-family: 'Museo Sans 500';
+        color: rgb(255, 255, 255);
+    }
+
+    #textspan13 {
+        float: none;
+        font-size: 1em;
+        line-height: 1em;
+        color: rgb(239, 195, 55);
+        font-family: 'Museo Sans 500';
+    }
+
+    #text15 {
+        float: left;
+        font-size: 1em;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        font-weight: normal;
+        line-height: 1em;
+        margin-left: 0;
+        margin-top: 31px;
+        clear: none;
+        min-height: 51px;
+    }
+
+    #textspan9 {
+        float: none;
+        font-size: 1.5em;
+        line-height: 1em;
+        font-family: 'Playfair Display';
+        color: rgb(255, 255, 255);
+    }
+
+    #textspan10 {
+        float: none;
+        font-size: 1em;
+        line-height: 1em;
+        font-family: 'Museo Sans 300';
+        color: rgb(255, 255, 255);
+    }
+
+    #wrapper_1 {
+        float: left;
+        height: auto;
+        margin: 0 20px;
+        clear: none;
+        width: 87%;
+        min-width: 0;
+        position: relative;
+        top: 0;
+        left: 0;
+        padding-bottom: 45px;
+    }
+
+    #Header {
+        float: left;
+        height: auto;
+        margin-left: 0;
+        margin-top: 0;
+        clear: both;
+        width: 100%;
+        min-width: 0;
+        min-height: 165px;
+        overflow: visible;
+        position: relative;
+        top: 0;
+        left: 0;
+        background-color: rgb(240, 238, 229);
+        z-index: 1;
+    }
+
+    #text2 {
+        float: left;
+        font-size: 2em;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        font-weight: normal;
+        line-height: 1em;
+        margin-left: 0;
+        margin-top: 18px;
+        clear: none;
+        min-height: 0;
+        color: rgb(108, 108, 108);
+        margin-right: 0;
+    }
+
+    #text3 {
+        float: left;
+        font-size: 1.23em;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        font-weight: normal;
+        line-height: 1em;
+        margin-left: 0;
+        margin-top: 38px;
+        clear: both;
+        min-height: 31px;
+        color: rgb(108, 108, 108);
+    }
+
+    #input {
+        float: none;
+        height: 45px;
+        font-size: 1em;
+        margin-left: 0;
+        margin-top: 0;
+        clear: both;
+        width: 65.864955%;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        top: auto;
+        left: 20.147679%;
+        padding: 0;
+        bottom: -24px;
+    }
+
+    #wrapper-images {
+        height: auto;
+        margin: 0 20px;
+        clear: none;
+        width: auto;
+        padding-right: 0;
+        padding-left: 0;
+        padding-bottom: 0;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+
+    #portfolio-grid1 {
+        float: none;
+        height: auto;
+        margin: 0 0;
+        clear: none;
+        width: auto;
+        position: static;
+        top: 0;
+        left: 0;
+    }
+
+    #grid1-row-1 {
+        float: none;
+        height: auto;
+        margin-top: 26px;
+        clear: none;
+        width: auto;
+        position: relative;
+    }
+
+    #grid1-row-2 {
+        float: none;
+        height: auto;
+        margin-left: 0;
+        margin-top: 0;
+        clear: none;
+        width: auto;
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-right: 0;
+    }
+
+    #portfolio-grid2 {
+        float: none;
+        height: auto;
+        clear: none;
+        width: auto;
+    }
+
+    #grid2-row-1 {
+        float: none;
+        height: auto;
+        clear: none;
+        width: auto;
+        position: relative;
+    }
+
+    #textspan5 {
+        float: none;
+        font-size: 1.25em;
+        line-height: 1em;
+    }
+
+    #textspan11 {
+        float: none;
+        font-size: 1em;
+        line-height: 1em;
+        font-family: 'Museo Sans 500';
+        color: rgb(128, 128, 128);
+    }
+}
+
