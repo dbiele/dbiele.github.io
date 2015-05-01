@@ -33,10 +33,10 @@ var AccessHandler = (function () {
         };
         this.scrollBrowser = function () {
             // get the anchor tag from the URL
-            var anchorTag = location.href.split("#");
+            var _anchorTag = location.href.split("#");
             // if anchor tag exists, scroll it down.
-            if (anchorTag[1] != undefined) {
-                switch (anchorTag[1]) {
+            if (_anchorTag[1] != undefined) {
+                switch (_anchorTag[1]) {
                     case "custom_elearning_content":
                         _this.scrollBrowserTo("custom_elearning_content");
                         break;
