@@ -8,6 +8,29 @@
     background-color: rgb(242, 242, 242);
 }
 
+.signature {
+    float: left;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    line-height: 1em;
+    margin: 18px 0 0;
+    clear: none;
+    min-height: 30px;
+    min-width: 0;
+    font-family: 'Playfair Display';
+    font-size: 3em;
+    color: rgb(255, 255, 255);
+    letter-spacing: -2px;
+}
+
+
+.signature-firstletter {
+    font-size: 1.4em;
+    font-family: 'Playfair Display';
+    color: rgb(255, 255, 255);
+}
+
 /**css for loading*/
 
 #img_deanbiele {
@@ -25,7 +48,7 @@
     height: 100%;
     clear: none;
     width: 100%;
-    background-color: rgb(10, 126, 210);
+    background-color: rgb(245, 245, 245);
     position: fixed;
     min-height: 0px;
     z-index: 1000;
@@ -72,7 +95,7 @@
     padding: 1px 0px 0px;
     overflow: hidden;
     min-width: 0px;
-    background-image:url("/images/portfolio_home.png");
+    background-image:url("../images/portfolio_home.png");
     background-attachment: scroll;
     -webkit-background-size: auto;
     background-size: auto;
@@ -2748,7 +2771,7 @@
 
     #background_image {
         width: 100%;
-        background-image:url("/images/portfolio_home_small.png");
+        background-image:url("../images/portfolio_home_small.png");
         background-attachment: scroll;
         -webkit-background-size: auto;
         background-size: auto;

@@ -4,6 +4,30 @@
     margin-right: auto;
     min-height: 100%;
     width: 100%;
+    background-color: rgb(245, 245, 245);
+}
+
+.signature {
+    float: left;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    line-height: 1em;
+    margin: 18px 0 0;
+    clear: none;
+    min-height: 30px;
+    min-width: 0;
+    font-family: 'Playfair Display';
+    font-size: 2em;
+    color: #b1b1b1;
+    letter-spacing: -2px;
+}
+
+
+.signature-firstletter {
+    font-size: 1.2em;
+    font-family: 'Playfair Display';
+    color: #5c5c5c;
 }
 
 #instructions {
