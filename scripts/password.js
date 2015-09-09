@@ -128,6 +128,7 @@ var AccessHandler = (function () {
         localStorage.setItem(AccessHandler.PASSWORD_STORAGE_ID, AccessHandler.PASSWORD);
     };
     AccessHandler.PASSWORD = "DeanBiele";
+    // Yes.  ^It's hard coded. :)
     AccessHandler.PASSWORD_STORAGE_ID = "portfolio_password";
     return AccessHandler;
 })();
