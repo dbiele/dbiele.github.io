@@ -1,0 +1,916 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<module>
+	<administration>
+		<admin coursetype="lms" courseexpiration="365" coursedate="07,12,30" coursetitle="New Balance: Fit" id="" navigation="lockstep" author="InVisionLearning" created="5/1/2011" />
+	</administration>
+	<cssstyles>
+		<![CDATA[
+			.bluetext {
+      			color: #0000CC;
+   			}
+			.redtext {
+      			color: #FF0000;
+   			}
+		]]>		
+	</cssstyles>
+	<feedbackwindow>
+		<link urlid="mailto:nbsalestraining@newbalance.com" />
+	</feedbackwindow>
+	<glossary>
+		<term image="default" name="A TEST TERM 1" id="lesson1">
+			<![CDATA[this is a test 1]]>
+		</term>
+		<term image="default" name="B TEST TERM 1" id="lesson2">
+			<![CDATA[this is a test 2]]>
+		</term>
+		<term image="default" name="C TEST TERM 2" id="lesson3">
+			<![CDATA[this is a test 3]]>
+		</term>
+	</glossary>
+	<jobaids>
+		<item link="media/SAMPLE PDF.pdf">
+			<![CDATA[Sample PDF]]>
+		</item>
+		<item link="media/SAMPLE PDF.pdf">
+			<![CDATA[Sample PDF]]>
+		</item>
+	</jobaids>
+	<audio path="media/"/>
+	<states>
+		<state name="default" enabledControls="exit, help, menuwindow, back, pause, next, feedback, glossary, jobaids, caption"/>
+		<state name="menu" enabledControls="caption"/>
+		<state name="content_admintext" enabledControls="exit, help, back, next"/>
+		<state name="content_main" enabledControls="exit, help, menu, caption, replay, back, pause"/>
+		<state name="content_courseconclusion" enabledControls="exit, caption, help"/>
+		<state name="question_main" enabledControls="exit, caption, help"/>
+		<state name="question_assessment" enabledControls="back, pause, next"/>
+		<state name="assessment_intro" enabledControls="exit, help, caption, replay, pause"/>
+		<state name="assessment_submit" enabledControls=""/>
+		<state name="assessment_results" enabledControls="help, next"/>
+	</states>
+	<templates>
+		<template id="default" desc="Basic Page" showpagenumber="true" listid="pages">
+			<type>content</type>
+			<state>default</state>
+			<renderer>com.invision.client.BasicRenderer</renderer>
+		</template>
+		<template id="00_coursemainmenu" desc="Course Main Menu">
+			<type>menu</type>
+			<state>menu</state>
+			<renderer>com.invision.client.renderers.CourseMainMenu</renderer>
+		</template>
+		<template id="26_custom" desc="CUSTOM">
+			<type>menu</type>
+			<state>question_main</state>
+			<renderer>com.invision.client.renderers.CustomContent</renderer>
+		</template>
+		<template id="30_custom" desc="Basic Page" showpagenumber="true" listid="pages">
+			<type>content</type>
+			<state>default</state>
+			<renderer>com.invision.client.BasicRenderer</renderer>
+		</template>
+		<template id="14_multiplechoice" desc="QUIZ">
+			<type>question</type>
+			<state>question_main</state>
+			<renderer>com.invision.client.renderers.MultipleChoice</renderer>
+		</template>
+		<template id="22_finalassesintro" desc="FINAL TEST">
+			<type>assessment_pre</type>
+			<state>assessment_intro</state>
+			<renderer>com.invision.client.renderers.FinalTestIntro</renderer>
+		</template>
+		<template id="23_finalasssubmit" desc="FINAL TEST">
+			<type>assessment_post</type>
+			<state>assessment_submit</state>
+			<renderer>com.invision.client.renderers.FinalTestSubmit</renderer>
+		</template>
+		<template id="24_finalassesresults" desc="FINAL TEST">
+			<type>assessment_post</type>
+			<state>assessment_results</state>
+			<renderer>com.invision.client.renderers.FinalTestResults</renderer>
+		</template>
+		<template id="25_courseconclusion" desc="FINAL">
+			<type>assessment_post</type>
+			<state>content_courseconclusion</state>
+			<renderer>com.invision.client.renderers.CourseConclusion</renderer>
+		</template>
+	</templates>
+	<scenes>
+		<scene id="scene1" template="30_custom" mediatype="none" title="Lesson 1 - Page 1" >
+			<audio>
+				<audiofile audio="media/Start_1.mp3" />
+			</audio>
+			<captioning>
+				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
+			</captioning>
+			<sceneparams>
+				<sceneparam name="symbol">Frame01_mc</sceneparam>
+			</sceneparams>
+			<animations>
+				<animation time="0">
+					<keyframe action="gotoAndPlay" label="anim01" />
+				</animation>
+			</animations>
+		</scene>
+		<scene id="scene2" template="30_custom" mediatype="none" title="Lesson 1 - Page 2" >
+			<audio>
+				<audiofile audio="media/intro_f2.mp3" />
+			</audio>
+			<captioning>
+				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
+			</captioning>
+			<sceneparams>
+				<sceneparam name="symbol">Frame02_mc</sceneparam>
+			</sceneparams>
+			<animations>
+				<animation time="27">
+					<keyframe action="gotoAndPlay" label="showMilestoneNav" movie="timeline_mc" />
+				</animation>
+				<animation time="30">
+					<keyframe action="gotoAndPlay" label="hideMilestoneNav" movie="timeline_mc" />
+				</animation>
+				<animation time="32">
+					<keyframe action="gotoAndPlay" label="showScrollNav" movie="timeline_mc" />
+				</animation>
+			</animations>
+		</scene>
+		<scene id="scene3" template="30_custom" mediatype="none" title="" >
+			<audio>
+				<audiofile audio="media/f3_s1.mp3" />
+			</audio>
+			<captioning>
+				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
+			</captioning>
+			<sceneparams>
+				<sceneparam name="symbol">Frame03_mc</sceneparam>
+			</sceneparams>
+		</scene>
+		<scene id="scene4_1" template="30_custom" mediatype="none" title="Lesson 1 - Page 4" >
+			<audio>
+				<audiofile audio="media/F4_s1.mp3" />
+			</audio>
+			<captioning>
+				<captions captiontext="Just like people, feet come in all different shapes. Because shoes that fit better perform better, New Balance knows that proper fit means multiple widths. New Balance is the only manufacturer to offer the majority of shoe models in multiple widths, from narrow (2A) to extra-extra-wide (6E).\rYou may not know the Brannock device by name, but you’ve probably used it.  The Brannock device is an international standard for proper foot measurement incorporating three measurements: Heel-to-toe, arch and width.  All three measurements are taken at the same time and without repositioning the device.\rThe Brannock device comes in men’s, women’s, and children’s graduations, eliminating much of the guess work and the need for transposing sizes.\r" captiontime="0, 9.25" />
+			</captioning>
+			<sceneparams>
+				<sceneparam name="symbol">Frame04_01_mc</sceneparam>
+			</sceneparams>
+			<animations>
+				<animation time="40">
+					<keyframe action="gotoAndPlay" label="arch_open" />
+				</animation>
+			</animations>
+		</scene>
+		<scene id="scene4_2" template="30_custom" mediatype="none" title="" >
+			<audio>
+				<audiofile audio="media/F4_s2.mp3" />
+			</audio>
+			<captioning>
+				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
+			</captioning>
+			<sceneparams>
+				<sceneparam name="symbol">Frame04_02_mc</sceneparam>
+			</sceneparams>
+			<animations>
+				<animation time="5">
+					<keyframe action="gotoAndPlay" label="anim01" />
+				</animation>
+			</animations>
+		</scene>
+		<scene id="scene4_3" template="30_custom" mediatype="none" title="" >
+			<audio>
+				<audiofile audio="media/F4_s3.mp3" />
+			</audio>
+			<captioning>
+				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
+			</captioning>
+			<sceneparams>
+				<sceneparam name="symbol">Frame04_03_mc</sceneparam>
+			</sceneparams>
+			<animations>
+				<animation time="3">
+					<keyframe action="gotoAndPlay" label="hilight_width" />
+				</animation>
+				<animation time="7">
+					<keyframe action="gotoAndPlay" label="hilight_arch" />
+				</animation>
+				<animation time="13">
+					<keyframe action="gotoAndPlay" label="close_next" />
+				</animation>
+			</animations>
+		</scene>
+		<scene id="scene4_4" template="30_custom" mediatype="none" title="" >
+			<audio>
+				<audiofile audio="media/F4_s4.mp3" async="true" />
+			</audio>
+			<captioning>
+				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
+			</captioning>
+			<sceneparams>
+				<sceneparam name="symbol">Frame04_04_mc</sceneparam>
+			</sceneparams>
+			<animations>
+				<animation time="5">
+					<keyframe action="gotoAndPlay" label="anim01" />
+				</animation>
+			</animations>
+		</scene>	
+		<scene id="scene4_5" template="30_custom" mediatype="none" title="" >
+			<audio>
+				<audiofile audio="media/F4_s5.mp3" async="true" />
+			</audio>
+			<captioning>
+				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
+			</captioning>
+			<sceneparams>
+				<sceneparam name="symbol">Frame04_05_mc</sceneparam>
+			</sceneparams>
+			<animations>
+				<animation time="5">
+					<keyframe action="gotoAndPlay" label="anim01" />
+				</animation>
+			</animations>
+		</scene>
+		<scene id="scene4_6" template="30_custom" mediatype="none" title="" >
+			<audio>
+				<audiofile audio="media/F4_s6.mp3" async="true" />
+			</audio>
+			<captioning>
+				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
+			</captioning>
+			<sceneparams>
+				<sceneparam name="symbol">Frame04_06_mc</sceneparam>
+			</sceneparams>
+			<animations>
+				<animation time="5">
+					<keyframe action="gotoAndPlay" label="anim01" />
+				</animation>
+			</animations>
+		</scene>		
+		<scene id="scene4_7" template="30_custom" mediatype="none" title="" >
+			<audio>
+				<audiofile audio="media/F4_s7.mp3" async="true" />
+			</audio>
+			<captioning>
+				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
+			</captioning>
+			<sceneparams>
+				<sceneparam name="symbol">Frame04_07_mc</sceneparam>
+			</sceneparams>
+			<animations>
+				<animation time="1">
+					<keyframe action="gotoAndPlay" label="anim01" />
+				</animation>
+			</animations>
+		</scene>		
+		<scene id="scene4_8" template="30_custom" mediatype="none" title="" >
+			<audio>
+				<audiofile audio="" />
+			</audio>
+			<captioning>
+				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
+			</captioning>
+			<sceneparams>
+				<sceneparam name="symbol">Frame04_08_mc</sceneparam>
+			</sceneparams>
+		</scene>
+		<scene id="scene4_8a" template="30_custom" mediatype="none" title="" >
+			<audio>
+				<audiofile audio="media/F4_s8a.mp3" />
+			</audio>
+			<captioning>
+				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
+			</captioning>
+			<sceneparams>
+				<sceneparam name="symbol">Frame04_08a_mc</sceneparam>
+			</sceneparams>
+		</scene>
+		<scene id="scene4_8b" template="30_custom" mediatype="none" title="" >
+			<audio>
+				<audiofile audio="media/F4_s8b.mp3" />
+			</audio>
+			<captioning>
+				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
+			</captioning>
+			<sceneparams>
+				<sceneparam name="symbol">Frame04_08b_mc</sceneparam>
+			</sceneparams>
+		</scene>		
+		<scene id="scene4_9" template="30_custom" mediatype="none" title="" >
+			<audio>
+				<audiofile audio="media/F4_s9.mp3" />
+			</audio>
+			<captioning>
+				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
+			</captioning>
+			<sceneparams>
+				<sceneparam name="symbol">Frame04_09_mc</sceneparam>
+			</sceneparams>
+			<animations>
+				<animation time="20">
+					<keyframe action="gotoAndPlay" label="hilight_A" />
+				</animation>
+				<animation time="25">
+					<keyframe action="gotoAndPlay" label="hilight_B" />
+				</animation>
+			</animations>
+		</scene>		
+		<scene id="scene4_10" template="30_custom" mediatype="none" title="" >
+			<audio>
+				<audiofile audio="media/F4_s10.mp3" async="true" />
+			</audio>
+			<captioning>
+				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
+			</captioning>
+			<sceneparams>
+				<sceneparam name="symbol">Frame04_10_mc</sceneparam>
+			</sceneparams>
+		</scene>		
+		<scene id="scene4_11" template="30_custom" mediatype="none" title="" >
+			<audio>
+				<audiofile audio="" />
+			</audio>
+			<captioning>
+				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
+			</captioning>
+			<sceneparams>
+				<sceneparam name="symbol">Frame04_11_mc</sceneparam>
+			</sceneparams>
+		</scene>
+		<scene id="scene4_12a" template="30_custom" mediatype="none" title="" >
+			<audio>
+				<audiofile audio="media/f4_s12a.mp3" />
+			</audio>
+			<captioning>
+				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
+			</captioning>
+			<sceneparams>
+				<sceneparam name="symbol">Frame04_12a_mc</sceneparam>
+			</sceneparams>
+		</scene>	
+		<scene id="scene4_12" template="30_custom" mediatype="none" title="" >
+			<audio>
+				<audiofile audio="media/f4_s14.mp3" />
+			</audio>
+			<captioning>
+				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
+			</captioning>
+			<sceneparams>
+				<sceneparam name="symbol">Frame04_12_mc</sceneparam>
+			</sceneparams>
+		</scene>		
+		<scene id="scene4_13" template="30_custom" mediatype="none" title="" >
+			<audio>
+				<audiofile audio="media/F4_s12.mp3" async="true" />
+			</audio>
+			<captioning>
+				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
+			</captioning>
+			<sceneparams>
+				<sceneparam name="symbol">Frame04_13_mc</sceneparam>
+			</sceneparams>
+		</scene>		
+		<scene id="scene4_14" template="30_custom" mediatype="none" title="" >
+			<audio>
+				<audiofile audio="" />
+			</audio>
+			<captioning>
+				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
+			</captioning>
+			<sceneparams>
+				<sceneparam name="symbol">Frame04_14_mc</sceneparam>
+			</sceneparams>
+		</scene>				
+<!-- scene 5 -->
+		<scene id="scene5_1" template="30_custom" mediatype="none" title="" >
+			<audio>
+				<audiofile audio="media/F5_s1.mp3" />
+			</audio>
+			<captioning>
+				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
+			</captioning>
+			<sceneparams>
+				<sceneparam name="symbol">Frame05_01_mc</sceneparam>
+			</sceneparams>
+			<animations>
+				<animation time="7">
+					<keyframe movie="bullet1_mc" action="gotoAndPlay" frame="2" />
+				</animation>
+				<animation time="8.25">
+					<keyframe movie="bullet2_mc" action="gotoAndPlay" frame="2" />
+				</animation>
+				<animation time="9.5">
+					<keyframe movie="bullet3_mc" action="gotoAndPlay" frame="2" />
+				</animation>
+			</animations>
+		</scene>		
+		<scene id="scene5_2" template="30_custom" mediatype="none" title="" >
+			<audio>
+				<audiofile audio="media/F5_s2.mp3" />
+			</audio>
+			<captioning>
+				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
+			</captioning>
+			<sceneparams>
+				<sceneparam name="symbol">Frame05_02_mc</sceneparam>
+			</sceneparams>
+			<animations>
+				<animation time="5">
+					<keyframe action="gotoAndPlay" label="wet_test_step2" />
+				</animation>
+				<animation time="9">
+					<keyframe action="gotoAndPlay" label="wet_test_step3" />
+				</animation>
+			</animations>
+		</scene>		
+		<scene id="scene5_3" template="30_custom" mediatype="none" title="" >
+			<audio>
+				<audiofile audio="media/F5_s3.mp3" />
+			</audio>
+			<captioning>
+				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
+			</captioning>
+			<sceneparams>
+				<sceneparam name="symbol">Frame05_03_mc</sceneparam>
+			</sceneparams>
+		</scene>		
+		
+		<!-- drag-n-drop -->
+		<scene id="scene5_4" template="30_custom" mediatype="none" title="" >
+			<audio>
+				<audiofile audio="media/F5_s7.mp3" />
+			</audio>
+			<captioning>
+				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
+			</captioning>
+			<sceneparams>
+				<sceneparam name="symbol">Frame05_04_mc</sceneparam>
+			</sceneparams>
+		</scene>		
+	<!-- scene 6 -->
+		<scene id="scene6_01" template="30_custom" mediatype="none" title="" >
+			<audio>
+				<audiofile audio="media/F6_s1.mp3" />
+			</audio>
+			<captioning>
+				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
+			</captioning>
+			<sceneparams>
+				<sceneparam name="symbol">Frame06_01_mc</sceneparam>
+			</sceneparams>
+		</scene>		
+		<scene id="scene6_02" template="30_custom" mediatype="none" title="" >
+			<audio>
+				<audiofile audio="media/F6_s2.mp3" />
+			</audio>
+			<captioning>
+				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
+			</captioning>
+			<sceneparams>
+				<sceneparam name="symbol">Frame06_02_mc</sceneparam>
+			</sceneparams>
+		</scene>		
+		<scene id="scene6_03" template="30_custom" mediatype="none" title="" >
+			<audio>
+				<audiofile audio="media/F6_s3.mp3" />
+			</audio>
+			<captioning>
+				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
+			</captioning>
+			<sceneparams>
+				<sceneparam name="symbol">Frame06_03_mc</sceneparam>
+			</sceneparams>
+		</scene>		
+		<scene id="scene6_04" template="30_custom" mediatype="none" title="" >
+			<audio>
+				<audiofile audio="media/F6_s4.mp3" />
+			</audio>
+			<captioning>
+				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
+			</captioning>
+			<sceneparams>
+				<sceneparam name="symbol">Frame06_04_mc</sceneparam>
+			</sceneparams>
+		</scene>		
+		<scene id="scene6_05" template="30_custom" mediatype="none" title="" >
+			<audio>
+				<audiofile audio="media/F6_s5.mp3" />
+			</audio>
+			<captioning>
+				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
+			</captioning>
+			<sceneparams>
+				<sceneparam name="symbol">Frame06_05_mc</sceneparam>
+			</sceneparams>
+		</scene>
+		<scene id="scene6_05b" template="30_custom" mediatype="none" title="" >
+			<audio>
+				<audiofile audio="media/F6_s5b.mp3" />
+			</audio>
+			<captioning>
+				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
+			</captioning>
+			<sceneparams>
+				<sceneparam name="symbol">Frame06_05b_mc</sceneparam>
+			</sceneparams>
+		</scene>	
+		<scene id="scene6_06" template="30_custom" mediatype="none" title="" >
+			<audio>
+				<audiofile audio="media/F6_s6.mp3" async="true" />
+			</audio>
+			<captioning>
+				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
+			</captioning>
+			<sceneparams>
+				<sceneparam name="symbol">Frame06_06_mc</sceneparam>
+			</sceneparams>
+		</scene>		
+		<scene id="scene6_07" template="30_custom" mediatype="none" title="" >
+			<audio>
+				<audiofile audio="" />
+			</audio>
+			<captioning>
+				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
+			</captioning>
+			<sceneparams>
+				<sceneparam name="symbol">Frame06_07_mc</sceneparam>
+			</sceneparams>
+		</scene>	
+		
+		<!-- scene 7 -->
+		<scene id="scene7_01" template="30_custom" mediatype="none" title="" >
+			<audio>
+				<audiofile audio="media/F7_s1.mp3" />
+			</audio>
+			<captioning>
+				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
+			</captioning>
+			<animations>
+				<animation time="10">
+					<keyframe action="gotoAndPlay" label="fade_up_lines" />
+				</animation>
+			</animations>
+			<sceneparams>
+				<sceneparam name="symbol">Frame07_01_mc</sceneparam>
+			</sceneparams>
+		</scene>	
+		<scene id="scene7_02" template="30_custom" mediatype="none" title="" >
+			<audio>
+				<audiofile audio="media/F7_s2.mp3" async="true" />
+			</audio>
+			<captioning>
+				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
+			</captioning>
+			<sceneparams>
+				<sceneparam name="symbol">Frame07_02_mc</sceneparam>
+			</sceneparams>
+		</scene>	
+		<scene id="scene7_03" template="30_custom" mediatype="none" title="" >
+			<audio>
+				<audiofile audio="media/F7_s3.mp3" async="true" />
+			</audio>
+			<captioning>
+				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
+			</captioning>
+			<sceneparams>
+				<sceneparam name="symbol">Frame07_03_mc</sceneparam>
+			</sceneparams>
+		</scene>	
+		<scene id="scene7_04" template="30_custom" mediatype="none" title="" >
+			<audio>
+				<audiofile audio="media/F7_s4.mp3" async="true" />
+			</audio>
+			<captioning>
+				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
+			</captioning>
+			<sceneparams>
+				<sceneparam name="symbol">Frame07_04_mc</sceneparam>
+			</sceneparams>
+		</scene>	
+		<!-- scene 8 -->
+		<scene id="scene8_01" template="30_custom" mediatype="none" title="" >
+			<audio>
+				<audiofile audio="media/F8_s1.mp3" />
+			</audio>
+			<captioning>
+				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
+			</captioning>
+			<sceneparams>
+				<sceneparam name="symbol">Frame08_01_mc</sceneparam>
+			</sceneparams>
+		</scene>
+		<scene id="scene8_01b" template="30_custom" mediatype="none" title="" >
+			<audio>
+				<audiofile audio="media/f8_s2.mp3" />
+			</audio>
+			<captioning>
+				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
+			</captioning>
+			<sceneparams>
+				<sceneparam name="symbol">Frame08_01b_mc</sceneparam>
+			</sceneparams>
+		</scene>
+		<scene id="scene8_02" template="30_custom" mediatype="none" title="" >
+			<audio>
+				<audiofile audio="media/F8_s3.mp3" async="true" />
+			</audio>
+			<captioning>
+				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
+			</captioning>
+			<sceneparams>
+				<sceneparam name="symbol">Frame08_02_mc</sceneparam>
+			</sceneparams>
+		</scene>	
+		<scene id="scene8_03" template="30_custom" mediatype="none" title="" >
+			<audio>
+				<audiofile audio="media/F8_s4.mp3" />
+			</audio>
+			<captioning>
+				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
+			</captioning>
+			<sceneparams>
+				<sceneparam name="symbol">Frame08_03_mc</sceneparam>
+			</sceneparams>
+		</scene>	
+		<scene id="scene8_04" template="30_custom" mediatype="none" title="" >
+			<audio>
+				<audiofile audio="media/F8_s5.mp3" async="true" />
+			</audio>
+			<captioning>
+				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
+			</captioning>
+			<sceneparams>
+				<sceneparam name="symbol">Frame08_04_mc</sceneparam>
+			</sceneparams>
+		</scene>	
+		<scene id="scene8_05" template="30_custom" mediatype="none" title="" >
+			<audio>
+				<audiofile audio="media/F8_s10.mp3" async="true" />
+			</audio>
+			<captioning>
+				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
+			</captioning>
+			<sceneparams>
+				<sceneparam name="symbol">Frame08_05_mc</sceneparam>
+			</sceneparams>
+		</scene>	
+		<scene id="scene8_06" template="30_custom" mediatype="none" title="" >
+			<audio>
+				<audiofile audio="media/F4_s15.mp3" async="true" />
+			</audio>
+			<captioning>
+				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
+			</captioning>
+			<sceneparams>
+				<sceneparam name="symbol">Frame04_15_mc</sceneparam>
+			</sceneparams>
+		</scene>
+		<!-- scene 9 -->
+		<scene id="scene9_01" template="30_custom" mediatype="none" title="" >
+			<audio>
+				<audiofile audio="media/F9_s1.mp3" />
+			</audio>
+			<captioning>
+				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
+			</captioning>
+			<sceneparams>
+				<sceneparam name="symbol">Frame09_01_mc</sceneparam>
+			</sceneparams>
+		</scene>	
+
+
+		<scene id="scene105" template="22_finalassesintro" mediatype="none">
+			<audio>
+				<audiofile audio="media/f10_s1.mp3" async="false" />
+			</audio>
+			<captioning>
+				<captions captiontext="The Final Assessment is 5 questions in length and should take you approximately 5 to 10 minutes to complete. When you click Begin Final Assessment, you will be taken to the first question" captiontime="0,9" />
+			</captioning>	
+			<assessmentresults>
+					<assessment passpercent="80"/>
+					<assessment pool="5"/>
+			</assessmentresults>	    
+			<sceneparams>
+				<sceneparam name="symbol">a25_FinalAssessmentIntroduction</sceneparam>
+			</sceneparams>
+		</scene>
+		<scene id="scene106" template="14_multiplechoice" mediatype="none">
+			<feedbacks>
+				<feedback selectiontype="one" />
+				<feedback questiontype="assessment" />
+			</feedbacks>
+			<multiplechoice>
+				<answers type="0" answer="0" id="bullet1">10</answers>
+				<answers type="0" answer="0" id="bullet2">10 1/2</answers>
+				<answers type="0" answer="1" id="bullet3">11</answers>
+				<question questiontext="Using the Brannock Device, choose the correct heel-to-toe length measurement." />
+			</multiplechoice>
+			<sceneparams>
+				<sceneparam name="symbol">assessment_02_mc</sceneparam>
+			</sceneparams>
+		</scene>
+		<scene id="scene107" template="14_multiplechoice" mediatype="none">
+			<feedbacks>
+				<feedback selectiontype="one" />
+				<feedback questiontype="assessment" />
+			</feedbacks>
+			<multiplechoice>
+				<answers type="0" answer="0" id="bullet1">10</answers>
+				<answers type="0" answer="0" id="bullet2">10 1/2</answers>
+				<answers type="0" answer="1" id="bullet3">11</answers>
+				<question questiontext="Using the Brannock Device, what is the correct arch length (heel-to-ball) measurement?" />
+			</multiplechoice>
+			<sceneparams>
+				<sceneparam name="symbol">assessment_03_mc</sceneparam>
+			</sceneparams>
+		</scene>
+		<scene id="scene108" template="14_multiplechoice" mediatype="none">
+			<feedbacks>
+				<feedback selectiontype="one" />
+				<feedback questiontype="assessment" />
+			</feedbacks>
+			<multiplechoice>
+				<answers type="0" answer="0" id="bullet1">10</answers>
+				<answers type="0" answer="0" id="bullet2">10 1/2</answers>
+				<answers type="0" answer="1" id="bullet3">11</answers>
+				<question questiontext="Compare the arch length to the heel-to-toe length.  What is the correct shoe size?" />
+			</multiplechoice>
+			<sceneparams>
+				<sceneparam name="symbol">assessment_04_mc</sceneparam>
+			</sceneparams>
+		</scene>
+		<scene id="scene109" template="14_multiplechoice" mediatype="none">
+			<feedbacks>
+				<feedback selectiontype="one" />
+				<feedback questiontype="assessment" />
+			</feedbacks>
+			<multiplechoice>
+				<answers type="0" answer="0" id="bullet1">B</answers>
+				<answers type="0" answer="0" id="bullet2">D</answers>
+				<answers type="0" answer="1" id="bullet3">2E</answers>
+				<question questiontext="Using the Brannock Device, what is the correct width measurement?" />
+			</multiplechoice>
+			<sceneparams>
+				<sceneparam name="symbol">assessment_05_mc</sceneparam>
+			</sceneparams>
+		</scene>
+		<scene id="scene110" template="14_multiplechoice" mediatype="none">
+			<feedbacks>
+				<feedback selectiontype="one" />
+				<feedback questiontype="assessment" />
+			</feedbacks>
+			<multiplechoice>
+				<answers type="0" answer="0" id="radiobutton1_mc">A</answers>
+				<answers type="0" answer="0" id="radiobutton2_mc">B</answers>
+				<answers type="0" answer="1" id="radiobutton3_mc">C</answers>
+				<question questiontext="Using the Brannock Device, what is the correct width measurement?" />
+			</multiplechoice>
+			<sceneparams>
+				<sceneparam name="symbol">assessment_06_mc</sceneparam>
+			</sceneparams>
+		</scene>
+		<scene id="scene111" template="14_multiplechoice" mediatype="none">
+			<feedbacks>
+				<feedback selectiontype="one" />
+				<feedback questiontype="assessment" />
+			</feedbacks>
+			<multiplechoice>
+				<answers type="0" answer="0" id="selection1">A</answers>
+				<answers type="0" answer="0" id="selection2">B</answers>
+				<answers type="0" answer="1" id="selection3">C</answers>
+				<question questiontext="Using the Brannock Device, what is the correct width measurement?" />
+			</multiplechoice>
+			<sceneparams>
+				<sceneparam name="symbol">assessment_07_mc</sceneparam>
+			</sceneparams>
+		</scene>
+		<scene id="scene112" template="14_multiplechoice" mediatype="none">
+			<feedbacks>
+				<feedback selectiontype="one" />
+				<feedback questiontype="assessment" />
+			</feedbacks>
+			<multiplechoice>
+				<answers type="0" answer="0" id="radiobutton1_mc">A</answers>
+				<answers type="0" answer="0" id="radiobutton2_mc">B</answers>
+				<answers type="0" answer="1" id="radiobutton3_mc">C</answers>
+				<question questiontext="Using the Brannock Device, what is the correct width measurement?" />
+			</multiplechoice>
+			<sceneparams>
+				<sceneparam name="symbol">assessment_08_mc</sceneparam>
+			</sceneparams>
+		</scene>
+		<scene id="scene113" template="14_multiplechoice" mediatype="none">
+			<feedbacks>
+				<feedback selectiontype="one" />
+				<feedback questiontype="assessment" />
+			</feedbacks>
+			<multiplechoice>
+				<answers type="0" answer="1" id="bullet1">Shoe built on a curved last with neutral cushioning</answers>
+				<answers type="0" answer="0" id="bullet2">Shoe built on a straight last with stability control</answers>
+				<answers type="0" answer="0" id="bullet3">Shoe built on any last that has a firm sole</answers>
+				<question questiontext="Your customer, Jane, needs new running shoes.  You observe that her current shoes are worn on the outside and she has high arches.  You have also determined she is a supinator.&lt;P&gt;What shoe would you recommend for Jane?" />
+			</multiplechoice>
+			<sceneparams>
+				<sceneparam name="symbol">assessment_09_mc</sceneparam>
+			</sceneparams>
+		</scene>
+		<scene id="scene1016" template="23_finalasssubmit" mediatype="none">
+			<assessmentsubmit>
+				<assessment text="&lt;P&gt;Congratulations!&lt;/P&gt;&lt;br&gt;You have completed the final test.  Select an option below to review your questions or submit your answers for evaluation." />
+			</assessmentsubmit>	
+			<sceneparams>
+				<sceneparam name="symbol">a26_FinalAssessmentSubmit</sceneparam>
+			</sceneparams>
+		</scene>
+		<scene id="scene1017" template="24_finalassesresults" mediatype="none">
+			<sceneparams>
+				<sceneparam name="symbol">a27_FinalAssessmentResults</sceneparam>
+			</sceneparams>
+		</scene>
+		<scene id="scene1018" template="25_courseconclusion" mediatype="none">
+			<captioning>
+				<captions captiontext="You have completed the course.\r" captiontime="0" />
+			</captioning>	
+			<sceneparams>
+				<sceneparam name="symbol">a28_CourseConclusion</sceneparam>
+			</sceneparams>
+		</scene>
+	</scenes>
+	<sequences>
+		<step desc="sequence" id="sequence1" type="lesson" name="Lesson Introduction" image="">
+		  <step desc="scene" id="scene1" />
+		  <step desc="scene" id="scene2" />
+		  <step desc="sequence" id="subsequence1" type="lesson" name="Objectives" image="">
+		  	<step desc="scene" id="scene3" />
+		  </step>
+		  <step desc="sequence" id="subsequence2" type="lesson" name="Fitting Instructions" image="">
+		  	<step desc="scene" id="scene4_1" />
+			<step desc="scene" id="scene4_2" />
+			<step desc="scene" id="scene4_3" />
+			<step desc="scene" id="scene4_4" />
+			<step desc="scene" id="scene4_5" />
+			<step desc="scene" id="scene4_6" />
+			<step desc="scene" id="scene4_7" />
+			<step desc="scene" id="scene4_8" />
+			<step desc="scene" id="scene4_8a" />
+			<step desc="scene" id="scene4_8b" />
+			<step desc="scene" id="scene4_9" />
+			<step desc="scene" id="scene4_10" />
+			<step desc="scene" id="scene4_11" />
+			<step desc="scene" id="scene4_12a" />
+			<step desc="scene" id="scene4_13" />
+			<step desc="scene" id="scene4_14" />
+			<step desc="scene" id="scene4_12" />
+		  </step>
+		  <step desc="sequence" id="subsequence3" type="lesson" name="Arch Type" image="">
+		  	<step desc="scene" id="scene5_1" />
+			<step desc="scene" id="scene5_2" />
+			<step desc="scene" id="scene5_3" />
+			<step desc="scene" id="scene5_4" />
+		  </step>
+		  <step desc="sequence" id="subsequence4" type="lesson" name="Introduction to Biomechanics" image="">
+		  	<step desc="scene" id="scene6_01" />
+			<step desc="scene" id="scene6_02" />
+			<step desc="scene" id="scene6_03" />
+			<step desc="scene" id="scene6_04" />
+			<step desc="scene" id="scene6_05" />
+			<step desc="scene" id="scene6_05b" />
+			<step desc="scene" id="scene6_06" />
+			<step desc="scene" id="scene6_07" />
+		  </step>
+		  <step desc="sequence" id="subsequence5" type="lesson" name="Shoe Construction Basics" image="">
+		  	<step desc="scene" id="scene7_01" />
+			<step desc="scene" id="scene7_02" />
+			<step desc="scene" id="scene7_03" />
+			<step desc="scene" id="scene7_04" />
+		  </step>
+		  <step desc="sequence" id="subsequence6" type="lesson" name="Introduction to Lasts" image="">
+		  	<step desc="scene" id="scene8_01" />
+			<step desc="scene" id="scene8_01b" />
+			<step desc="scene" id="scene8_02" />
+			<step desc="scene" id="scene8_03" />
+			<step desc="scene" id="scene8_04" />
+			<step desc="scene" id="scene8_05" />
+			<step desc="scene" id="scene8_06" />
+		  </step>
+		  <step desc="sequence" id="subsequence7" type="lesson" name="Course Conclusion" image="">
+		  	<step desc="scene" id="scene9_01" />
+		  </step>
+		</step>	
+		
+		<step desc="sequence" id="sequence10" type="assessment" name="Final Assessment" image="">
+		  <step desc="scene" id="scene105" />
+		  <step desc="scene" id="scene106" />
+		  <step desc="scene" id="scene107" />
+		  <step desc="scene" id="scene108" />
+		  <step desc="scene" id="scene109" />
+		  <step desc="scene" id="scene110" />
+		  <step desc="scene" id="scene111" />
+		  <step desc="scene" id="scene112" />
+		  <step desc="scene" id="scene113" />
+		  <step desc="scene" id="scene1016" />
+		  <step desc="scene" id="scene1017" />
+		  <step desc="scene" id="scene1018" />
+		</step>  	
+	</sequences>
+</module>
