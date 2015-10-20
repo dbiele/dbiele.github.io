@@ -147,7 +147,7 @@
 		</scene>
 		<scene id="scene4_1" template="30_custom" mediatype="none" title="Lesson 1 - Page 4" >
 			<audio>
-				<audiofile audio="media/F4_s1.mp3" />
+				<audiofile audio="media/f4_s1.mp3" />
 			</audio>
 			<captioning>
 				<captions captiontext="Just like people, feet come in all different shapes. Because shoes that fit better perform better, New Balance knows that proper fit means multiple widths. New Balance is the only manufacturer to offer the majority of shoe models in multiple widths, from narrow (2A) to extra-extra-wide (6E).\rYou may not know the Brannock device by name, but you’ve probably used it.  The Brannock device is an international standard for proper foot measurement incorporating three measurements: Heel-to-toe, arch and width.  All three measurements are taken at the same time and without repositioning the device.\rThe Brannock device comes in men’s, women’s, and children’s graduations, eliminating much of the guess work and the need for transposing sizes.\r" captiontime="0, 9.25" />
@@ -163,7 +163,7 @@
 		</scene>
 		<scene id="scene4_2" template="30_custom" mediatype="none" title="" >
 			<audio>
-				<audiofile audio="media/F4_s2.mp3" />
+				<audiofile audio="media/f4_s2.mp3" />
 			</audio>
 			<captioning>
 				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
@@ -179,7 +179,7 @@
 		</scene>
 		<scene id="scene4_3" template="30_custom" mediatype="none" title="" >
 			<audio>
-				<audiofile audio="media/F4_s3.mp3" />
+				<audiofile audio="media/f4_s3.mp3" />
 			</audio>
 			<captioning>
 				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
@@ -201,7 +201,7 @@
 		</scene>
 		<scene id="scene4_4" template="30_custom" mediatype="none" title="" >
 			<audio>
-				<audiofile audio="media/F4_s4.mp3" async="true" />
+				<audiofile audio="media/f4_s4.mp3" async="true" />
 			</audio>
 			<captioning>
 				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
@@ -217,7 +217,7 @@
 		</scene>	
 		<scene id="scene4_5" template="30_custom" mediatype="none" title="" >
 			<audio>
-				<audiofile audio="media/F4_s5.mp3" async="true" />
+				<audiofile audio="media/f4_s5.mp3" async="true" />
 			</audio>
 			<captioning>
 				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
@@ -233,7 +233,7 @@
 		</scene>
 		<scene id="scene4_6" template="30_custom" mediatype="none" title="" >
 			<audio>
-				<audiofile audio="media/F4_s6.mp3" async="true" />
+				<audiofile audio="media/f4_s6.mp3" async="true" />
 			</audio>
 			<captioning>
 				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
@@ -249,7 +249,7 @@
 		</scene>		
 		<scene id="scene4_7" template="30_custom" mediatype="none" title="" >
 			<audio>
-				<audiofile audio="media/F4_s7.mp3" async="true" />
+				<audiofile audio="media/f4_s7.mp3" async="true" />
 			</audio>
 			<captioning>
 				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
@@ -276,7 +276,7 @@
 		</scene>
 		<scene id="scene4_8a" template="30_custom" mediatype="none" title="" >
 			<audio>
-				<audiofile audio="media/F4_s8a.mp3" />
+				<audiofile audio="media/f4_s8a.mp3" />
 			</audio>
 			<captioning>
 				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
@@ -287,7 +287,7 @@
 		</scene>
 		<scene id="scene4_8b" template="30_custom" mediatype="none" title="" >
 			<audio>
-				<audiofile audio="media/F4_s8b.mp3" />
+				<audiofile audio="media/f4_s8b.mp3" />
 			</audio>
 			<captioning>
 				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
@@ -298,7 +298,7 @@
 		</scene>		
 		<scene id="scene4_9" template="30_custom" mediatype="none" title="" >
 			<audio>
-				<audiofile audio="media/F4_s9.mp3" />
+				<audiofile audio="media/f4_s9.mp3" />
 			</audio>
 			<captioning>
 				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
@@ -317,7 +317,7 @@
 		</scene>		
 		<scene id="scene4_10" template="30_custom" mediatype="none" title="" >
 			<audio>
-				<audiofile audio="media/F4_s10.mp3" async="true" />
+				<audiofile audio="media/f4_s10.mp3" async="true" />
 			</audio>
 			<captioning>
 				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
@@ -361,7 +361,7 @@
 		</scene>		
 		<scene id="scene4_13" template="30_custom" mediatype="none" title="" >
 			<audio>
-				<audiofile audio="media/F4_s12.mp3" async="true" />
+				<audiofile audio="media/f4_s12.mp3" async="true" />
 			</audio>
 			<captioning>
 				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
@@ -384,7 +384,7 @@
 <!-- scene 5 -->
 		<scene id="scene5_1" template="30_custom" mediatype="none" title="" >
 			<audio>
-				<audiofile audio="media/F5_s1.mp3" />
+				<audiofile audio="media/f5_s1.mp3" />
 			</audio>
 			<captioning>
 				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
@@ -406,7 +406,7 @@
 		</scene>		
 		<scene id="scene5_2" template="30_custom" mediatype="none" title="" >
 			<audio>
-				<audiofile audio="media/F5_s2.mp3" />
+				<audiofile audio="media/f5_s2.mp3" />
 			</audio>
 			<captioning>
 				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
@@ -425,7 +425,7 @@
 		</scene>		
 		<scene id="scene5_3" template="30_custom" mediatype="none" title="" >
 			<audio>
-				<audiofile audio="media/F5_s3.mp3" />
+				<audiofile audio="media/f5_s3.mp3" />
 			</audio>
 			<captioning>
 				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
@@ -438,7 +438,7 @@
 		<!-- drag-n-drop -->
 		<scene id="scene5_4" template="30_custom" mediatype="none" title="" >
 			<audio>
-				<audiofile audio="media/F5_s7.mp3" />
+				<audiofile audio="media/f5_s7.mp3" />
 			</audio>
 			<captioning>
 				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
@@ -450,7 +450,7 @@
 	<!-- scene 6 -->
 		<scene id="scene6_01" template="30_custom" mediatype="none" title="" >
 			<audio>
-				<audiofile audio="media/F6_s1.mp3" />
+				<audiofile audio="media/f6_s1.mp3" />
 			</audio>
 			<captioning>
 				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
@@ -461,7 +461,7 @@
 		</scene>		
 		<scene id="scene6_02" template="30_custom" mediatype="none" title="" >
 			<audio>
-				<audiofile audio="media/F6_s2.mp3" />
+				<audiofile audio="media/f6_s2.mp3" />
 			</audio>
 			<captioning>
 				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
@@ -472,7 +472,7 @@
 		</scene>		
 		<scene id="scene6_03" template="30_custom" mediatype="none" title="" >
 			<audio>
-				<audiofile audio="media/F6_s3.mp3" />
+				<audiofile audio="media/f6_s3.mp3" />
 			</audio>
 			<captioning>
 				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
@@ -483,7 +483,7 @@
 		</scene>		
 		<scene id="scene6_04" template="30_custom" mediatype="none" title="" >
 			<audio>
-				<audiofile audio="media/F6_s4.mp3" />
+				<audiofile audio="media/f6_s4.mp3" />
 			</audio>
 			<captioning>
 				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
@@ -494,7 +494,7 @@
 		</scene>		
 		<scene id="scene6_05" template="30_custom" mediatype="none" title="" >
 			<audio>
-				<audiofile audio="media/F6_s5.mp3" />
+				<audiofile audio="media/f6_s5.mp3" />
 			</audio>
 			<captioning>
 				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
@@ -505,7 +505,7 @@
 		</scene>
 		<scene id="scene6_05b" template="30_custom" mediatype="none" title="" >
 			<audio>
-				<audiofile audio="media/F6_s5b.mp3" />
+				<audiofile audio="media/f6_s5b.mp3" />
 			</audio>
 			<captioning>
 				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
@@ -516,7 +516,7 @@
 		</scene>	
 		<scene id="scene6_06" template="30_custom" mediatype="none" title="" >
 			<audio>
-				<audiofile audio="media/F6_s6.mp3" async="true" />
+				<audiofile audio="media/f6_s6.mp3" async="true" />
 			</audio>
 			<captioning>
 				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
@@ -540,7 +540,7 @@
 		<!-- scene 7 -->
 		<scene id="scene7_01" template="30_custom" mediatype="none" title="" >
 			<audio>
-				<audiofile audio="media/F7_s1.mp3" />
+				<audiofile audio="media/f7_s1.mp3" />
 			</audio>
 			<captioning>
 				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
@@ -556,7 +556,7 @@
 		</scene>	
 		<scene id="scene7_02" template="30_custom" mediatype="none" title="" >
 			<audio>
-				<audiofile audio="media/F7_s2.mp3" async="true" />
+				<audiofile audio="media/f7_s2.mp3" async="true" />
 			</audio>
 			<captioning>
 				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
@@ -567,7 +567,7 @@
 		</scene>	
 		<scene id="scene7_03" template="30_custom" mediatype="none" title="" >
 			<audio>
-				<audiofile audio="media/F7_s3.mp3" async="true" />
+				<audiofile audio="media/f7_s3.mp3" async="true" />
 			</audio>
 			<captioning>
 				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
@@ -578,7 +578,7 @@
 		</scene>	
 		<scene id="scene7_04" template="30_custom" mediatype="none" title="" >
 			<audio>
-				<audiofile audio="media/F7_s4.mp3" async="true" />
+				<audiofile audio="media/f7_s4.mp3" async="true" />
 			</audio>
 			<captioning>
 				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
@@ -590,7 +590,7 @@
 		<!-- scene 8 -->
 		<scene id="scene8_01" template="30_custom" mediatype="none" title="" >
 			<audio>
-				<audiofile audio="media/F8_s1.mp3" />
+				<audiofile audio="media/f8_s1.mp3" />
 			</audio>
 			<captioning>
 				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
@@ -612,7 +612,7 @@
 		</scene>
 		<scene id="scene8_02" template="30_custom" mediatype="none" title="" >
 			<audio>
-				<audiofile audio="media/F8_s3.mp3" async="true" />
+				<audiofile audio="media/f8_s3.mp3" async="true" />
 			</audio>
 			<captioning>
 				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
@@ -623,7 +623,7 @@
 		</scene>	
 		<scene id="scene8_03" template="30_custom" mediatype="none" title="" >
 			<audio>
-				<audiofile audio="media/F8_s4.mp3" />
+				<audiofile audio="media/f8_s4.mp3" />
 			</audio>
 			<captioning>
 				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
@@ -634,7 +634,7 @@
 		</scene>	
 		<scene id="scene8_04" template="30_custom" mediatype="none" title="" >
 			<audio>
-				<audiofile audio="media/F8_s5.mp3" async="true" />
+				<audiofile audio="media/f8_s5.mp3" async="true" />
 			</audio>
 			<captioning>
 				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
@@ -645,7 +645,7 @@
 		</scene>	
 		<scene id="scene8_05" template="30_custom" mediatype="none" title="" >
 			<audio>
-				<audiofile audio="media/F8_s10.mp3" async="true" />
+				<audiofile audio="media/f8_s10.mp3" async="true" />
 			</audio>
 			<captioning>
 				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
@@ -656,7 +656,7 @@
 		</scene>	
 		<scene id="scene8_06" template="30_custom" mediatype="none" title="" >
 			<audio>
-				<audiofile audio="media/F4_s15.mp3" async="true" />
+				<audiofile audio="media/f4_s15.mp3" async="true" />
 			</audio>
 			<captioning>
 				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
@@ -668,7 +668,7 @@
 		<!-- scene 9 -->
 		<scene id="scene9_01" template="30_custom" mediatype="none" title="" >
 			<audio>
-				<audiofile audio="media/F9_s1.mp3" />
+				<audiofile audio="media/f9_s1.mp3" />
 			</audio>
 			<captioning>
 				<captions captiontext="Placeholder Closed Caption text\r\r" captiontime="0, 9.25" />
