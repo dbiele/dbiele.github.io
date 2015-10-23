@@ -1,0 +1,3094 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<module>
+  <administration>
+    <admin coursetype="lms" courseexpiration="356" coursedate="07,12,30" coursetitle="This is the title of the course " id="energy" serverurl="/secured/course_certificate.aspx" />
+  </administration>
+  <glossary>
+    <term image="default" name="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Verdana&quot; SIZE=&quot;14&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="lesson1" />
+  </glossary>
+  <audio path="media/" />
+  <states>
+    <state name="default" enabledControls="exit, help, menu, caption, replay, back, pause, next" />
+    <state name="menu" enabledControls="" />
+    <state name="content_admintext" enabledControls="exit, help, back, next" />
+    <state name="content_main" enabledControls="exit, help, menu, caption, replay, back, pause" />
+    <state name="content_courseconclusion" enabledControls="exit, caption, help" />
+    <state name="question_main" enabledControls="exit, caption, help" />
+    <state name="question_assessment" enabledControls="back, pause, next" />
+    <state name="assessment_intro" enabledControls="exit, help, caption, replay, pause" />
+    <state name="assessment_submit" enabledControls="" />
+    <state name="assessment_results" enabledControls="help, next" />
+  </states>
+  <templates>
+    <template id="default" desc="Basic Page" showpagenumber="true" listid="pages">
+      <type>content</type>
+      <state>default</state>
+      <renderer>com.invision.client.BasicRenderer</renderer>
+    </template>
+    <template id="stickynote" desc="Sticky Note Page" showpagenumber="true" listid="pages">
+      <type>content</type>
+      <state>default</state>
+      <renderer>com.invision.client.renderers.StickyNote</renderer>
+    </template>
+    <template id="14_multiplechoice" desc="QUIZ">
+      <type>question</type>
+      <state>question_main</state>
+      <renderer>com.invision.client.renderers.MultipleChoice</renderer>
+    </template>
+    <template id="18_quizdragdrop" desc="QUIZ">
+      <type>question</type>
+      <state>question_main</state>
+      <renderer>com.invision.client.renderers.DragDrop</renderer>
+    </template>
+    <template id="game_duckbelt" desc="Conveyor Belt Game" showpagenumber="true" listid="pages">
+      <type>content</type>
+      <state>default</state>
+      <renderer>com.invision.client.renderers.DuckBeltGame</renderer>
+    </template>
+    <template id="game_whackamole" desc="Whack-A-Mole Game" showpagenumber="true" listid="pages">
+      <type>content</type>
+      <state>default</state>
+      <renderer>com.invision.client.renderers.WhackAMoleGame</renderer>
+    </template>
+    <template id="game_price" desc="Name That Price Game" showpagenumber="true" listid="pages">
+      <type>content</type>
+      <state>default</state>
+      <renderer>com.invision.client.renderers.PriceGame</renderer>
+    </template>
+  </templates>
+  <scenes>
+    <scene id="scene1" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content1_page1.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Welcome to Lean Overview!\r  This course will give you an introduction to the Lean concepts that we use here at SC Johnson to\r  make our plants more productive and better places to work.\r Proceed through the topics in order.  Each lesson is less than ten minutes long.  We recommend that\r you take the whole course in one or two sittings to space out your learning experience.\r To get started, click on the flashing Next button at the bottom of your screen." captiontime="0, 2.25, 7.5, 10.75, 16.75, 21.25" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content1_page1_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="2">
+          <keyframe action="gotoAndStop" frame="2" />
+        </animation>
+        <animation time="10">
+          <keyframe action="gotoAndStop" frame="3" />
+        </animation>
+        <animation time="11">
+          <keyframe action="gotoAndStop" frame="4" />
+        </animation>
+        <animation time="13">
+          <keyframe action="gotoAndStop" frame="5" />
+        </animation>
+        <animation time="15">
+          <keyframe action="gotoAndStop" frame="6" />
+        </animation>
+        <animation time="21">
+          <keyframe action="gotoAndStop" frame="7" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene2" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content1_page2.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="This is Pete.  He works at the Rubber Duck Factory (RDF).  RDF has been the #1 manufacturer of \rquality rubber ducks for the past 20 years.  Things have gotten pretty hot lately, with pressure from the\rDevil Duck Company forcing RDF to figure out ways to increase productivity and reduce costs." captiontime="0, 7.5, 12.5" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content1_page2_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="1.5">
+          <keyframe action="gotoAndStop" frame="2" />
+        </animation>
+        <animation time="3">
+          <keyframe action="gotoAndStop" frame="3" />
+        </animation>
+        <animation time="13">
+          <keyframe action="gotoAndStop" frame="4" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene3" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content1_page3.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="The RDF team has decided to implement the Lean principles into their manufacturing environment. Lean\r includes tools and concepts such as 5S and setup reduction that help a company continuously\r improve safety, quality, productivity and delivery – while also reducing lead-time and costs.\r The hope is that RDF can continue making quality products at low prices and keep their customers\r coming back." captiontime="0, 5.75, 12.25, 18.5, 25" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content1_page3_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="2">
+          <keyframe action="gotoAndStop" frame="2" />
+        </animation>
+        <animation time="12">
+          <keyframe action="gotoAndStop" frame="3" />
+        </animation>
+        <animation time="16">
+          <keyframe action="gotoAndStop" frame="4" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene4" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content1_page4.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Click on each item to learn more about the benefits of Lean." captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content1_page4_mc</sceneparam>
+        <sceneparam name="multiple">true</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene5" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content1_page5.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Implementing Lean has a large impact on an organization’s costs and profitability.  Some typical Lean \r results have shown a 50 percent reduction in changeover time or a 50 percent reduction\r in total quality defects, to name just a few.  Productivity improvements come from increased up-time,\r strategic utilization of resources, and elimination of waste." captiontime="0, 6.25, 12.5, 19" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content1_page5_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene6" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content1_page6.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Lean isn’t just about applying one tool across the whole organization.  There are many tools in the \r Lean toolbox.  It’s not just about cleaning, but about finding many ways to eliminate waste using the\r appropriate tool for the situation.   If there is a challenge in the organization, there is a tool in the\r Lean toolbox that can help solve the problem." captiontime="0, 6.25, 12.5, 19" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content1_page6_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="1">
+          <keyframe action="gotoAndPlay" frame="2" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene7" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content1_page7.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="In this Lean Overview, you’ll learn about the Lean tools and help Pete put some of these tools to\r work to improve his line.  Along the way, you’ll also learn about how you can use Lean to improve\r productivity here at SC Johnson." captiontime="0, 5.5, 11.75" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content1_page7_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="2">
+          <keyframe action="gotoAndStop" frame="2" />
+        </animation>
+        <animation time="9">
+          <keyframe action="gotoAndStop" frame="3" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene8" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/music.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="(music playing)" captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content1_page8_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="1">
+          <keyframe action="gotoAndPlay" frame="2" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene9" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content2_sub1_page1.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="The goal of world class organizations is to improve and grow the business by being globally\r competitive." captiontime="0, 5.75" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content2_sub1_page1_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene10" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content2_sub1_page2.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="At SC Johnson, we’re proud of our brand name and the respect our customers have for our products.\r We’ve remained competitive with other companies by standing out from other products.  To keep us\r competitive in the current economy and the future, we’re now working to use continuous improvement\r concepts to improve safety, quality, productivity and delivery in order to keep our costs down." captiontime="0, 5, 11.25, 17.25" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content2_sub1_page2_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene11" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content2_sub1_page3.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="There are several distinguishing features of a world class organization. \rClick on each feature to learn more." captiontime="0, 4.5" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content2_sub1_page3_mc</sceneparam>
+        <sceneparam name="multiple">true</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene12" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content2_sub1_page4.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Lean is a journey which changes a company’s culture; it's not the program of the month, or even\r the year!  Some companies have been on their “lean journeys” for decades.  Learning to think “lean”\r is an evolutionary process – it takes time." captiontime="0, 5.75, 11.75" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content2_sub1_page4_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene13" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content2_sub1_page5.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="In a global economy, successful companies know this equation: Happy customers lead to profits.\r  More profits mean more jobs.  But none of this can happen without teamwork." captiontime="0, 6.75" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content2_sub1_page5_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="4">
+          <keyframe action="gotoAndStop" frame="2" />
+        </animation>
+        <animation time="5">
+          <keyframe action="gotoAndStop" frame="3" />
+        </animation>
+        <animation time="7">
+          <keyframe action="gotoAndStop" frame="4" />
+        </animation>
+        <animation time="9">
+          <keyframe action="gotoAndStop" frame="5" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene14" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content2_sub1_page6.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Think About It! How does your own work group operate?" captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content2_sub1_page6_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene15" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/music.mp3" />
+      </audio>
+	  <captioning>
+        <captions captiontext="(music playing)" captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content2_sub1_page7_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="1">
+          <keyframe action="gotoAndPlay" frame="2" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene16" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content2_sub2_page1.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="(pause to read quote)\rHenry Ford made this statement, which really defines customer satisfaction.\r You might be thinking, “but I thought the company paid my salary…”\r Yes…but the company can only pay salaries if customers are buying products.\r And customers aren’t going to buy products that they don’t value." captiontime="0, 5, 10.25, 14, 18.75" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content2_sub2_page1_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene17" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content2_sub2_page2.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Customer Satisfaction is meeting a customer’s expectations for the quality, delivery, price,\r performance and service of our products. When you buy a new car, you’re not going to buy it\r if it doesn’t meet your criteria.  Same for our customers.  They have a lot of choices!  We have to \rdeliver the right product, the first time and at the best cost." captiontime="0, 6, 12, 18" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content2_sub2_page2_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene18" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content2_sub2_page3.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Identifying, eliminating and reducing waste is the heart of Lean. All the tools in some way focus on\r adding value through the elimination of waste, which is one of the key barriers to customer\r satisfaction." captiontime="0, 8.25, 13.5" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content2_sub2_page3_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="1">
+          <keyframe action="gotoAndStop" frame="2" />
+        </animation>
+        <animation time="4">
+          <keyframe action="gotoAndStop" frame="3" />
+        </animation>
+        <animation time="7">
+          <keyframe action="gotoAndStop" frame="4" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene19" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content2_sub2_page4.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Waste is anything other than the minimum amount.  If you’re using more people, time, \r equipment, material or space than is required, then you’re not adding value to the part or product." captiontime="0, 6.25" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content2_sub2_page4_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene20" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content2_sub2_page5.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="If the customer won’t pay for a feature, then it’s not adding value to the product." captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content2_sub2_page5_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="5">
+          <keyframe action="gotoAndStop" frame="2" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene21" template="default">
+      <audio>
+        <audiofile async="true" audio="media/Content2_sub2_page6.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Which of the following describes the term “value added”?" captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content2_sub2_page6_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene22" template="18_quizdragdrop">
+      <audio>
+        <audiofile async="true" audio="media/Content2_sub2_page7.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Which of the following activities add value to this product? And which are waste? Drag each item\r to the appropriate place." captiontime="0, 7.25" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content2_sub2_page7_mc</sceneparam>
+        <sceneparam name="feedback_dragger1_mc_incorrect">Activities must be done right the first time.  Scrap is waste and does not add value.</sceneparam>
+        <sceneparam name="feedback_dragger2_mc_incorrect">Customers may not want to pay for the additional costs required by a lengthy changeover.  All that extra time spent is waste.</sceneparam>
+        <sceneparam name="feedback_dragger3_mc_incorrect">If a customer is willing to pay for it, then new features add value to a product.</sceneparam>
+      </sceneparams>
+      <dragdrop>
+        <targets id="target1_mc">Add Value</targets>
+        <targets id="target2_mc">Waste</targets>
+        <draggers answer="2" id="dragger1_mc">Scrap</draggers>
+        <draggers answer="2" id="dragger2_mc">Changeover</draggers>
+        <draggers answer="1" id="dragger3_mc">Ducks</draggers>
+        <question questiontext="Pete and his team are producing a new rubber duck design.  Which of the following activities do you think add value to this product? And which are waste?" />
+      </dragdrop>
+    </scene>
+    <scene id="scene23" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/music.mp3" />
+      </audio>
+	  <captioning>
+        <captions captiontext="(music playing)" captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content2_sub2_page8_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="1">
+          <keyframe action="gotoAndPlay" frame="2" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene24" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content2_sub3_page1.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="There are many different types of waste in a business setting. In this lesson, we’ll identify some\r different examples." captiontime="0, 5" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content2_sub3_page1_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene25" template="default" mediatype="none">
+      <audio>
+        <audiofile async="true" audio="media/Content2_sub3_page2.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="We’ve identified at least eight general types of waste that can be found at SC Johnson or many\r other companies.  Click on each type of waste to learn more." captiontime="0, 5.25" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content2_sub3_page2_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene26" template="default" mediatype="none">
+      <audio>
+        <audiofile async="true" audio="media/Content2_sub3_page3.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="It can be hard to identify waste in a business environment. Do any of these seem familiar?  \rClick on any areas where you’ve seen examples of waste in your own workplace." captiontime="0, 6.5" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content2_sub3_page3_mc</sceneparam>
+      </sceneparams>
+      <animations></animations>
+    </scene>
+    <scene id="scene27" template="game_whackamole" mediatype="none">
+      <audio>
+        <audiofile async="true" audio="media/Content2_sub3_page4.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="See if you can identify all the different types of waste that you see." captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content2_sub3_page4_mc</sceneparam>
+        <sceneparam name="waste_1">Storage facility for excess inventory</sceneparam>
+        <sceneparam name="waste_2">Running out of printer ink</sceneparam>
+        <sceneparam name="waste_3">Lost time injury</sceneparam>
+        <sceneparam name="waste_4">Stock delays</sceneparam>
+        <sceneparam name="waste_5">Carrying unused paint back to storage room</sceneparam>
+        <sceneparam name="waste_6">Calling supplier to verify bill payment</sceneparam>
+        <sceneparam name="waste_7">Leaving unneeded lights on</sceneparam>
+        <sceneparam name="waste_8">Scrapped product</sceneparam>
+        <sceneparam name="waste_9">Printer jam</sceneparam>
+        <sceneparam name="waste_10">Mislabeled product</sceneparam>
+        <sceneparam name="waste_11">Broken computer keyboard</sceneparam>
+        <sceneparam name="waste_12">Counting inventory</sceneparam>
+        <sceneparam name="waste_13">Using a pair of channel locks vs. the correct size wrench or screw driver</sceneparam>
+        <sceneparam name="nonwaste_1">Proper staffing levels</sceneparam>
+        <sceneparam name="nonwaste_2">Vacation time</sceneparam>
+        <sceneparam name="nonwaste_3">Efficient workflow</sceneparam>
+        <sceneparam name="nonwaste_4">Team meeting</sceneparam>
+        <sceneparam name="nonwaste_5">Energy efficient equipment</sceneparam>
+        <sceneparam name="nonwaste_6">Filling customer orders on time</sceneparam>
+        <sceneparam name="nonwaste_7">Communication meetings</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene28" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/music.mp3" />
+      </audio>
+	  <captioning>
+        <captions captiontext="(music playing)" captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content2_sub3_page5_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="1">
+          <keyframe action="gotoAndPlay" frame="2" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene29" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content2_sub4_page1.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="In this lesson, we’ll think about different ways we can improve company productivity." captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content2_sub4_page1_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene30" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content2_sub4_page2.mp3" />
+        <mp3 id="value_added" url="media/Content2_sub4_page2_1.mp3">
+          <transcript cuepoints="0,5.5" text="An organization typically spends 14 percent of their time on value added activities.\r These are things the customer is willing to pay for." />
+        </mp3>
+        <mp3 id="critical" url="media/Content2_sub4_page2_2.mp3">
+          <transcript cuepoints="0,4.75" text="How much time is spent on activities that are critical to the smooth operation\r of the business, like team meetings and 5S activities?" />
+        </mp3>
+        <mp3 id="business_structural" url="media/Content2_sub4_page2_3.mp3">
+          <transcript cuepoints="0,5,10" text="About 11 percent of their time is Business Structural Time.  You can’t make product\r during these times, but these essential activities, like communication and team meetings,\r keep everyone informed on new updates, progress and customer feedback." />
+        </mp3>
+        <mp3 id="waste" url="media/Content2_sub4_page2_4.mp3">
+          <transcript cuepoints="0,5" text="And how much is spent on waste – such as doing rework, overproduction,\r or dealing with scrap?" />
+        </mp3>
+        <mp3 id="non_value" url="media/Content2_sub4_page2_5.mp3">
+          <transcript cuepoints="0,5" text="75 percent of the time is currently spent on doing non-value added activities.\r That’s where implementing the Lean principles can help organizations become more productive." />
+        </mp3>
+      </audio>
+      <captioning>
+        <captions captiontext="This chart shows some statistics for typical organizations that have not yet implemented Lean.\r Here’s an exercise to help you better understand this chart. What percentage of the time does this\r organization spend actually making product? Click on the piece of the chart that shows this time." captiontime="0, 6.25, 12.25" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content2_sub4_page2_mc</sceneparam>
+        <sceneparam name="multiple">true</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="12.75">
+          <keyframe action="gotoAndStop" frame="3" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene31" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content2_sub4_page3.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="By implementing Lean, you can eliminate the non-value added activities – the waste.  What a\r difference!  Think how much more productive – and profitable – the plant will be.\r But for that type of improvement to happen, some big changes must occur." captiontime="0, 6, 11" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content2_sub4_page3_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="1">
+          <keyframe action="gotoAndStop" frame="2" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene32" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content2_sub4_page4.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="In the old days, companies like ours would figure out what to charge for our products by taking the\r cost to make the product and then tacking on the profit that we wanted. This worked out great.\r Today, a changed marketplace with more competition means the selling price is fixed.  So now\r companies have to subtract the costs of making the product from the selling price to figure out what\r the profit will be." captiontime="0, 6.25, 12, 19.5, 24.75" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content2_sub4_page4_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="1">
+          <keyframe action="gotoAndStop" frame="2" />
+        </animation>
+        <animation time="5">
+          <keyframe action="gotoAndStop" frame="3" />
+        </animation>
+        <animation time="13">
+          <keyframe action="gotoAndStop" frame="4" />
+        </animation>
+        <animation time="16">
+          <keyframe action="gotoAndStop" frame="5" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene33" template="18_quizdragdrop" mediatype="none">
+      <audio>
+        <audiofile async="true" audio="media/Content2_sub4_page5.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="If cost is the only thing we can control in this equation, how can we be more efficient and reduce our\r costs?  Think about it for a few minutes before you move on.  Some costs we can’t control, but\r others we can.  Drag the different types of costs into the appropriate buckets." captiontime="0, 6.75, 13.75" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content2_sub4_page5_mc</sceneparam>
+        <sceneparam name="feedback_dragger1_mc_incorrect">No, that's not right.</sceneparam>
+        <sceneparam name="feedback_dragger2_mc_incorrect">No, that's not right.</sceneparam>
+        <sceneparam name="feedback_dragger3_mc_incorrect">No, that's not right.</sceneparam>
+        <sceneparam name="feedback_dragger4_mc_incorrect">No, that's not right.</sceneparam>
+        <sceneparam name="feedback_dragger5_mc_incorrect">No, that's not right.</sceneparam>
+        <sceneparam name="feedback_dragger6_mc_incorrect">No, that's not right.</sceneparam>
+        <sceneparam name="feedback_dragger7_mc_incorrect">No, that's not right.</sceneparam>
+        <sceneparam name="feedback_dragger8_mc_incorrect">No, that's not right.</sceneparam>
+        <sceneparam name="feedback_dragger9_mc_incorrect">No, that's not right.</sceneparam>
+        <sceneparam name="feedback_dragger10_mc_incorrect">No, that's not right.</sceneparam>
+      </sceneparams>
+      <dragdrop>
+        <targets id="target1_mc">Costs We Can Control</targets>
+        <targets id="target2_mc">Costs We Can't Control</targets>
+        <draggers answer="1" id="dragger1_mc">Cost of changing over a production line</draggers>
+        <draggers answer="2" id="dragger2_mc">The price of oil</draggers>
+        <draggers answer="1" id="dragger3_mc">Cost of accidents</draggers>
+        <draggers answer="1" id="dragger4_mc">Damaged products</draggers>
+        <draggers answer="2" id="dragger5_mc">Market price for raw materials</draggers>
+        <draggers answer="2" id="dragger6_mc">Employee health insurance premiums</draggers>
+        <draggers answer="1" id="dragger7_mc">Broken Equipment</draggers>
+        <draggers answer="1" id="dragger8_mc">How efficiently we use energy</draggers>
+        <draggers answer="2" id="dragger9_mc">Rate of inflation</draggers>
+        <draggers answer="2" id="dragger10_mc">Interest rates</draggers>
+        <question questiontext="Drag the different types of costs into the appropriate buckets." />
+      </dragdrop>
+    </scene>
+    <scene id="scene34" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/music.mp3" />
+      </audio>
+	  <captioning>
+        <captions captiontext="(music playing)" captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content2_sub4_page6_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="1">
+          <keyframe action="gotoAndPlay" frame="2" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene35" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content2_sub5_page1.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Most of us buy our products at the SC Johnson company store.  It’s inexpensive and easy. \r But typical consumers shop in retail stores, comparing our products against our competitors’.\r Customers may buy a product because it’s the cheapest, or because they’ve heard it works the best,\r or because they recognize the name." captiontime="0, 6.5, 12.75, 18.5" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content2_sub5_page1_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene36" template="game_price" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content2_sub5_page2.mp3" />
+        <mp3 id="clock_is_ticking" url="media/Content2_sub5_page2_2.mp3">
+          <transcript cuepoints="0" text="The clock is ticking!" />
+        </mp3>
+        <mp3 id="try_again" url="media/Content2_sub5_page2_3.mp3">
+          <transcript cuepoints="0" text="That's not right.  Try again!  You've got 20 seconds." />
+        </mp3>
+        <mp3 id="correct1" url="media/Content2_sub5_page2_8.mp3">
+          <transcript cuepoints="0" text="That's right!" />
+        </mp3>
+        <mp3 id="prompt2" url="media/Content2_sub5_page2_5.mp3">
+          <transcript cuepoints="1" text="You've advanced to Level Two!  What about these products?" />
+        </mp3>
+        <mp3 id="correct2" url="media/Content2_sub5_page2_8.mp3">
+          <transcript cuepoints="1" text="That's right!" />
+        </mp3>
+        <mp3 id="prompt3" url="media/Content2_sub5_page2_7.mp3">
+          <transcript cuepoints="1" text="Congratulations - you're at Level Three!  You have 20 seconds." />
+        </mp3>
+        <mp3 id="correct3" url="media/Content2_sub5_page2_8.mp3">
+          <transcript cuepoints="1" text="That's right!" />
+        </mp3>
+        <mp3 id="prompt4" url="media/Content2_sub5_page2_9.mp3">
+          <transcript cuepoints="1,4" text="You're getting there.  Now you're at Level Four!\rYou've got 20 seconds." />
+        </mp3>
+        <mp3 id="correct4" url="media/Content2_sub5_page2_8.mp3">
+          <transcript cuepoints="1" text="That's right!" />
+        </mp3>
+        <mp3 id="prompt5" url="media/Content2_sub5_page2_10.mp3">
+          <transcript cuepoints="1" text="And what about these? This is the last level." />
+        </mp3>
+		<mp3 id="correct5" url="media/Content2_sub5_page2_6.mp3">
+          <transcript cuepoints="1,6,11" text="That's right!  As you can see, there's a big cost difference between our product\rand the competitors'.  We have to trust that the customers recognize our brand name,\rand know it's a better product!" />
+        </mp3>
+        <mp3 id="prompt6" url="media/Content2_sub5_page2_11.mp3">
+          <transcript cuepoints="6,9.75" text="Congratulations!  You've made it to the top of the heap.\rNow choose one of the three doors to select your fabulous prize!" />
+        </mp3>
+        <mp3 id="final" url="media/Content2_sub5_page2_12.mp3">
+          <transcript cuepoints="0,4,10,15,20" text="Will you look at that!\rThanks for playing. In these examples, SC Johnson's prices were typically higher than the competitors'.\rWhy?  Well, we think it's because we offer more value.  But remember - \rour customers need to see that value in order to buy that product.\rJoin us next time on 'Name That Price'!" />
+        </mp3>
+      </audio>
+      <captioning>
+        <captions captiontext="Congratulations! You’re the next contestant on “Name That Price”  -- the Fantastic Game Show\r where you determine the right price of the products to advance to the next level!\r Let’s get started!\r What about these products?" captiontime="0, 6, 10.5, 14" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content2_sub5_page2_mc</sceneparam>
+        <sceneparam name="multiple">true</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="3">
+          <keyframe action="gotoAndStop" frame="2" />
+        </animation>
+        <animation time="14">
+          <keyframe action="gotoAndStop" frame="3" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene37" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/music.mp3" />
+      </audio>
+	  <captioning>
+        <captions captiontext="(music playing)" captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content2_sub5_page3_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="1">
+          <keyframe action="gotoAndPlay" frame="2" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene38" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content3_page1.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Here at SC Johnson, we have a strong team culture. Teamwork is a core part of Lean and an\r important part of building a World Class Organization. Why?  Well let’s imagine the opposite of\r good teamwork.  For instance, Pete’s production line at RDF.  They don’t communicate very well\r with each other or share their ideas." captiontime="0, 7.25, 13.25, 19" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content3_page1_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="1">
+          <keyframe action="gotoAndStop" frame="2" />
+        </animation>
+        <animation time="3">
+          <keyframe action="gotoAndStop" frame="3" />
+        </animation>
+        <animation time="5">
+          <keyframe action="gotoAndStop" frame="4" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene39" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content3_page2.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Let’s learn a bit more about the RDF team." captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content3_page2_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time=".5">
+          <keyframe action="gotoAndStop" frame="2" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene40" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content3_page3.mp3" />
+        <mp3 id="diverse_backgrounds" url="media/Content3_page3_1.mp3">
+          <transcript cuepoints="0,4,9,14,18" text="Pete's group is now having their first Lean event.  Members from all three shifts are involved,\r as well as some folks who aren't that familiar with their process.\rThey've included team members with diverse backgrounds to help the team approach problems\rfrom a variety of angles.  New people may often have a different view,\rand provide some great ideas and pass on some new skills." />
+        </mp3>
+        <mp3 id="mission" url="media/Content3_page3_2.mp3">
+          <transcript cuepoints="0,5,9.5" text="Together, the team works to come up with a vision and mission for their line.\rBecause all members of the team know the direction in which they are moving, each member can\rcontribute to the common goal." />
+        </mp3>
+        <mp3 id="communication" url="media/Content3_page3_3.mp3">
+          <transcript cuepoints="0,3.5" text="When people communicate with each other, they feel more connected -\rand understand why something is being done." />
+        </mp3>
+        <mp3 id="measurement" url="media/Content3_page3_4.mp3">
+          <transcript cuepoints="0,5" text="Now that everyone understands the team's goals, they can work better together.\rAnd common measurements are used to see how everyone's doing." />
+        </mp3>
+      </audio>
+      <captioning>
+        <captions captiontext="In order to build a solid team, you need the following.  Click on each one to learn how RDF worked\r at team building at their first Lean event." captiontime="0, 6.5" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content3_page3_mc</sceneparam>
+        <sceneparam name="multiple">true</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene41" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content3_page4.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="In preparation for their Lean Events, the Rubber Duck Factory established a Lean Core Team, which\r includes a diverse group of individuals." captiontime="0, 6" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content3_page4_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene42" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content3_page5.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="When they first met, the team wrote these goals on a board." captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content3_page5_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene43" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content3_page6.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="These are some big changes for this group. A lot of people are going to have to do things\r differently. Changing behaviors can be challenging, but worth it in the end." captiontime="0, 5" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content3_page6_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene44" template="default" mediatype="none">
+      <audio>
+        <audiofile async="true" audio="media/Content3_page7.mp3" />
+        <mp3 id="brainstorming" url="media/Content3_page7_1.mp3">
+          <transcript cuepoints="0,6,9,15" text="Brainstorming is a way to let every member of the team be creative and as open as they can be\rwith their ideas.  Together, you create a wish list.\rEveryone's encouraged to participate, with no judgement, until all ideas have been written down.\rThen you can review each one and decide which ideas should be put to work." />
+        </mp3>
+        <mp3 id="multivoting" url="media/Content3_page7_2.mp3">
+          <transcript cuepoints="0,6" text="Here's multivoting at work.  Each team member gets ten dots, and must vote on at least\rfour of the ideas on the board.  Once everyone has voted, you see which items have the most dots." />
+        </mp3>
+        <mp3 id="consensus" url="media/Content3_page7_3.mp3">
+          <transcript cuepoints="0,6,11.5" text="Coming to a group consensus is a way of prioritizing.  Everyone needs to support the idea.\rAlthough it may not be everyone's first choice, no one can oppose the idea outright.\rThe team leader summarizes the decision, and directly asks each person if they support it." />
+        </mp3>
+      </audio>
+      <captioning>
+        <captions captiontext="One of the hardest parts of working with a team is coming to a group decision. Here are three \r tools that your team can put to use right away." captiontime="0, 5.75" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content3_page7_mc</sceneparam>
+        <sceneparam name="multiple">true</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene45" template="default" mediatype="none">
+      <audio>
+        <audiofile async="true" audio="media/Content3_page8.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="The Rubber Duck Factory team saw some interesting results from their team building efforts." captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content3_page8_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="3">
+          <keyframe action="gotoAndStop" frame="2" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene46" template="stickynote" mediatype="none">
+      <audio>
+        <audiofile async="true" audio="media/Content3_page9.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Think About It! Can you think of some ways that your group could work better as a team?" captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content3_page9_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene47" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/music.mp3" />
+      </audio>
+	  <captioning>
+        <captions captiontext="(music playing)" captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content3_page10_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="1">
+          <keyframe action="gotoAndPlay" frame="2" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene48" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content4_sub1_page1.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="5S is the foundation of Lean. The 5S’s are:  Sort, Shine, Set, Standardize/Schedule, and Sustain.  \rAnd forget what you may have heard before: it’s not just about cleaning, although there is\r some cleaning involved.  5S is a process that helps us focus on improving\r Safety, Housekeeping, Workplace Organization, Visual Management and Ergonomics." captiontime="0, 8.75, 14.5, 19.25" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content4_sub1_page1_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="19">
+          <keyframe action="gotoAndStop" frame="2" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene49" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content4_sub1_page2.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="(pause to read quote)\rEssentially, this statement means that our goals are only as good as our behaviors. If you see a\r mess, pick it up. If you see a safety hazard, take care of it. We’re all responsible and each of us\r needs to do our part." captiontime="0, 4, 10.25, 17" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content4_sub1_page2_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="3">
+          <keyframe action="gotoAndStop" frame="2" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene51" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content4_sub1_page4.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Think About It! How much time do you spend in a day looking for something you need?" captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content4_sub1_page4_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene52" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content4_sub1_page5.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="5S can be applied everywhere – at work and at home!  If this homeowner had done some basic\r maintenance and cleared the gutters before trees started growing in them, he would have saved\r a lot of money.  Instead he had to replace his windows and an interior wall, due to water damage\r caused by this sagging, leaking gutter." captiontime="0, 6.75, 12, 18" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content4_sub1_page5_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="4">
+          <keyframe action="gotoAndStop" frame="2" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene53" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content4_sub1_page6.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="When you implement 5S there’s nothing lying around to trip over.  Increased Safety! You won’t have\r the wrong tools or outdated procedures.  Increased Quality! You’ll save time because you’re not\r hunting down tools or forms, or files on a computer. You’ve got what you need where you need it.\r Increased Productivity!" captiontime="0, 6, 12, 18" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content4_sub1_page6_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="3.5">
+          <keyframe action="gotoAndStop" frame="2" />
+        </animation>
+        <animation time="8.5">
+          <keyframe action="gotoAndStop" frame="3" />
+        </animation>
+        <animation time="18">
+          <keyframe action="gotoAndStop" frame="4" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene54" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content4_sub1_page7.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Lots of people think 5S and Lean originated with the Japanese at Toyota.\rBut it actually goes back before that to Henry Ford’s “Can Do” Method. \rEach of Henry Ford’s steps were given a new name that begins with S, but means the same thing." captiontime="0, 7, 15.25" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content4_sub1_page7_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time=".5">
+          <keyframe action="gotoAndStop" frame="2" />
+        </animation>
+        <animation time="8">
+          <keyframe action="gotoAndStop" frame="3" />
+        </animation>
+        <animation time="21.5">
+          <keyframe action="gotoAndStop" frame="4" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene56" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content4_sub2_page1.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="The first S is Sort. Sort from the work place what is needed from what is not needed. Add what is\r needed but not there. If it wasn’t used in the last 30 days or will not be used in the next 30 days,\r store it away from the work site." captiontime="0, 7.5, 14.25" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content4_sub2_page1_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="2">
+          <keyframe action="gotoAndStop" frame="2" />
+        </animation>
+        <animation time="6">
+          <keyframe action="gotoAndStop" frame="3" />
+        </animation>
+        <animation time="9">
+          <keyframe action="gotoAndStop" frame="4" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene57" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content4_sub2_page2.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="You don't keep your Christmas decorations in the middle of the living room in August.\rThey're up in the attic, or boxed in a closet. And you don't keep the remote control to your TV\r in the hall closet, you keep it next to the couch." captiontime="0, 4.5, 9.5" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content4_sub2_page2_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="3">
+          <keyframe action="gotoAndStop" frame="2" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene58" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content4_sub2_page3.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="The idea behind Sort is to keep everything nearby that you will use today. Items not used on a daily\r basis should be placed in storage. Items that are used every day need to be stored in the work\r area and not off in a back room. The less frequently an item is used, the further it can be stored\r from the work area. Items that are not needed anywhere should be disposed of." captiontime="0, 6.75, 12.75, 19" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content4_sub2_page3_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="1">
+          <keyframe action="gotoAndStop" frame="2" />
+        </animation>
+        <animation time="3">
+          <keyframe action="gotoAndStop" frame="3" />
+        </animation>
+        <animation time="5">
+          <keyframe action="gotoAndStop" frame="4" />
+        </animation>
+        <animation time="7">
+          <keyframe action="gotoAndStop" frame="5" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene59" template="stickynote" mediatype="none">
+      <audio>
+        <audiofile async="true" audio="media/Content4_sub2_page4.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Think About It! What are the benefits of sorting?" captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content4_sub2_page4_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene60" template="stickynote" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content4_sub2_page5.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="How did you do?  Here are some of the key benefits we see in sorting." captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content4_sub2_page5_mc</sceneparam>
+        <sceneparam name="saved_sticky_id">stickynote_scene59</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="1">
+          <keyframe action="gotoAndStop" frame="2" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene61" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content4_sub2_page6.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="First, sort out the junk.  The junk is usually pretty obvious." captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content4_sub2_page6_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="1">
+          <keyframe action="gotoAndStop" frame="2" />
+        </animation>
+        <animation time="3">
+          <keyframe action="gotoAndStop" frame="3" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene62" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content4_sub2_page7.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="But sometimes, you may not be sure if something is junk. The Red Tag System is a great way to\r identify unneeded items. During a 5S event, certain items may be marked with a Red Tag." captiontime="0, 6.25" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content4_sub2_page7_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene63" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content4_sub2_page8.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Here are some guidelines for Red Tagging." captiontime="0, 6.25" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content4_sub2_page8_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="1">
+          <keyframe action="gotoAndStop" frame="2" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene64" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content4_sub2_page9.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Red Tag items go into the Red Tag Parking Lot. Items should be placed here for a maximum of 30 days." captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content4_sub2_page9_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene65" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content4_sub2_page10.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="The Red tag owner monitors what goes in and what comes out of the Red Tag area." captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content4_sub2_page10_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene66" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content4_sub2_page11.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Sometimes it’s easier to put almost everything into the Red Tag Area, then bring back what’s\r needed, when it’s needed. This can help you determine what tools and equipment are actually\r being used and if they’re the right tools. Don’t bring back a 7-foot ladder when a 2-step step stool\r is what you really need." captiontime="0, 6.5, 12.25, 18" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content4_sub2_page11_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene67" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content4_sub2_page12.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Here are some important rules about the Red Tag area." captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content4_sub2_page12_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="1">
+          <keyframe action="gotoAndPlay" frame="2" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene68" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content4_sub2_page13.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Around ten days after your 5S event, your team will hold a disposition meeting. This team includes\r members from Finance, reps from each shift, engineering, TRT, and the Red Tag area owner." captiontime="0, 7.75" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content4_sub2_page13_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="1">
+          <keyframe action="gotoAndStop" frame="2" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene69" template="18_quizdragdrop" mediatype="none">
+      <audio>
+        <audiofile async="true" audio="media/Content4_sub2_page14.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="So let’s try it. The Rubber Duck Factory is sorting their workplace.  Roll your mouse over each item\r to learn more about it, and then drag it to the correct location on the screen." captiontime="0, 6.5" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content4_sub2_page14_mc</sceneparam>
+        <sceneparam name="caption_dragger1_mc">Tools: These are used every day.</sceneparam>
+        <sceneparam name="caption_dragger2_mc">Toolbox: Tools should be kept in a visible place, not out of sight in a toolbox.</sceneparam>
+        <sceneparam name="caption_dragger3_mc">File cabinet: The files in this cabinet are a few years old.  No one has looked at it in months.</sceneparam>
+        <sceneparam name="caption_dragger4_mc">Extra paint cans: These are used as needed - probably every few weeks when supplies run low.</sceneparam>
+        <sceneparam name="caption_dragger5_mc">Forms: This invoice form is kept in a folder by the printer, although it's only used quarterly.</sceneparam>
+        <sceneparam name="caption_dragger6_mc">Ladder: This ladder is broken.</sceneparam>
+        <sceneparam name="caption_dragger7_mc">Printer: This is an extra printer that still works.</sceneparam>
+        <sceneparam name="feedback_dragger1_mc_incorrect">No, that's not right.</sceneparam>
+        <sceneparam name="feedback_dragger2_mc_incorrect">No, that's not right.</sceneparam>
+        <sceneparam name="feedback_dragger3_mc_incorrect">No, that's not right.</sceneparam>
+        <sceneparam name="feedback_dragger4_mc_incorrect">No, that's not right.</sceneparam>
+        <sceneparam name="feedback_dragger5_mc_incorrect">No, that's not right.</sceneparam>
+        <sceneparam name="feedback_dragger6_mc_incorrect">No, that's not right.</sceneparam>
+        <sceneparam name="feedback_dragger7_mc_incorrect">No, that's not right.</sceneparam>
+      </sceneparams>
+      <dragdrop>
+        <targets id="target1_mc">The Workplace</targets>
+        <targets id="target2_mc">Storage</targets>
+        <targets id="target3_mc">Red Tag Area</targets>
+        <draggers answer="1" id="dragger1_mc">Tools</draggers>
+        <draggers answer="3" id="dragger2_mc">Toolbox</draggers>
+        <draggers answer="3" id="dragger3_mc">File cabinet</draggers>
+        <draggers answer="2" id="dragger4_mc">Extra paint cans</draggers>
+        <draggers answer="2" id="dragger5_mc">Forms</draggers>
+        <draggers answer="3" id="dragger6_mc">Ladder</draggers>
+        <draggers answer="3" id="dragger7_mc">Printer</draggers>
+        <question questiontext="Sort the items into the correct locations." />
+      </dragdrop>
+    </scene>
+    <scene id="scene70" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/music.mp3" />
+      </audio>
+	  <captioning>
+        <captions captiontext="(music playing)" captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content4_sub2_page15_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="1">
+          <keyframe action="gotoAndPlay" frame="2" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene71" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content4_sub3_page1.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="The Second S, Sweep and Shine, is the one that most people associate with the 5S system. I think\r it's because it’s the most visible." captiontime="0, 7.25" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content4_sub3_page1_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene72" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content4_sub3_page2.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Get equipment back to a like-new condition!  This might include sweeping the floors, wiping off\r equipment, or even painting." captiontime="0, 6" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content4_sub3_page2_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="1">
+          <keyframe action="gotoAndStop" frame="2" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene73" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content4_sub3_page3.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Use a ceiling-down strategy." captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content4_sub3_page3_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="1">
+          <keyframe action="gotoAndStop" frame="2" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene74" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content4_sub3_page4.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Establish dirt prevention methods." captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content4_sub3_page4_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="1">
+          <keyframe action="gotoAndStop" frame="2" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene75" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content4_sub3_page5.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Cleaning may not be the fun part, but there’s a real purpose to it. We’re cleaning not just for\r cleaning sake, but also as part of an inspection process.  When you wipe down a wire, you may\r notice a frayed plug. You see a lot more detail on your equipment when it’s clean, which can help\r you identify safety or maintenance issues before they happen." captiontime="0, 6, 11.5, 17" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content4_sub3_page5_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene76" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content4_sub3_page6.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Cleaning will need to be done on a regular basis. So we keep cleaning supplies in the area and\r easily accessible." captiontime="0, 6.25" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content4_sub3_page6_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="1">
+          <keyframe action="gotoAndStop" frame="2" />
+        </animation>
+        <animation time="3">
+          <keyframe action="gotoAndStop" frame="3" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene77" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/music.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="(music playing)" captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content4_sub3_page7_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="1">
+          <keyframe action="gotoAndPlay" frame="2" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene78" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content4_sub4_page1.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="The third S is “Straighten/Set in Order”" captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content4_sub4_page1_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene79" template="stickynote" mediatype="none">
+      <audio>
+        <audiofile async="true" audio="media/Content4_sub4_page2.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Think About It! Can you think of some reasons why straightening up is important? " captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content4_sub4_page2_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene80" template="stickynote" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content4_sub4_page3.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="How did you do? Here are some of the key improvements we’ve seen from straightening up a\r workspace." captiontime="0, 4.5" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content4_sub4_page3_mc</sceneparam>
+        <sceneparam name="saved_sticky_id">stickynote_scene79</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="1">
+          <keyframe action="gotoAndStop" frame="2" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene81" template="default" mediatype="none">
+      <audio>
+        <audiofile async="true" audio="media/Content4_sub4_page4.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="One of the keys to the third S is to clearly mark and label every thing so that items can easily be\r found and put away.\r" captiontime="0, 5.75" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content4_sub4_page4_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="1">
+          <keyframe action="gotoAndPlay" frame="2" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene82" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content4_sub4_page5.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Imagine a parking lot. Lines on the asphalt clearly tell people just where to park. But what happens\r when it snows and you can’t see the lines anymore?" captiontime="0, 6.75" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content4_sub4_page5_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="1">
+          <keyframe action="gotoAndStop" frame="2" />
+        </animation>
+        <animation time="5">
+          <keyframe action="gotoAndStop" frame="3" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene83" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content4_sub4_page6.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="At an airport, each de-icing truck has a designated spot.  A manager can quickly look out and see\r which trucks are available.  And because the trucks are kept in a standard location, there’s no risk\r of an airplane wing clipping a truck." captiontime="0, 6, 11.5" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content4_sub4_page6_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene84" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content4_sub4_page7.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="A key straightening technique is Visible Arrangement Storage.  The idea is simple: label the item\r that is being stored AND put a label on the place where the item belongs.  In our plants, we can do\r this with tools, dies, fixtures, inventories - even office equipment." captiontime="0, 6.25, 11.5" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content4_sub4_page7_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="1">
+          <keyframe action="gotoAndPlay" frame="2" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene85" template="default" mediatype="none">
+      <audio>
+        <audiofile async="true" audio="media/Content4_sub4_page8.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="What tool is missing?" captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content4_sub4_page8_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene86" template="18_quizdragdrop" mediatype="none">
+      <audio>
+        <audiofile async="true" audio="media/Content4_sub4_page9.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Drag each item to its correct location on the desk." captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content4_sub4_page9_mc</sceneparam>
+        <sceneparam name="feedback_dragger1_mc_incorrect">No, that's not right.</sceneparam>
+        <sceneparam name="feedback_dragger2_mc_incorrect">No, that's not right.</sceneparam>
+        <sceneparam name="feedback_dragger3_mc_incorrect">No, that's not right.</sceneparam>
+        <sceneparam name="feedback_dragger4_mc_incorrect">No, that's not right.</sceneparam>
+        <sceneparam name="feedback_dragger5_mc_incorrect">No, that's not right.</sceneparam>
+        <sceneparam name="feedback_dragger6_mc_incorrect">No, that's not right.</sceneparam>
+        <sceneparam name="feedback_dragger7_mc_incorrect">No, that's not right.</sceneparam>
+        <sceneparam name="feedback_dragger8_mc_incorrect">No, that's not right.</sceneparam>
+      </sceneparams>
+      <dragdrop>
+        <targets id="target1_mc">Inbox</targets>
+        <targets id="target2_mc">Scotch Tape</targets>
+        <targets id="target3_mc">Calculator</targets>
+        <targets id="target4_mc">Stapler</targets>
+        <targets id="target5_mc">Phone</targets>
+        <targets id="target6_mc">Paper Clips</targets>
+        <targets id="target7_mc">Push Pins</targets>
+        <targets id="target8_mc">Rubber Bands</targets>
+        <draggers answer="1" id="dragger1_mc">Inbox</draggers>
+        <draggers answer="2" id="dragger2_mc">Scotch Tape</draggers>
+        <draggers answer="3" id="dragger3_mc">Calculator</draggers>
+        <draggers answer="4" id="dragger4_mc">Stapler</draggers>
+        <draggers answer="5" id="dragger5_mc">Phone</draggers>
+        <draggers answer="6" id="dragger6_mc">Paper Clips</draggers>
+        <draggers answer="7" id="dragger7_mc">Push Pins</draggers>
+        <draggers answer="8" id="dragger8_mc">Rubber Bands</draggers>
+        <question questiontext="Sort the items into the correct locations." />
+      </dragdrop>
+    </scene>
+    <scene id="scene87" template="default" mediatype="none">
+      <audio>
+        <audiofile async="true" audio="media/Content4_sub4_page10.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Visual tools are an important way to communicate important information, like safety. Look at this\r chart and see if you can determine when a lost time accident occurred." captiontime="0, 6.5" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content4_sub4_page10_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene88" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content4_sub4_page11.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Charts and tables are great ways to communicate how we’re doing. This chart shows a team’s\r goals by hour. As the shift progresses, actual results are filled in so we can see how well the\r production line is doing based on the customer’s needs." captiontime="0, 6.25, 12" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content4_sub4_page11_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="1">
+          <keyframe action="gotoAndPlay" frame="2" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene89" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content4_sub4_page12.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Before you continue, take a moment to think of some ways you can straighten or set in order your\r own work area…or your home." captiontime="0, 6.25" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content4_sub4_page12_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene90" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/music.mp3" />
+      </audio>
+	  <captioning>
+        <captions captiontext="(music playing)" captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content4_sub4_page13_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="1">
+          <keyframe action="gotoAndPlay" frame="2" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene91" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content4_sub5_page1.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="The 4th S is Standardize/Schedule. At a typical 5S Event, we focus on the first three Ss.  The 4th\r and 5th Ss are about making those first three S’s into habits. Standardize/Schedule simply means\r that we standardize and maintain the use of sort, straighten and sweep." captiontime="0, 8, 15" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content4_sub5_page1_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene92" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content4_sub5_page2.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Checklists and visual schedules help us identify who needs to do what by shift and help us make\r sure we’re all doing the same tasks in the same way, at the desired frequency. The idea is to clean\r up while the task is small…before the dust gets out of hand. Ideally, we clean daily with each shift." captiontime="0, 6.25, 12" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content4_sub5_page2_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene93" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/music.mp3" />
+      </audio>
+	  <captioning>
+        <captions captiontext="(music playing)" captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content4_sub5_page3_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="1">
+          <keyframe action="gotoAndPlay" frame="2" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene94" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content4_sub6_page1.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="The fifth and final S is Sustain. Sustain is about developing the discipline to make the first 4S’s a\r habit and part of our culture here at SC Johnson." captiontime="0, 7.25" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content4_sub6_page1_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene95" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content4_sub6_page2.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="As we move forward with Lean here, we’ll be using monthly audits to measure how well we’re doing with\r our S’s. Auditors will assign a grade for each S for each line." captiontime="0, 6" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content4_sub6_page2_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene96" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content4_sub6_page3.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="What’s our goal?  To be tour-ready at all times. So we don’t have to prep for an unexpected visitor\r doing a plant walkthrough. Instead, the plant is always presentable." captiontime="0, 6.25" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content4_sub6_page3_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene97" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/music.mp3" />
+      </audio>
+	  <captioning>
+        <captions captiontext="(music playing)" captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content4_sub6_page4_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="1">
+          <keyframe action="gotoAndPlay" frame="2" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene98" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content5_page1.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Kanban is a Japanese word that means signboard or signal. A simple example of a Kanban is the\r flashing next button on this page that tells you when it’s time to move on." captiontime="0, 7.5" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content5_page1_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene99" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content5_page2.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="In manufacturing terms, Kanbans are signals that tell suppliers to replenish inventory, before it’s all\r used up. When the tote is empty, the container goes back to the vendor to be filled again. The\r card tells the vendor just what is needed." captiontime="0, 6.75, 12.5" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content5_page2_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene100" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content5_page3.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Kanbans tie related processes together, as if they were connected by an invisible conveyer belt. An\r empty tote sends a signal to the next step in the process." captiontime="0, 6.75" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content5_page3_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene101" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content5_page4.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="With this Kanban, the green card gets faxed back to the vendor when the product is opened. That\r way, we never run out." captiontime="0, 6.75" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content5_page4_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene102" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content5_page5.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="When the yellow circle on the floor is empty, it means, bring more! If all the circles are occupied,\r then the maximum number of barrels is present. If the circles are empty, then you’re completely\r out." captiontime="0, 6.75, 11.75" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content5_page5_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene103" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content5_page6.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="In this office, when the last printer cartridge is taken out of the bag, it’s a sign that it’s time to fax in\r the order for replacements." captiontime="0, 6.75" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content5_page6_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene104" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content5_page7.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="A Kanban can be almost any type of signal." captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content5_page7_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="1">
+          <keyframe action="gotoAndStop" frame="2" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene105" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content5_page8.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Think About It! Can you think of any Kanbans you already use?" captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content5_page8_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene106" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/music.mp3" />
+      </audio>
+	  <captioning>
+        <captions captiontext="(music playing)" captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content5_page9_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="1">
+          <keyframe action="gotoAndPlay" frame="2" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene107" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content6_page1.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="In this lesson, we’ll look at the importance of reducing setup times." captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content6_page1_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene108" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content6_page2.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Any time that we spend on the line doing a change over is time in which we aren’t making product.\r And if we’re not making product, then we’re not making money. That’s why it’s important to get\r our setup times to the absolute minimum." captiontime="0, 5.75, 10.75" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content6_page2_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene109" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content6_page3.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="The goals of setup reduction are to reduce lead time and improve manufacturing capacity." captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content6_page3_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="2">
+          <keyframe action="gotoAndStop" frame="2" />
+        </animation>
+        <animation time="3">
+          <keyframe action="gotoAndStop" frame="3" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene110" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content6_page4.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="The Rubber Duck Factory is doing a changeover from one duck design to another. The total Setup\r Time is the elapsed time from when the last rubber duck design comes off the original run, to when\r the first GOOD rubber duck comes off the next design run at full speed." captiontime="0, 5, 10.25" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content6_page4_mc</sceneparam>
+        <sceneparam name="multiple">true</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="1">
+          <keyframe action="gotoAndPlay" frame="2" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene111" template="default" mediatype="none">
+      <audio>
+        <audiofile async="true" audio="media/Content6_page5.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="These are important terms in Setup Reduction. Click on each term to learn more." captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content6_page5_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene112" template="default" mediatype="none">
+      <audio>
+        <audiofile async="true" audio="media/Content6_page6.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Read the scenario and then identify the type of waste that this is an example of." captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content6_page6_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene113" template="default" mediatype="none">
+      <audio>
+        <audiofile async="true" audio="media/Content6_page7.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Here’s another scenario." captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content6_page7_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene114" template="default" mediatype="none">
+      <audio>
+        <audiofile async="true" audio="media/Content6_page8.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Try this scenario." captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content6_page8_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene115" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content6_page9.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Here we see a traditional setup process at the Rubber Duck Factory.  The last piece of Part A comes\r off the machine and the setup clock starts ticking. The team does the setup, then runs the first part\r and does a quick inspection.  Everything was not just right, so some scrap was produced. They\r make an adjustment to the equipment and repeat the process until they get the first good Part B\r coming out. When you start thinking LEAN, the ultimate goal is to eliminate all this middle work…\r …and get to a streamlined process where you’re just doing the setup.  There’s no scrap or rework;\r no time adjusting machines. Just lots of product being made." captiontime="0, 5.5, 11, 17.5, 22.5, 28.25, 33.5" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content6_page9_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="6">
+          <keyframe action="gotoAndStop" frame="3" />
+        </animation>
+        <animation time="8">
+          <keyframe action="gotoAndStop" frame="4" />
+        </animation>
+        <animation time="10">
+          <keyframe action="gotoAndStop" frame="5" />
+        </animation>
+        <animation time="11">
+          <keyframe action="gotoAndStop" frame="6" />
+        </animation>
+        <animation time="14">
+          <keyframe action="gotoAndStop" frame="7" />
+        </animation>
+        <animation time="17">
+          <keyframe action="gotoAndStop" frame="8" />
+        </animation>
+        <animation time="20">
+          <keyframe action="gotoAndStop" frame="9" />
+        </animation>
+        <animation time="27">
+          <keyframe action="gotoAndStop" frame="10" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene116" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content6_page10.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="The tools of 5S and Lean reduce setup time. Here’s an example from right here at SC Johnson.\r  Using tool boards helped us reduce time spent hunting for tools and parts.  But people still spent\r almost a minute during the changeover obtaining tools not to mention the added movement.\rA magnetic tool board placed right at the point of use – means that now we spend virtually no time\r looking for or obtaining tools!" captiontime="0, 7.5, 12.75, 17.75, 23.75" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content6_page10_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="6">
+          <keyframe action="gotoAndStop" frame="2" />
+        </animation>
+        <animation time="8">
+          <keyframe action="gotoAndStop" frame="3" />
+        </animation>
+        <animation time="18">
+          <keyframe action="gotoAndStop" frame="4" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene117" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content6_page11.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="There are six key steps to follow in a Lean Setup Reduction Event." captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content6_page11_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="1">
+          <keyframe action="gotoAndStop" frame="2" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene118" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content6_page12.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Prior to your Setup Reduction Lean Event, several people will be videotaped doing an actual\r changeover. During the event, this tape is used by a cross-functional team as a starting point to\r share experiences and shortcuts. The team collectively brainstorms ways to simplify the process or\r best practices observed to incorporate in the final process. Remember, different operators may do\r things slightly differently from each other. We include input from the teams doing the changeover\r so we can see those variations. Then together, the team comes up with the best, easiest and safest\r way to do the job." captiontime="0, 5.75, 11.75, 17.5, 24.75, 29.75, 36.25" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content6_page12_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="5">
+          <keyframe action="gotoAndPlay" frame="2" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene118a" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content6_page12a.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="This is an actual diagram from a changeover at SCJ.  We call this a spaghetti diagram.  \rEach arrow maps the flow of an individual through a workstation." captiontime="0, 6.5" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content6_page12a_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene119" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content6_page13.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Once a team agrees to a particular way to do a changeover, these instructions are written down.\r  Pictures help make sure everyone is doing things the exact same way. Work instructions are clearly\r posted and include specific times for each step.   Remember, each time we vary from a process, we\r produce a slightly different product. Standards ensure consistency!" captiontime="0, 5.5, 11.75, 18" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content6_page13_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene120" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content6_page14.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Here at SC Johnson, we’ve seen improvements in Setup Reduction Times by 30% up to 88%\r following a Setup Reduction Event!" captiontime="0, 7" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content6_page14_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene121" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content6_page15.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Here are some simple strategies for reducing setup time." captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content6_page15_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="1">
+          <keyframe action="gotoAndStop" frame="2" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene122" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content6_page16.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Think About It! Finding ways to be more efficient, like reducing setup time, can save the company\r millions. At profit sharing time, that will mean more money to go around. What can you do today?" captiontime="0, 5.75" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content6_page16_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene123" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/music.mp3" />
+      </audio>
+	  <captioning>
+        <captions captiontext="(music playing)" captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content6_page17_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="1">
+          <keyframe action="gotoAndPlay" frame="2" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene124" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content7_sub1_page1.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="As part of Lean, we use different problem solving tools. You might have heard of some of\r them before. We will touch on three tools in more detail during this next lesson." captiontime="0, 5.75" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content7_sub1_page1_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="1">
+          <keyframe action="gotoAndStop" frame="2" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene126" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content7_sub2_page1.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="The Five-Whys is a great way to get to the root of a problem. Essentially, you state the problem and\r then keep asking “why” until you get to the root.  The first answer or two is usually pretty superficial;\r it’s only when you start digging deeper that you get to the real cause. Brainstorm possible reasons\r at each step of the process. Eliminate the ones that you can. If you think a reason is valid, then\r investigate it." captiontime="0, 7.5, 13.5, 19, 25.5" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content7_sub2_page1_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="1">
+          <keyframe action="gotoAndStop" frame="2" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene127" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content7_sub2_page2.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Read this case study to see how the 5 Whys were put to use here at SC Johnson." captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content7_sub2_page2_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene128" template="default" mediatype="none">
+      <audio>
+        <audiofile async="true" audio="media/Content7_sub2_page3.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Here’s the rubber duck team doing a 5 Why Analysis." captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content7_sub2_page3_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="3">
+          <keyframe action="gotoAndStop" frame="2" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene129" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content7_sub2_page4.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="If you’re interested in learning more about using the 5 Why tool, talk to your manager to see\r if there is a course you can take to learn more about the 5 Why’s." captiontime="0, 5" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content7_sub2_page4_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene130" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/music.mp3" />
+      </audio>
+	  <captioning>
+        <captions captiontext="(music playing)" captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content7_sub2_page5_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="1">
+          <keyframe action="gotoAndPlay" frame="2" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene131" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content7_sub3_page1.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Value Stream Mapping is a fancy way of saying you’re going to create a picture of the entire process\r – from the time the customer places an order until they receive it.  You list out every single step of a\r process. This map helps you see where the bottlenecks are, such as where a form might get\r stopped in the process and sit on someone’s desk. The goal is to improve the total process." captiontime="0, 6.5, 12.25, 18" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content7_sub3_page1_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene132" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content7_sub3_page2.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="The red arrows show the flow of information.  The dotted lines show the flow of product.  The green\r dots show those points in the process that the customer is willing to pay for.  These are your value\r added activities.  The red dots show what the customer is not willing to pay for.  Those red dots are\r where you’ll start streamlining your process.  These are the non-value added activities.  In Lean, we\r eliminate the non-value added activities that can stop and start the process.  You will need to ask,\r how can we reduce those parts of the process in order to make things flow more smoothly and get\r the product to the customer faster?" captiontime="0, 6.5, 12.75, 19.5, 26, 32, 37.75" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content7_sub3_page2_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time=".5">
+          <keyframe action="gotoAndStop" frame="2" />
+        </animation>
+        <animation time="3">
+          <keyframe action="gotoAndStop" frame="3" />
+        </animation>
+        <animation time="6">
+          <keyframe action="gotoAndStop" frame="4" />
+        </animation>
+        <animation time="14">
+          <keyframe action="gotoAndStop" frame="5" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene133" template="default" mediatype="none">
+      <audio>
+        <audiofile async="true" audio="media/Content7_sub3_page3.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Is this question true or false?" captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content7_sub3_page3_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene134" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/music.mp3" />
+      </audio>
+	  <captioning>
+        <captions captiontext="(music playing)" captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content7_sub3_page4_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="1">
+          <keyframe action="gotoAndPlay" frame="2" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene135" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content7_sub4_page1.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Humans make errors. It’s inevitable. Machines and processes occasionally fail and make errors as\r well. Error Proofing is about preventing those errors and defects before they even happen – using\r simple ideas and tools." captiontime="0, 7.25, 14" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content7_sub4_page1_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene136" template="game_duckbelt" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content7_sub4_page2.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Pete’s doing an inspection of ducks as they come off the line. He needs to catch all the defects.\r  Remember, our minds can play tricks on us, making it easy to miss errors sometimes. See if you\r can help Pete catch all the defects." captiontime="0, 5.5, 11.5" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content7_sub4_page2_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene137" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content7_sub4_page3.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="As you may have seen, it can be really hard to detect errors and mistakes. Which is why an\r inspection process is not always the best way to ensuring 100% quality. An error or defect may or\r may not always be detected, and then the defects still have to be fixed. A better way to work would\r be to prevent those errors from happening in the first place!" captiontime="0, 6, 13.25, 20" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content7_sub4_page3_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene138" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content7_sub4_page4.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Error proofing devices are all around us. Here are some common examples. Click on each item to\r learn more." captiontime="0, 6.25" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content7_sub4_page4_mc</sceneparam>
+        <sceneparam name="multiple">true</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene139" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content7_sub4_page5.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="This diagram represents a traditional defect detection cycle.  The process begins with the Action Step, \r which really represents when the product is either produced or shipped.  If a mistake, or defect is made,\r it may not get detected until the next audit cycle, and that might not occur until an hour later or even\r the next day!  A lot of product can be produced and shipped during that time!" captiontime="0, 7, 13.25, 20" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content7_sub4_page5_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene140" template="default" mediatype="none">
+      <audio>
+        <audiofile async="true" audio="media/Content7_sub4_page6.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Defect prevention does not let bad output occur in the first place.  Feedback is immediately provided\r to the Action Step so that the error can be fixed right away.  Some lines use technology to help with\r this.  Cameras and photo eyes take pictures of product as they come through the line and\r compare it to a picture of the way the product should be.  If the camera sees a defect, it’ll kick the\r product off and shut the line down so the error can be fixed." captiontime="0, 6.5, 12.25, 18, 23.25" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content7_sub4_page6_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="13">
+          <keyframe action="gotoAndStop" frame="2" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene141" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/music.mp3" />
+      </audio>
+	  <captioning>
+        <captions captiontext="(music playing)" captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content7_sub4_page7_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="1">
+          <keyframe action="gotoAndPlay" frame="2" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene142" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content8_page1.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Total Productive Maintenance – or TPM – is about improving quality, productivity, and delivery\r through equipment reliability with the involvement of the entire team." captiontime="0, 6.75" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content8_page1_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene143" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content8_page2.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="All members of a team have the power of observation. If you listen, you can often tell when\r something’s wrong with your car. You may not know exactly what the problem is, but you can\r usually describe that annoying tick to the mechanic." captiontime="0, 6.25, 10.75" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content8_page2_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="5">
+          <keyframe action="gotoAndStop" frame="2" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene144" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content8_page3.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="We can all do a little something to help with maintenance." captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content8_page3_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="1">
+          <keyframe action="gotoAndStop" frame="2" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene145" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content8_page4.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="The goal of TPM is to maintain production equipment to provide 100% on-demand availability to\r the next process or customer." captiontime="0, 7.5" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content8_page4_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="1">
+          <keyframe action="gotoAndStop" frame="2" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene146" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content8_page5.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Click on each item to learn more about available maintenance strategies." captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content8_page5_mc</sceneparam>
+        <sceneparam name="multiple">true</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene147" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content8_page6.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Think About It!  Which maintenance strategy do you think your work area currently practices?\r  Firefighting, preventative, predictive, corrective or prevention?" captiontime="0, 5.5" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content8_page6_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene148" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content8_page7.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="You may have heard of OEE, which is the TPM way of measuring efficiency. OEE equals Equipment\r Availability times Equipment Efficiency Performance times Equipment Quality Performance." captiontime="0, 8.25" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content8_page7_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="7">
+          <keyframe action="gotoAndStop" frame="2" />
+        </animation>
+        <animation time="9">
+          <keyframe action="gotoAndStop" frame="3" />
+        </animation>
+        <animation time="11">
+          <keyframe action="gotoAndStop" frame="4" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene149" template="default" mediatype="none">
+      <audio>
+        <audiofile async="true" audio="media/Content8_page8.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Click on each element of the equation to learn more." captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content8_page8_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene150" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content8_page9.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="These are some typical numbers in a world-class plant." captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content8_page9_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene151" template="default" mediatype="none">
+      <audio>
+        <audiofile async="true" audio="media/Content8_page10.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Read the scenario and then decide which of the following OEE factors was implicated." captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content8_page10_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene152" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/music.mp3" />
+      </audio>
+	  <captioning>
+        <captions captiontext="(music playing)" captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content8_page11_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="1">
+          <keyframe action="gotoAndPlay" frame="2" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene153" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content9_page1.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="A manufacturing cell is a grouping of equipment, desks, or machines, usually in the shape of a “U”.\r  Everyone working in this cell is dedicated to the same goal.  Things flow smoothly and information\r is easily exchanged.  This setup supports one piece flow and minimizes inventory build-up.\rWorking this way means you can easily see how what you do fits with what everyone else is doing.\r Issues are identified as they happen and can be immediately addressed." captiontime="0, 7, 13.25, 18.75, 24.75" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content9_page1_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene154" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content9_page2.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="These are some of the main benefits of manufacturing/office cells." captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content9_page2_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="1">
+          <keyframe action="gotoAndStop" frame="2" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene155" template="default" mediatype="none">
+      <audio>
+        <audiofile async="true" audio="media/Content9_page3.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="At Rubber Duck Factory, they reconfigured the production line to a manufacturing cell.  Here’s what\r the team had to say." captiontime="0, 6.25" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content9_page3_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="7">
+          <keyframe action="gotoAndStop" frame="2" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene156" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/music.mp3" />
+      </audio>
+	  <captioning>
+        <captions captiontext="(music playing)" captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content9_page4_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="1">
+          <keyframe action="gotoAndPlay" frame="2" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene157" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content10_page1.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="In this final Learning Check, you’ll be representing the Rubber Duck Factory in a race against the\r Devil Duck Company. Your challenge: to correctly answer questions about Lean. For every correct\r response you make, you’ll get a Rubber Duck. For every incorrect response you make, the\r competition will get a duck. So let’s see how you stack up. Ready? Let’s go!" captiontime="0, 5.25, 12, 17.5" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content10_page1_mc</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene158" template="14_multiplechoice" mediatype="none">
+      <audio>
+        <audiofile audio="" />
+      </audio>
+	  <captioning>
+        <captions captiontext="(please refer to the screen for instructions)" captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content10_multichoice</sceneparam>
+      </sceneparams>
+      <multiplechoice>
+        <answers type="0" answer="1" weight="50" feedback="That's right.  But there's more." id="bullet1">To sweep and shine your work location so that everything looks as good as new.</answers>
+        <answers type="0" answer="1" weight="50" feedback="That's right.  But there's more." id="bullet2">To increase quality and productivity, while reducing accidents.</answers>
+        <answers type="1" answer="1" weight="100" feedback="That's right!  These are both goals of 5S." id="bullet3">All of the above.</answers>
+        <question questiontext="What's the main goal of 5S?" />
+      </multiplechoice>
+    </scene>
+    <scene id="scene159" template="14_multiplechoice" mediatype="none">
+      <audio>
+        <audiofile audio="" />
+      </audio>
+	  <captioning>
+        <captions captiontext="(please refer to the screen for instructions)" captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content10_multichoice</sceneparam>
+      </sceneparams>
+      <multiplechoice>
+        <answers type="0" answer="1" weight="50" feedback="That's right.  But there are more." id="bullet1">The silverware divider in your kitchen drawer.</answers>
+        <answers type="0" answer="1" weight="50" feedback="That's right.  But there are more." id="bullet2">The red flag on your mailbox.</answers>
+        <answers type="0" answer="1" weight="50" feedback="That's right.  But there are more." id="bullet3">A chart showing the actual results on a production line compared to the customer's requirements.</answers>
+        <answers type="1" answer="1" weight="100" feedback="That's right!  All of these are good examples." id="bullet4">All of the above.</answers>
+        <question questiontext="A Kanban is a visible sign or symbol that inventory needs to be replaced or an action needs to be taken.  Which of the following is a good example of a Kanban?" />
+      </multiplechoice>
+    </scene>
+    <scene id="scene160" template="14_multiplechoice" mediatype="none">
+      <audio>
+        <audiofile audio="" />
+      </audio>
+	  <captioning>
+        <captions captiontext="(please refer to the screen for instructions)" captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content10_multichoice</sceneparam>
+      </sceneparams>
+      <multiplechoice>
+        <answers type="0" answer="1" weight="100" feedback="That's right.  Paint is an essential part of a duck's design, so it adds value to the process." id="bullet1">Filling the paint canister on the Rubber Duck machine.</answers>
+        <answers type="0" answer="1" weight="0" feedback="No.  Customers don't want to pay for maintenance." id="bullet2">Shutting down the line to replace a torn conveyor belt.</answers>
+        <answers type="0" answer="1" weight="0" feedback="No.  Customers don't want to pay for quality inspections." id="bullet3">Checking finished Rubber Ducks for defects.</answers>
+        <question questiontext="Adding value to a process means that you're doing something that the customer will be willing to pay for.  Which of the following would be considered a Value Added activity?" />
+      </multiplechoice>
+    </scene>
+    <scene id="scene161" template="14_multiplechoice" mediatype="none">
+      <audio>
+        <audiofile audio="" />
+      </audio>
+	  <captioning>
+        <captions captiontext="(please refer to the screen for instructions)" captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content10_multichoice</sceneparam>
+      </sceneparams>
+      <multiplechoice>
+        <answers type="0" answer="1" weight="0" feedback="That's not the answer we're looking for.  While this is a nice benefit of sorting, it's not the main goal." id="bullet1">To clear out any unneeded junk and donate it to charity.</answers>
+        <answers type="0" answer="1" weight="0" feedback="Not quite.  We don't want to make less used items unavailable.  They should still be accessible, just not stored right at the center of things." id="bullet2">To create a workspace where only the things most used are available.</answers>
+        <answers type="0" answer="1" weight="100" feedback="That's right!  When you streamline a workspace, you help increase safety, productivity and quality!" id="bullet3">To create a workspace where only the things most used are right on the work floor.</answers>
+        <question questiontext="What is one of the main goals of the 5S Sorting Activity?" />
+      </multiplechoice>
+    </scene>
+    <scene id="scene162" template="14_multiplechoice" mediatype="none">
+      <audio>
+        <audiofile audio="" />
+      </audio>
+	  <captioning>
+        <captions captiontext="(please refer to the screen for instructions)" captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content10_multichoice</sceneparam>
+      </sceneparams>
+      <multiplechoice>
+        <answers type="0" answer="1" weight="0" feedback="That's a correct statement.  Inventory needs to be stored and heated or cooled." id="bullet1">Excess inventory needs to be stored and transported, which costs money.  And that's waste.</answers>
+        <answers type="0" answer="1" weight="100" feedback="You got it.  This is the wrong statement.  It might be counter-intuitive, but storing all that extra product costs money and time." id="bullet2">Excess inventory is not an example of waste.  Actually, having extra inventory means we can be more responsive to customer requests.</answers>
+        <answers type="0" answer="1" weight="0" feedback="That's a correct statement.  That space could be used for other value added activities." id="bullet3">Excess inventory takes up space that could be used for other production lines, which is wasteful.</answers>
+        <question questiontext="Which of the following statements about excess inventory is NOT true?" />
+      </multiplechoice>
+    </scene>
+    <scene id="scene163" template="14_multiplechoice" mediatype="none">
+      <audio>
+        <audiofile audio="" />
+      </audio>
+	  <captioning>
+        <captions captiontext="(please refer to the screen for instructions)" captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content10_multichoice</sceneparam>
+      </sceneparams>
+      <multiplechoice>
+        <answers type="0" answer="1" weight="0" feedback="That's incorrect.  Equipment Availability is a percentage of how much time a piece of equipment is actually up and running." id="bullet1">EA</answers>
+        <answers type="0" answer="1" weight="0" feedback="Nope.  Equipment Efficiency Performance is a measurement of the number of units that were produced in the time the equipment was running and able to produce?" id="bullet2">EEP</answers>
+        <answers type="0" answer="1" weight="100" feedback="That's right!  Equipment Quality Performance is a measurement of how many products that were made that were actually sellable." id="bullet3">EQP</answers>
+        <question questiontext="OEE = EA (Equipment Availability) x EEP (Equipment Efficiency Performance) x EQP (Equipment Quality Performance).  The Rubber Duck Factory had a decline in their OEE today because a run of ducks came out with smeared beaks.  Which factor in the equation did this represent?" />
+      </multiplechoice>
+    </scene>
+    <scene id="scene164" template="18_quizdragdrop" mediatype="none">
+      <audio>
+        <audiofile audio="" />
+      </audio>
+	  <captioning>
+        <captions captiontext="(please refer to the screen for instructions)" captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content10_page8</sceneparam>
+        <sceneparam name="caption_dragger1_mc">Paint Solvent Container: Contains paint solvent.  This is used every day.</sceneparam>
+        <sceneparam name="caption_dragger2_mc">Toolbox: Contains specialty tools that are used monthly for basic maintenance.</sceneparam>
+        <sceneparam name="caption_dragger3_mc">Box: This box contains a worn out conveyor belt.</sceneparam>
+        <sceneparam name="feedback_dragger1_mc_incorrect">Items that are used every day should be kept close by.  This does NOT go into the Red Tag Area.</sceneparam>
+        <sceneparam name="feedback_dragger2_mc_incorrect">Items that have been used within the last 30 days should be stored near to the workspace, but not right in it.  This does NOT go into the Red Tag Area.</sceneparam>
+        <sceneparam name="feedback_dragger3_mc_correct">That's right.  This should definitely go in the Red Tag Area!</sceneparam>
+      </sceneparams>
+      <dragdrop>
+        <targets id="target1_mc">Target One</targets>
+        <draggers answer="undefined" id="dragger1_mc">Paint Solvent Container</draggers>
+        <draggers answer="undefined" id="dragger2_mc">Toolbox</draggers>
+        <draggers answer="1" id="dragger3_mc">Box</draggers>
+        <question questiontext="Which of these items should be moved into the Red Tag Area?  Rollover each item for a brief description and then drag the correct item into the Red Tag Area." />
+      </dragdrop>
+    </scene>
+    <scene id="scene165" template="14_multiplechoice" mediatype="none">
+      <audio>
+        <audiofile audio="" />
+      </audio>
+	  <captioning>
+        <captions captiontext="(please refer to the screen for instructions)" captiontime="0" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content10_multichoice</sceneparam>
+      </sceneparams>
+      <multiplechoice>
+        <answers type="0" answer="1" weight="100" feedback="That's right!  This can be done while the machine is operating." id="bullet1">Bringing the appropriate tools to the plant floor</answers>
+        <answers type="0" answer="1" weight="0" feedback="No.  That's an example of an Adjustment." id="bullet2">Adjusting the flow level in order to get the run going correctly</answers>
+        <answers type="0" answer="1" weight="0" feedback="No.  That would be an example of Internal Setup Activities that must be performed while the machine is shut down." id="bullet3">Installing the necessary tooling to run the next product</answers>
+        <question questiontext="External Setup activities are things that can be done while a machine is operating.  Which of these is an example of External Setup?" />
+      </multiplechoice>
+    </scene>
+    <scene id="scene166" template="14_multiplechoice" mediatype="none">
+      <audio>
+        <audiofile audio="" />
+      </audio>
+	  <captioning>
+        <captions captiontext="(please refer to the screen for instructions)" captiontime="0" />
+      </captioning>
+	  <sceneparams>
+        <sceneparam name="symbol">content10_multichoice</sceneparam>
+      </sceneparams>
+      <multiplechoice>
+        <answers type="0" answer="1" weight="100" feedback="That's right.  Error proofing is about PREVENTING defects." id="bullet1">They make it hard to make mistakes, thus preventing errors and defects before they happen.</answers>
+        <answers type="0" answer="1" weight="0" feedback="That's not it.  Error proofing ensures that mistakes don't happen." id="bullet2">They save money by turning off equipment when it's unused.</answers>
+        <answers type="0" answer="1" weight="0" feedback="That's not it.  LO/TO is still needed to enter machines." id="bullet3">They prevent the need for Lock Out / Tag Out.</answers>
+        <question questiontext="A sensor that turns a machine off when you get too close is an example of Error Proofing.  What's the value in such devices?" />
+      </multiplechoice>
+    </scene>
+    <scene id="scene167" template="14_multiplechoice" mediatype="none">
+      <audio>
+        <audiofile audio="" />
+      </audio>
+	  <captioning>
+        <captions captiontext="(please refer to the screen for instructions)" captiontime="0" />
+      </captioning>
+	  <sceneparams>
+        <sceneparam name="symbol">content10_multichoice</sceneparam>
+      </sceneparams>
+      <multiplechoice>
+        <answers type="0" answer="1" weight="100" feedback="That's right.  Instead of practicing TPM, they're fixing issues as they occur.  This is a really reactive model and not very effective in the long run." id="bullet1">Firefighting</answers>
+        <answers type="0" answer="1" weight="0" feedback="That's not it.  If they were practicing TPM, then they would be doing predictive maintenance, which is about predicting errors before they occur." id="bullet2">Corrective</answers>
+        <answers type="0" answer="1" weight="0" feedback="That’s not it.  If they were practicing TPM, then they would be practicing predictive maintenance, which is about predicting errors before they occur." id="bullet3">Predictive</answers>
+        <question questiontext="A company that is &lt;b&gt;not&lt;b&gt; practicing Total Productive Maintenance (TPM) is often in which mode when it comes to maintenance?" />
+      </multiplechoice>
+    </scene>
+    <scene id="scene168" template="14_multiplechoice" mediatype="none">
+      <audio>
+        <audiofile audio="" />
+      </audio>
+	  <captioning>
+        <captions captiontext="(please refer to the screen for instructions)" captiontime="0" />
+      </captioning>
+	  <sceneparams>
+        <sceneparam name="symbol">content10_multichoice</sceneparam>
+      </sceneparams>
+      <multiplechoice>
+        <answers type="0" answer="1" weight="0" feedback="Nope.  That's a shift change." id="bullet1">The amount of time needed to change the employee line up during a shift change.</answers>
+        <answers type="0" answer="1" weight="0" feedback="No.  That's an outdated view of setup time.  In Lean, we include the TOTAL time needed to switch over a product and get things running." id="bullet2">The amount of time needed to switch the machine parts from the old run to the new.</answers>
+        <answers type="0" answer="1" weight="100" feedback="That's it!" id="bullet3">The amount of time in a change over from the last good product off the line to the first good product off the line in the next run.</answers>
+        <question questiontext="What does setup time include?" />
+      </multiplechoice>
+    </scene>
+    <scene id="scene169" template="18_quizdragdrop" mediatype="none">
+      <audio>
+        <audiofile audio="" />
+      </audio>
+	  <captioning>
+        <captions captiontext="(please refer to the screen for instructions)" captiontime="0" />
+      </captioning>
+	  <sceneparams>
+        <sceneparam name="symbol">content10_page12</sceneparam>
+        <sceneparam name="feedback_dragger1_mc_correct">That's right!</sceneparam>
+        <sceneparam name="feedback_dragger2_mc_correct">That's right!</sceneparam>
+        <sceneparam name="feedback_dragger3_mc_correct">That's right!</sceneparam>
+        <sceneparam name="feedback_dragger4_mc_correct">That's right!</sceneparam>
+        <sceneparam name="feedback_dragger5_mc_correct">That's right!</sceneparam>
+        <sceneparam name="feedback_dragger6_mc_incorrect">That's not right.</sceneparam>
+        <sceneparam name="feedback_dragger7_mc_incorrect">That's not right.</sceneparam>
+        <sceneparam name="feedback_dragger8_mc_incorrect">That's silly!</sceneparam>
+      </sceneparams>
+      <dragdrop>
+        <targets id="target1_mc">5S</targets>
+        <draggers answer="1" id="dragger1_mc">Sort</draggers>
+        <draggers answer="1" id="dragger2_mc">Shine</draggers>
+        <draggers answer="1" id="dragger3_mc">Set</draggers>
+        <draggers answer="1" id="dragger4_mc">Standardize/Schedule</draggers>
+        <draggers answer="1" id="dragger5_mc">Sustain</draggers>
+        <draggers answer="undefined" id="dragger6_mc">Service</draggers>
+        <draggers answer="undefined" id="dragger7_mc">Settle</draggers>
+        <draggers answer="undefined" id="dragger8_mc">Surrender</draggers>
+        <question questiontext="Which of these are part of 5S?  Drag the right ones into the 5S logo and leave the rest." />
+      </dragdrop>
+    </scene>
+    <scene id="scene170" template="14_multiplechoice" mediatype="none">
+      <audio>
+        <audiofile audio="" />
+      </audio>
+	  <captioning>
+        <captions captiontext="(please refer to the screen for instructions)" captiontime="0" />
+      </captioning>
+	  <sceneparams>
+        <sceneparam name="symbol">content10_multichoice</sceneparam>
+      </sceneparams>
+      <multiplechoice>
+        <answers type="0" answer="1" weight="100" feedback="That's right.  A strong team ensures that employees share a common purpose and are motivated by a common mission." id="bullet1">The ability for employees to work effectively as a team.</answers>
+        <answers type="0" answer="1" weight="0" feedback="That's not the answer we're looking for." id="bullet2">A good performance review process to ensure that employees are doing their jobs well.</answers>
+        <answers type="0" answer="1" weight="0" feedback="That's not it.  Although a good manager is essential, they should play the role of a coach and not a dictator." id="bullet3">A strong manager who can effectively tell employees what to do and when.</answers>
+        <question questiontext="Successful world class organizations know that customer satisfaction leads to profits, which creates jobs.  What essential ingredient is needed at a workplace to ensure that customers are satisfied with your products and services?" />
+      </multiplechoice>
+    </scene>
+    <scene id="scene171" template="14_multiplechoice" mediatype="none">
+      <audio>
+        <audiofile audio="" />
+      </audio>
+	  <captioning>
+        <captions captiontext="(please refer to the screen for instructions)" captiontime="0" />
+      </captioning>
+	  <sceneparams>
+        <sceneparam name="symbol">content10_multichoice</sceneparam>
+      </sceneparams>
+      <multiplechoice>
+        <answers type="0" answer="1" weight="0" feedback="That's not the answer we're looking for.  Value Stream Mapping is a valuable Lean tool." id="bullet1">Value Stream Map</answers>
+        <answers type="0" answer="1" weight="100" feedback="Correct, this is not a Lean tool." id="bullet2">Guess and Check</answers>
+        <answers type="0" answer="1" weight="0" feedback="That's not the answer we're looking for.  This is a valuable Lean tool." id="bullet3">The 5 Why's</answers>
+        <question questiontext="Which of the following tools is &lt;b&gt;not&lt;b&gt; a Lean tool?" />
+      </multiplechoice>
+    </scene>
+    <scene id="scene172" template="14_multiplechoice" mediatype="none">
+      <audio>
+        <audiofile audio="" />
+      </audio>
+	  <captioning>
+        <captions captiontext="(please refer to the screen for instructions)" captiontime="0" />
+      </captioning>
+	  <sceneparams>
+        <sceneparam name="symbol">content10_multichoice</sceneparam>
+      </sceneparams>
+      <multiplechoice>
+        <answers type="0" answer="1" weight="0" feedback="That's not it.  But Toyota did help make it popular." id="bullet1">Japanese auto maker Toyota</answers>
+        <answers type="0" answer="1" weight="0" feedback="That's not it, but we are implementing 5S!" id="bullet2">SC Johnson</answers>
+        <answers type="0" answer="1" weight="100" feedback="Correct; it came from Henry Ford's CAN DO methodology." id="bullet3">Ford Motor Company</answers>
+        <question questiontext="What is the origin of the 5S method?" />
+      </multiplechoice>
+    </scene>
+    <scene id="scene173" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content10_page17.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Congratulations.  So let’s see how well your production line stacked up to the competition – and\r then we’ll see what you’ve won!\r" captiontime="0, 6.5" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content10_page17_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="1">
+          <keyframe action="gotoAndStop" frame="2" />
+        </animation>
+        <animation time="7">
+          <keyframe action="gotoAndStop" frame="3" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene174" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content11_page1.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Good job! I hope you’ve had fun with this course and have learned a few things along the way\r about Lean and how we can use Lean Tools to improve productivity here at SC Johnson." captiontime="0, 5.75" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content11_page1_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="1">
+          <keyframe action="gotoAndStop" frame="2" />
+        </animation>
+        <animation time="3">
+          <keyframe action="gotoAndStop" frame="3" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene175" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content11_page2.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="Your next step will be to join us in a classroom program about using Lean tools. We’ll review many\r of the key points you’ve learned here and do some group exercises to apply the Lean Tools to real-\rlife examples." captiontime="0, 6.5, 12" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content11_page2_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="1">
+          <keyframe action="gotoAndStop" frame="2" />
+        </animation>
+        <animation time="3">
+          <keyframe action="gotoAndStop" frame="3" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene176" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content11_page3.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="After that, your work team will have a series of Lean Events. We typically start with a 5S event and\r then a Setup Reduction event. In these events, we take the Lean tools and work together as a team\r to improve your work space." captiontime="0, 6.5, 13" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content11_page3_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="1">
+          <keyframe action="gotoAndStop" frame="2" />
+        </animation>
+        <animation time="3">
+          <keyframe action="gotoAndStop" frame="3" />
+        </animation>
+        <animation time="5">
+          <keyframe action="gotoAndStop" frame="4" />
+        </animation>
+      </animations>
+    </scene>
+    <scene id="scene177" template="default" mediatype="none">
+      <audio>
+        <audiofile audio="media/Content11_page4.mp3" />
+      </audio>
+      <captioning>
+        <captions captiontext="In the meantime, think about all the ways you can be using Lean – both at work and at home. \r And good luck in going Lean!" captiontime="0, 6.5" />
+      </captioning>
+      <sceneparams>
+        <sceneparam name="symbol">content11_page4_mc</sceneparam>
+      </sceneparams>
+      <animations>
+        <animation time="1">
+          <keyframe action="gotoAndStop" frame="2" />
+        </animation>
+        <animation time="3">
+          <keyframe action="gotoAndStop" frame="3" />
+        </animation>
+        <animation time="5">
+          <keyframe action="gotoAndStop" frame="4" />
+        </animation>
+      </animations>
+    </scene>
+  </scenes>
+  <sequences>
+    <!--"sequence" and "scene" nodes deprecated.
+        a sequence is now a series of "step" nodes, each of which can denote either an individual scene or another sequence.
+        "step" nodes have a "type" attribute which each either "scene" or "sequence".
+        nested sequence nodes will always be of sequence type "sub".
+        -->
+    <step desc="sequence" id="sequence1" type="lesson" name="Introduction" image="">
+      <step desc="scene" id="scene1" />
+      <step desc="scene" id="scene2" />
+      <step desc="scene" id="scene3" />
+      <step desc="scene" id="scene4" />
+      <step desc="scene" id="scene5" />
+      <step desc="scene" id="scene6" />
+      <step desc="scene" id="scene7" />
+      <step desc="scene" id="scene8" />
+    </step>
+    <step desc="sequence" id="sequence2" type="lesson" name="Customer Satisfaction &amp; Business Waste" image="">
+      <step desc="sequence" id="sequence2_1" name="World Class Organizations" image="">
+        <step desc="scene" id="scene9" />
+        <step desc="scene" id="scene10" />
+        <step desc="scene" id="scene11" />
+        <step desc="scene" id="scene12" />
+        <step desc="scene" id="scene13" />
+        <step desc="scene" id="scene14" />
+        <step desc="scene" id="scene15" />
+      </step>
+      <step desc="sequence" id="sequence2_2" name="Defining Customer Satisfaction" image="">
+        <step desc="scene" id="scene16" />
+        <step desc="scene" id="scene17" />
+        <step desc="scene" id="scene18" />
+        <step desc="scene" id="scene19" />
+        <step desc="scene" id="scene20" />
+        <step desc="scene" id="scene21" />
+        <step desc="scene" id="scene22" />
+        <step desc="scene" id="scene23" />
+      </step>
+      <step desc="sequence" id="sequence2_3" name="Types of Waste" image="">
+        <step desc="scene" id="scene24" />
+        <step desc="scene" id="scene25" />
+        <step desc="scene" id="scene26" />
+        <step desc="scene" id="scene27" />
+        <step desc="scene" id="scene28" />
+      </step>
+      <step desc="sequence" id="sequence2_4" name="Improving Productivity" image="">
+        <step desc="scene" id="scene29" />
+        <step desc="scene" id="scene30" />
+        <step desc="scene" id="scene31" />
+        <step desc="scene" id="scene32" />
+        <step desc="scene" id="scene33" />
+        <step desc="scene" id="scene34" />
+      </step>
+      <step desc="sequence" id="sequence2_5" name="Proof of the Need" image="">
+        <step desc="scene" id="scene35" />
+        <step desc="scene" id="scene36" />
+        <step desc="scene" id="scene37" />
+      </step>
+    </step>
+    <step desc="sequence" id="sequence3" type="lesson" name="Team Building" image="">
+      <step desc="scene" id="scene38" />
+      <step desc="scene" id="scene39" />
+      <step desc="scene" id="scene40" />
+      <step desc="scene" id="scene41" />
+      <step desc="scene" id="scene42" />
+      <step desc="scene" id="scene43" />
+      <step desc="scene" id="scene44" />
+      <step desc="scene" id="scene45" />
+      <step desc="scene" id="scene46" />
+      <step desc="scene" id="scene47" />
+    </step>
+    <step desc="sequence" id="sequence4" type="lesson" name="5S: Paving the Approach" image="">
+      <step desc="sequence" id="sequence4_1" name="What is 5S?" image="">
+        <step desc="scene" id="scene48" />
+        <step desc="scene" id="scene49" />
+        <step desc="scene" id="scene51" />
+        <step desc="scene" id="scene52" />
+        <step desc="scene" id="scene53" />
+        <step desc="scene" id="scene54" />
+      </step>
+      <step desc="sequence" id="sequence4_2" name="Sort" image="">
+        <step desc="scene" id="scene56" />
+        <step desc="scene" id="scene57" />
+        <step desc="scene" id="scene58" />
+        <step desc="scene" id="scene59" />
+        <step desc="scene" id="scene60" />
+        <step desc="scene" id="scene61" />
+        <step desc="scene" id="scene62" />
+        <step desc="scene" id="scene63" />
+        <step desc="scene" id="scene64" />
+        <step desc="scene" id="scene65" />
+        <step desc="scene" id="scene66" />
+        <step desc="scene" id="scene67" />
+        <step desc="scene" id="scene68" />
+        <step desc="scene" id="scene69" />
+        <step desc="scene" id="scene70" />
+      </step>
+      <step desc="sequence" id="sequence4_3" name="Sweep/Shine" image="">
+        <step desc="scene" id="scene71" />
+        <step desc="scene" id="scene72" />
+        <step desc="scene" id="scene73" />
+        <step desc="scene" id="scene74" />
+        <step desc="scene" id="scene75" />
+        <step desc="scene" id="scene76" />
+        <step desc="scene" id="scene77" />
+      </step>
+      <step desc="sequence" id="sequence4_4" name="Straighten/Set in Order" image="">
+        <step desc="scene" id="scene78" />
+        <step desc="scene" id="scene79" />
+        <step desc="scene" id="scene80" />
+        <step desc="scene" id="scene81" />
+        <step desc="scene" id="scene82" />
+        <step desc="scene" id="scene83" />
+        <step desc="scene" id="scene84" />
+        <step desc="scene" id="scene85" />
+        <step desc="scene" id="scene86" />
+        <step desc="scene" id="scene87" />
+        <step desc="scene" id="scene88" />
+        <step desc="scene" id="scene89" />
+        <step desc="scene" id="scene90" />
+      </step>
+      <step desc="sequence" id="sequence4_5" name="Standardize/Schedule" image="">
+        <step desc="scene" id="scene91" />
+        <step desc="scene" id="scene92" />
+        <step desc="scene" id="scene93" />
+      </step>
+      <step desc="sequence" id="sequence4_6" name="Sustain" image="">
+        <step desc="scene" id="scene94" />
+        <step desc="scene" id="scene95" />
+        <step desc="scene" id="scene96" />
+        <step desc="scene" id="scene97" />
+      </step>
+    </step>
+    <step desc="sequence" id="sequence5" type="lesson" name="Kanbans" image="">
+      <step desc="scene" id="scene98" />
+      <step desc="scene" id="scene99" />
+      <step desc="scene" id="scene100" />
+      <step desc="scene" id="scene101" />
+      <step desc="scene" id="scene102" />
+      <step desc="scene" id="scene103" />
+      <step desc="scene" id="scene104" />
+      <step desc="scene" id="scene105" />
+      <step desc="scene" id="scene106" />
+    </step>
+    <step desc="sequence" id="sequence6" type="lesson" name="Setup Reduction" image="">
+      <step desc="scene" id="scene107" />
+      <step desc="scene" id="scene108" />
+      <step desc="scene" id="scene109" />
+      <step desc="scene" id="scene110" />
+      <step desc="scene" id="scene111" />
+      <step desc="scene" id="scene112" />
+      <step desc="scene" id="scene113" />
+      <step desc="scene" id="scene114" />
+      <step desc="scene" id="scene115" />
+      <step desc="scene" id="scene116" />
+      <step desc="scene" id="scene117" />
+      <step desc="scene" id="scene118" />
+      <step desc="scene" id="scene118a" />
+      <step desc="scene" id="scene119" />
+      <step desc="scene" id="scene120" />
+      <step desc="scene" id="scene121" />
+      <step desc="scene" id="scene122" />
+      <step desc="scene" id="scene123" />
+    </step>
+    <step desc="sequence" id="sequence7" type="lesson" name="Problem Solving Tools" image="">
+      <step desc="sequence" id="sequence7_1" name="Problem Solving Tools" image="">
+        <step desc="scene" id="scene124" />
+      </step>
+      <step desc="sequence" id="sequence7_2" name="5 Whys" image="">
+        <step desc="scene" id="scene126" />
+        <step desc="scene" id="scene127" />
+        <step desc="scene" id="scene128" />
+        <step desc="scene" id="scene129" />
+        <step desc="scene" id="scene130" />
+      </step>
+      <step desc="sequence" id="sequence7_3" name="Value Stream Mapping" image="">
+        <step desc="scene" id="scene131" />
+        <step desc="scene" id="scene132" />
+        <step desc="scene" id="scene133" />
+        <step desc="scene" id="scene134" />
+      </step>
+      <step desc="sequence" id="sequence7_4" name="Error Proofing" image="">
+        <step desc="scene" id="scene135" />
+        <step desc="scene" id="scene136" />
+        <step desc="scene" id="scene137" />
+        <step desc="scene" id="scene138" />
+        <step desc="scene" id="scene139" />
+        <step desc="scene" id="scene140" />
+        <step desc="scene" id="scene141" />
+      </step>
+    </step>
+    <step desc="sequence" id="sequence8" type="lesson" name="Total Productive Maintenance" image="">
+      <step desc="scene" id="scene142" />
+      <step desc="scene" id="scene143" />
+      <step desc="scene" id="scene144" />
+      <step desc="scene" id="scene145" />
+      <step desc="scene" id="scene146" />
+      <step desc="scene" id="scene147" />
+      <step desc="scene" id="scene148" />
+      <step desc="scene" id="scene149" />
+      <step desc="scene" id="scene150" />
+      <step desc="scene" id="scene151" />
+      <step desc="scene" id="scene152" />
+    </step>
+    <step desc="sequence" id="sequence9" type="lesson" name="Manufacturing Cells" image="">
+      <step desc="scene" id="scene153" />
+      <step desc="scene" id="scene154" />
+      <step desc="scene" id="scene155" />
+      <step desc="scene" id="scene156" />
+    </step>
+    <step desc="sequence" id="sequence10" type="assessment" name="Learning Check" image="">
+      <step desc="scene" id="scene157" />
+      <step desc="scene" id="scene158" />
+      <step desc="scene" id="scene159" />
+      <step desc="scene" id="scene160" />
+      <step desc="scene" id="scene161" />
+      <step desc="scene" id="scene162" />
+      <step desc="scene" id="scene163" />
+      <step desc="scene" id="scene164" />
+      <step desc="scene" id="scene165" />
+      <step desc="scene" id="scene166" />
+      <step desc="scene" id="scene167" />
+      <step desc="scene" id="scene168" />
+      <step desc="scene" id="scene169" />
+      <step desc="scene" id="scene170" />
+      <step desc="scene" id="scene171" />
+      <step desc="scene" id="scene172" />
+      <step desc="scene" id="scene173" />
+    </step>
+    <step desc="sequence" id="sequence11" type="lesson" name="Conclusion" image="">
+      <step desc="scene" id="scene174" />
+      <step desc="scene" id="scene175" />
+      <step desc="scene" id="scene176" />
+      <step desc="scene" id="scene177" />
+    </step>
+  </sequences>
+</module>
