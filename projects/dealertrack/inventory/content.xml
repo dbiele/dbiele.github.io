@@ -1,0 +1,1548 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<module>
+  <administration>
+    <admin courseversion="1.0" menunavigation="nolesson" navigation="open" coursetype="lms" serverurl="/secured/course_certificate.aspx" coursedate="undefined,undefined,undefined" courseexpiration="356" coursetype="lms" coursetitle="InventoryPro" id="trading" />
+	</administration>
+  <audio path="media/" />
+  <states>
+    <state name="default" enabledControls="exit, help, menu, caption, replay, back, pause, next, home, mediapause" />
+    <state name="menu" enabledControls="" />
+    <state name="content_admintext" enabledControls="exit, help, back, next, pause, play, caption, mediapause" />
+    <state name="content_main" enabledControls="exit, help, menu, caption, replay, back, pause, home, mediapause" />
+    <state name="content_courseconclusion" enabledControls="exit, help, home, mediapause" />
+    <state name="question_main" enabledControls="exit, help, menu, caption, replay, back, pause, next, home, mediapause" />
+    <state name="question_assessment" enabledControls="back, pause, next, home, mediapause" />
+    <state name="assessment_intro" enabledControls="exit, help, caption, replay, pause, home, mediapause" />
+    <state name="assessment_submit" enabledControls="exit, help" />
+    <state name="assessment_results" enabledControls="exit, help, next" />
+  </states>
+  <templates>
+    <template id="00_coursemainmenu" desc="Course Main Menu">
+      <type>menu</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.CourseMainMenu</renderer>
+    </template>
+    <template id="01_administrativetext" desc="Administrative Text">
+      <type>content</type>
+      <state>content_admintext</state>
+      <renderer>com.invision.client.renderers.AdministrativeText</renderer>
+    </template>
+    <template id="02_mainmenu" desc="Main Menu">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.MainMenu</renderer>
+    </template>
+    <template id="03_lessonoverview" desc="Lesson Overview">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.LessonOverview</renderer>
+    </template>
+    <template id="04_lessonObjectives" desc="Lesson Objectives">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.LessonObjectives</renderer>
+    </template>
+    <template id="05_imagehalfcircle" desc="Image Half Circle" showpagenumber="true" listid="pages">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.ImageHalfCircle</renderer>
+    </template>
+    <template id="06_imagetop" desc="Image Top" showpagenumber="true" listid="pages">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.ImageTop</renderer>
+    </template>
+    <template id="07_imagebottom" desc="Image Bottom" showpagenumber="true" listid="pages">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.ImageBottom</renderer>
+    </template>
+    <template id="08_imageleft" desc="Image Left" showpagenumber="true" listid="pages">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.ImageLeft</renderer>
+    </template>
+    <template id="09_imageright" desc="Image Right" showpagenumber="true" listid="pages">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.ImageRight</renderer>
+    </template>
+    <template id="10_imagefullscreen" desc="Image Full Screen" showpagenumber="true" listid="pages">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.ImageFullScreen</renderer>
+    </template>
+    <template id="11_video" desc="Video" showpagenumber="true" listid="pages">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.VideoPlayer</renderer>
+    </template>
+    <template id="12_clicktolearn" desc="Click To Learn" showpagenumber="true" listid="pages">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.ClickToLearn</renderer>
+    </template>
+    <template id="13_quizintroduction" desc="QUIZ">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.QuizIntroduction</renderer>
+    </template>
+    <template id="14_multiplechoice" desc="QUIZ">
+      <type>question</type>
+      <state>question_main</state>
+      <renderer>com.invision.client.renderers.MultipleChoice</renderer>
+    </template>
+    <template id="15_quiztruefalse" desc="QUIZ">
+      <type>question</type>
+      <state>question_main</state>
+      <renderer>com.invision.client.renderers.TrueFalse</renderer>
+    </template>
+    <template id="16_quizfillintheblank" desc="QUIZ">
+      <type>question</type>
+      <state>question_main</state>
+      <renderer>com.invision.client.renderers.FillInTheBlank</renderer>
+    </template>
+    <template id="17_quizexplore" desc="QUIZ">
+      <type>question</type>
+      <state>question_main</state>
+      <renderer>com.invision.client.renderers.Explore</renderer>
+    </template>
+    <template id="18_quizdragdrop" desc="QUIZ">
+      <type>question</type>
+      <state>question_main</state>
+      <renderer>com.invision.client.renderers.DragDrop</renderer>
+    </template>
+    <template id="18_quizdragdrop_v2" desc="QUIZ">
+      <type>question</type>
+      <state>question_main</state>
+      <renderer>com.invision.client.renderers.DragDropV2</renderer>
+    </template>
+    <template id="18_quizdragdrop_v3" desc="QUIZ">
+      <type>question</type>
+      <state>question_main</state>
+      <renderer>com.invision.client.renderers.DragDropV3</renderer>
+    </template>
+    <template id="19_rankorder" desc="QUIZ">
+      <type>question</type>
+      <state>question_main</state>
+      <renderer>com.invision.client.renderers.RankOrder</renderer>
+    </template>
+    <template id="20_lessonsummary" desc="LESSON SUMMARY">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.LessonSummary</renderer>
+    </template>
+    <template id="21_lessoncomplete" desc="LESSON COMPLETE">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.LessonComplete</renderer>
+    </template>
+    <template id="22_finalassesintro" desc="FINAL TEST">
+      <type>assessment_pre</type>
+      <state>assessment_intro</state>
+      <renderer>com.invision.client.renderers.FinalTestIntro</renderer>
+    </template>
+    <template id="23_finalasssubmit" desc="FINAL TEST">
+      <type>assessment_post</type>
+      <state>assessment_submit</state>
+      <renderer>com.invision.client.renderers.FinalTestSubmit</renderer>
+    </template>
+    <template id="24_finalassesresults" desc="FINAL TEST">
+      <type>assessment_post</type>
+      <state>assessment_results</state>
+      <renderer>com.invision.client.renderers.FinalTestResults</renderer>
+    </template>
+    <template id="25_courseconclusion" desc="FINAL">
+      <type>assessment_post</type>
+      <state>content_courseconclusion</state>
+      <renderer>com.invision.client.renderers.CourseConclusion</renderer>
+    </template>
+    <template id="26_custom" desc="CUSTOM">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.CustomContent</renderer>
+    </template>
+    <template id="27_multiplechoiceimage" desc="QUIZ">
+      <type>content</type>
+      <state>question_main</state>
+      <renderer>com.invision.client.renderers.MultipleChoice</renderer>
+    </template>
+    <template id="28_formsdiagrams" desc="Forms and Diagrams" showpagenumber="true" listid="pages">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.FormsDiagrams</renderer>
+    </template>
+    <template id="29_interactivesimulation" desc="Interactive Simulation" showpagenumber="true" listid="pages">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.InteractiveSimulation</renderer>
+    </template>
+    <template id="29_textonly" desc="Text Only" showpagenumber="true" listid="pages">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.TextOnly</renderer>
+    </template>
+    <template id="30_custom" desc="Custom" showpagenumber="true" listid="pages">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.CustomContent</renderer>
+    </template>
+    <template id="31_jobaid" desc="Job Aid">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.JobAid</renderer>
+    </template>
+    <template id="32_contemplative" desc="Contemplative" showpagenumber="true" listid="pages">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.Contemplative</renderer>
+    </template>
+    <template id="33_contemplativeprint" desc="Contemplative Print" showpagenumber="true" listid="pages">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.ContemplativePrint</renderer>
+    </template>
+  </templates>
+  <scenes>
+    <scene id="scene1" template="00_coursemainmenu" mediatype="none">
+      <coursemenus>
+        <lesson type="lesson" frame="2" image="" lessondescription="" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;CENTER&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; SIZE=&quot;14&quot; COLOR=&quot;#FFFFFF&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;Preparation Pit Stop&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="1" />
+        <lesson type="lesson" frame="6" image="" lessondescription="" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;CENTER&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; SIZE=&quot;14&quot; COLOR=&quot;#FFFFFF&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;Creating and Finding Appraisals&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="2" />
+        <lesson type="lesson" frame="16" image="" lessondescription="" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;CENTER&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; SIZE=&quot;14&quot; COLOR=&quot;#FFFFFF&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;Managing Inventory via the Inventory List&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="3" />
+        <lesson type="lesson" frame="26" image="" lessondescription="" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;CENTER&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; SIZE=&quot;14&quot; COLOR=&quot;#FFFFFF&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;Creating a Buy List and Purchasing at Auction&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="4" />
+        <lesson type="lesson" frame="36" image="" lessondescription="" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;CENTER&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; SIZE=&quot;14&quot; COLOR=&quot;#FFFFFF&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;Identifying Vehicles for Disposition via Auction&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="5" />
+        <lesson type="lesson" frame="46" image="" lessondescription="" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;CENTER&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; SIZE=&quot;14&quot; COLOR=&quot;#FFFFFF&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;Managing Inventory via Alerts&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="6" />
+        <lesson type="lesson" frame="55" image="" lessondescription="" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;CENTER&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; SIZE=&quot;14&quot; COLOR=&quot;#FFFFFF&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;Getting a Summary of the Health of your Dealership&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="7" />
+        <lesson type="lesson" frame="68" image="" lessondescription="" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;CENTER&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; SIZE=&quot;14&quot; COLOR=&quot;#FFFFFF&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;Customizing User and Department Settings&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="8" />
+		<lesson type="lesson" frame="80" image="" lessondescription="" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;CENTER&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; SIZE=&quot;14&quot; COLOR=&quot;#FFFFFF&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;The Road Ahead&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="9" />
+      </coursemenus>
+      <menus>
+        <course reminder="undefined" coursedescription="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;16&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;Select each exit below to learn about InventoryPro.&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" />
+      </menus>
+      <sceneparams>
+        <sceneparam name="frame">1</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene2" template="02_mainmenu" mediatype="none">
+	  <audio>
+        <audiofile audio="media/e1.mp3" />
+      </audio>
+      <menus>
+        <lesson sequence="sequence2_1" type="undefined" frame="3" image="icon_key" lessondescription="undefined" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;Overview&lt;/B&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="lesson1" />
+        <lesson sequence="sequence2_2" type="undefined" frame="4" image="icon_key" lessondescription="undefined" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;Content and Exercises&lt;/B&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="lesson2" />
+        <lesson sequence="sequence2_3" type="undefined" frame="5" image="icon_key" lessondescription="undefined" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;Scenarios&lt;/B&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="lesson3" />
+      </menus>
+      <sceneparams>
+        <sceneparam name="frame">2</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene3" template="30_custom" mediatype="none">
+	  <audio>
+        <audiofile audio="media/e1l1.mp3" />
+      </audio>
+      <sceneparams>
+        <sceneparam name="frame">3</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene4" template="30_custom" mediatype="none">
+	  <audio>
+        <audiofile audio="media/e1l2.mp3" />
+      </audio>
+      <sceneparams>
+        <sceneparam name="frame">4</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene5" template="30_custom" mediatype="none">
+	  <audio>
+        <audiofile audio="media/e1l3.mp3" />
+      </audio>
+      <sceneparams>
+        <sceneparam name="frame">5</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene6" template="02_mainmenu" mediatype="none">
+	  <audio>
+        <audiofile audio="media/e2.mp3" />
+      </audio>
+      <menus>
+        <lesson sequence="sequence3_1" type="undefined" frame="7" image="icon_key" lessondescription="undefined" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;What&amp;apos;s the Value?&lt;/B&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="lesson1" />
+        <lesson sequence="sequence3_2" type="undefined" frame="8" image="icon_key" lessondescription="undefined" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;The Scenario&lt;/B&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="lesson2" />
+        <lesson sequence="sequence3_3" type="undefined" frame="10" image="icon_key" lessondescription="undefined" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;The Demo&lt;/B&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="lesson3" />
+        <lesson sequence="sequence3_4" type="undefined" frame="11" image="icon_flag" lessondescription="undefined" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;Review&lt;/B&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="lesson4" />
+        <lesson sequence="sequence3_5" type="undefined" frame="12" image="icon_steerwheel" lessondescription="undefined" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;Try It Yourself&lt;/B&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="lesson5" />
+        <lesson sequence="sequence3_6" type="undefined" frame="14" image="icon_flag" lessondescription="undefined" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;Knowledge Check&lt;/B&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="lesson6" />
+      </menus>
+      <sceneparams>
+        <sceneparam name="frame">6</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene7" template="30_custom" mediatype="none">
+      <audio>
+        <audiofile audio="media/e2l1.mp3" />
+      </audio>
+	  <animations>
+        <animation time="5">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim02" />
+        </animation>
+		<animation time="7.5">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim03" />
+        </animation>
+		<animation time="10">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim04" />
+        </animation>
+		<animation time="15">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim05" />
+        </animation>
+		<animation time="16.5">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim06" />
+        </animation>
+		<animation time="18">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim07" />
+        </animation>
+		<animation time="31">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim08" />
+        </animation>
+		<animation time="38">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim09" />
+        </animation>
+		<animation time="40.5">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim10" />
+        </animation>
+		<animation time="59.5">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim11" />
+        </animation>
+		<animation time="61.5">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim12" />
+        </animation>
+		<animation time="64">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim13" />
+        </animation>
+      </animations>
+	  <sceneparams>
+        <sceneparam name="frame">7</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene8" template="30_custom" mediatype="none">
+	  <audio>
+        <audiofile audio="media/e2l2_1.mp3" />
+      </audio>
+      <sceneparams>
+        <sceneparam name="frame">8</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene9" template="30_custom" mediatype="none">
+	  <audio>
+        <audiofile audio="media/e2l2_2.mp3" />
+      </audio>
+      <sceneparams>
+        <sceneparam name="frame">9</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene10" template="30_custom" mediatype="none">
+      <sceneparams>
+        <sceneparam name="frame">10</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene11" template="18_quizdragdrop_v3" mediatype="none">
+      <dragdrop>
+        <targets id="bullet1" />
+        <targets id="bullet2" />
+        <draggers answer="1" id="drag1"></draggers>
+        <draggers answer="2" id="drag2"></draggers>
+        <draggers answer="1" id="drag3"></draggers>
+		<draggers answer="1" id="drag4"></draggers>
+		<draggers answer="1" id="drag5"></draggers>
+		<draggers answer="1" id="drag6"></draggers>
+	</dragdrop>
+	  <audio>
+        <audiofile audio="media/e2l4.mp3" async="true"/>
+      </audio>
+      <sceneparams>
+        <sceneparam name="frame">11</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene12" template="30_custom" mediatype="none">
+	  <audio>
+        <audiofile audio="media/e2l5_1.mp3" async="true"/>
+      </audio>
+      <sceneparams>
+        <sceneparam name="frame">12</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene13" template="30_custom" mediatype="none">
+      <sceneparams>
+        <sceneparam name="frame">13</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene14" template="30_custom" mediatype="none">
+	  <audio>
+        <audiofile audio="media/e2l6_1.mp3" async="true"/>
+      </audio>
+      <sceneparams>
+        <sceneparam name="frame">14</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene15" template="30_custom" mediatype="none">
+	  <audio>
+        <audiofile audio="media/e2l6_2.mp3" async="true"/>
+      </audio>
+	  	  <animations>
+        <animation time="1">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim01" />
+        </animation>
+      </animations>
+      <sceneparams>
+        <sceneparam name="frame">15</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene16" template="02_mainmenu" mediatype="none">
+	  <audio>
+        <audiofile audio="media/e3.mp3" async="true"/>
+      </audio>
+      <menus>
+        <lesson sequence="sequence4_1" type="undefined" frame="17" image="icon_key" lessondescription="undefined" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;What&amp;apos;s the Value&lt;/B&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="lesson1" />
+        <lesson sequence="sequence4_2" type="undefined" frame="18" image="icon_key" lessondescription="undefined" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;The Scenario&lt;/B&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="lesson2" />
+        <lesson sequence="sequence4_3" type="undefined" frame="20" image="icon_key" lessondescription="undefined" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;The Demo&lt;/B&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="lesson3" />
+        <lesson sequence="sequence4_4" type="undefined" frame="21" image="icon_flag" lessondescription="undefined" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;Review&lt;/B&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="lesson4" />
+        <lesson sequence="sequence4_5" type="undefined" frame="22" image="icon_steerwheel" lessondescription="undefined" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;Try It Yourself&lt;/B&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="lesson5" />
+        <lesson sequence="sequence4_6" type="undefined" frame="24" image="icon_flag" lessondescription="undefined" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;Knowledge Check&lt;/B&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="lesson6" />
+      </menus>
+      <sceneparams>
+        <sceneparam name="frame">16</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene17" template="30_custom" mediatype="none">
+      <audio>
+        <audiofile audio="media/e3l1.mp3" />
+      </audio>
+	  <animations>
+        <animation time="4">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim02" />
+        </animation>
+		<animation time="7.5">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim03" />
+        </animation>
+		<animation time="12.5">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim04" />
+        </animation>
+		<animation time="15.5">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim05" />
+        </animation>
+		<animation time="16.5">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim06" />
+        </animation>
+		<animation time="19">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim07" />
+        </animation>
+		<animation time="22">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim08" />
+        </animation>
+      </animations>
+	  <sceneparams>
+        <sceneparam name="frame">17</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene18" template="30_custom" mediatype="none">
+	  <audio>
+        <audiofile audio="media/e3l2_1.mp3" />
+      </audio>
+      <sceneparams>
+        <sceneparam name="frame">18</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene19" template="30_custom" mediatype="none">
+	  <audio>
+        <audiofile audio="media/e3l2_2.mp3" />
+      </audio>
+	  <animations>
+        <animation time="2">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim01" />
+        </animation>
+		<animation time="4">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim02" />
+        </animation>
+		<animation time="8">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim03" />
+        </animation>
+		<animation time="11">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim04" />
+        </animation>
+      </animations>
+      <sceneparams>
+        <sceneparam name="frame">19</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene20" template="30_custom" mediatype="none">
+      <sceneparams>
+        <sceneparam name="frame">20</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene21" template="18_quizdragdrop_v3" mediatype="none">
+      <dragdrop>
+        <targets id="bullet1" />
+        <targets id="bullet2" />
+        <draggers answer="2" id="drag1"></draggers>
+        <draggers answer="1" id="drag2"></draggers>
+        <draggers answer="1" id="drag3"></draggers>
+		<draggers answer="2" id="drag4"></draggers>
+		<draggers answer="1" id="drag5"></draggers>
+		<draggers answer="1" id="drag6"></draggers>
+		<draggers answer="2" id="drag7"></draggers>
+	</dragdrop>
+	  <audio>
+        <audiofile audio="media/e3l5.mp3" async="true"/>
+      </audio>
+      <sceneparams>
+        <sceneparam name="frame">21</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene22" template="30_custom" mediatype="none">
+	  <audio>
+        <audiofile audio="media/e3l4.mp3" />
+      </audio>
+      <sceneparams>
+        <sceneparam name="frame">22</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene23" template="30_custom" mediatype="none">
+      <sceneparams>
+        <sceneparam name="frame">23</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene24" template="30_custom" mediatype="none">
+	  <audio>
+        <audiofile audio="media/e3l6_1.mp3" async="true"/>
+      </audio>
+      <sceneparams>
+        <sceneparam name="frame">24</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene25" template="30_custom" mediatype="none">
+	  <audio>
+        <audiofile audio="media/e3l6_2.mp3" />
+      </audio>
+	  	  <animations>
+        <animation time="1">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim01" />
+        </animation>
+      </animations>
+      <sceneparams>
+        <sceneparam name="frame">25</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene26" template="02_mainmenu" mediatype="none">
+	  <audio>
+        <audiofile audio="media/e4.mp3" />
+      </audio>
+      <menus>
+        <lesson sequence="sequence5_1" type="undefined" frame="27" image="icon_key" lessondescription="undefined" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;What&amp;apos;s the Value&lt;/B&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="lesson1" />
+        <lesson sequence="sequence5_2" type="undefined" frame="28" image="icon_key" lessondescription="undefined" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;The Scenario&lt;/B&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="lesson2" />
+        <lesson sequence="sequence5_3" type="undefined" frame="30" image="icon_key" lessondescription="undefined" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;The Demo&lt;/B&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="lesson3" />
+        <lesson sequence="sequence5_4" type="undefined" frame="31" image="icon_flag" lessondescription="undefined" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;Review&lt;/B&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="lesson4" />
+        <lesson sequence="sequence5_5" type="undefined" frame="32" image="icon_steerwheel" lessondescription="undefined" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;Try It Yourself&lt;/B&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="lesson5" />
+        <lesson sequence="sequence5_6" type="undefined" frame="34" image="icon_flag" lessondescription="undefined" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;Knowledge Check&lt;/B&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="lesson6" />
+      </menus>
+      <sceneparams>
+        <sceneparam name="frame">26</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene27" template="30_custom" mediatype="none">
+      <audio>
+        <audiofile audio="media/e4l1.mp3" />
+      </audio>
+	  <animations>
+        <animation time="3">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim02" />
+        </animation>
+		<animation time="10">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim03" />
+        </animation>
+		<animation time="12.25">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim04" />
+        </animation>
+		<animation time="13.5">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim05" />
+        </animation>
+		<animation time="14.5">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim06" />
+        </animation>
+		<animation time="15.75">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim07" />
+        </animation>
+		<animation time="17.5">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim08" />
+        </animation>
+		<animation time="19">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim09" />
+        </animation>
+		<animation time="33">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim10" />
+        </animation>
+		<animation time="36.5">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim11" />
+        </animation>
+		<animation time="57.75">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim12" />
+        </animation>
+		<animation time="67">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim13" />
+        </animation>
+		<animation time="68.5">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim14" />
+        </animation>
+		<animation time="70">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim15" />
+        </animation>
+		<animation time="72.5">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim16" />
+        </animation>
+		<animation time="75">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim17" />
+        </animation>
+		<animation time="81.5">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim18" />
+        </animation>
+		<animation time="84">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim19" />
+        </animation>
+		<animation time="86.5">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim20" />
+        </animation>
+      </animations>
+	  <sceneparams>
+        <sceneparam name="frame">27</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene28" template="30_custom" mediatype="none">
+	  <audio>
+        <audiofile audio="media/e4l2_1.mp3" />
+      </audio>
+      <sceneparams>
+        <sceneparam name="frame">28</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene29" template="30_custom" mediatype="none">
+	  <audio>
+        <audiofile audio="media/e4l2_2.mp3" />
+      </audio>
+	  	  <animations>
+        <animation time="5">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim01" />
+        </animation>
+		<animation time="7">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim02" />
+        </animation>
+		<animation time="9">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim03" />
+        </animation>
+		<animation time="12">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim04" />
+        </animation>
+		<animation time="16">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim05" />
+        </animation>
+      </animations>
+      <sceneparams>
+        <sceneparam name="frame">29</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene30" template="30_custom" mediatype="none">
+      <sceneparams>
+        <sceneparam name="frame">30</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene31" template="18_quizdragdrop_v3" mediatype="none">
+      <dragdrop>
+        <targets id="bullet1" />
+        <targets id="bullet2" />
+        <draggers answer="1" id="drag1"></draggers>
+        <draggers answer="1" id="drag2"></draggers>
+        <draggers answer="1" id="drag3"></draggers>
+		<draggers answer="2" id="drag4"></draggers>
+		<draggers answer="2" id="drag5"></draggers>
+		<draggers answer="1" id="drag6"></draggers>
+	</dragdrop>
+	  <audio>
+        <audiofile audio="media/e4l4.mp3" async="true"/>
+      </audio>
+      <sceneparams>
+        <sceneparam name="frame">31</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene32" template="30_custom" mediatype="none">
+	  <audio>
+        <audiofile audio="media/e4l5_1.mp3" />
+      </audio>
+      <sceneparams>
+        <sceneparam name="frame">32</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene33" template="30_custom" mediatype="none">
+      <sceneparams>
+        <sceneparam name="frame">33</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene34" template="30_custom" mediatype="none">
+	  <audio>
+        <audiofile audio="media/e4l6_1.mp3" async="true"/>
+      </audio>
+      <sceneparams>
+        <sceneparam name="frame">34</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene35" template="30_custom" mediatype="none">
+	  <audio>
+        <audiofile audio="media/e4l6_2.mp3" />
+      </audio>
+	  <animations>
+        <animation time="1">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim01" />
+        </animation>
+      </animations>
+      <sceneparams>
+        <sceneparam name="frame">35</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene36" template="02_mainmenu" mediatype="none">
+	  <audio>
+        <audiofile audio="media/e5.mp3" />
+      </audio>
+      <menus>
+        <lesson sequence="sequence6_1" type="undefined" frame="37" image="icon_key" lessondescription="undefined" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;What&amp;apos;s the Value?&lt;/B&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="lesson1" />
+        <lesson sequence="sequence6_2" type="undefined" frame="38" image="icon_key" lessondescription="undefined" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;The Scenario&lt;/B&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="lesson2" />
+        <lesson sequence="sequence6_3" type="undefined" frame="40" image="icon_key" lessondescription="undefined" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;The Demo&lt;/B&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="lesson3" />
+        <lesson sequence="sequence6_4" type="undefined" frame="41" image="icon_flag" lessondescription="undefined" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;Review&lt;/B&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="lesson4" />
+        <lesson sequence="sequence6_5" type="undefined" frame="42" image="icon_steerwheel" lessondescription="undefined" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;Try It Yourself&lt;/B&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="lesson5" />
+        <lesson sequence="sequence6_6" type="undefined" frame="44" image="icon_flag" lessondescription="undefined" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;Knowledge Check&lt;/B&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="lesson6" />
+      </menus>
+      <sceneparams>
+        <sceneparam name="frame">36</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene37" template="30_custom" mediatype="none">
+      <audio>
+        <audiofile audio="media/e5l1.mp3" />
+      </audio>
+	  <animations>
+        <animation time="5.25">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim02" />
+        </animation>
+		<animation time="9.25">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim03" />
+        </animation>
+		<animation time="23.5">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim04" />
+        </animation>
+		<animation time="30">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim05" />
+        </animation>
+		<animation time="67">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim06" />
+        </animation>
+		<animation time="75.5">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim07" />
+        </animation>
+		<animation time="76.5">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim08" />
+        </animation>
+		<animation time="78">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim09" />
+        </animation>
+		<animation time="80">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim10" />
+        </animation>
+		<animation time="83">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim11" />
+        </animation>
+		<animation time="90">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim12" />
+        </animation>
+		<animation time="91.25">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim13" />
+        </animation>
+		<animation time="93">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim14" />
+        </animation>
+      </animations>
+	  <sceneparams>
+        <sceneparam name="frame">37</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene38" template="30_custom" mediatype="none">
+	  <audio>
+        <audiofile audio="media/e5l2_1.mp3" />
+      </audio>
+      <sceneparams>
+        <sceneparam name="frame">38</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene39" template="30_custom" mediatype="none">
+	  <audio>
+        <audiofile audio="media/e5l2_2.mp3" />
+      </audio>
+	  	  <animations>
+        <animation time="2">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim01" />
+        </animation>
+		<animation time="5">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim02" />
+        </animation>
+		<animation time="8">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim03" />
+        </animation>
+		<animation time="10">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim04" />
+        </animation>
+      </animations>
+      <sceneparams>
+        <sceneparam name="frame">39</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene40" template="30_custom" mediatype="none">
+      <sceneparams>
+        <sceneparam name="frame">40</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene41" template="18_quizdragdrop_v3" mediatype="none">
+      <dragdrop>
+        <targets id="bullet1" />
+        <targets id="bullet2" />
+        <draggers answer="1" id="drag1"></draggers>
+        <draggers answer="2" id="drag2"></draggers>
+        <draggers answer="2" id="drag3"></draggers>
+		<draggers answer="1" id="drag4"></draggers>
+		<draggers answer="1" id="drag5"></draggers>
+		<draggers answer="2" id="drag6"></draggers>
+		<draggers answer="1" id="drag7"></draggers>
+	</dragdrop>
+	  <audio>
+        <audiofile audio="media/e5l4.mp3" async="true"/>
+      </audio>
+      <sceneparams>
+        <sceneparam name="frame">41</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene42" template="30_custom" mediatype="none">
+	  <audio>
+        <audiofile audio="media/e5l5.mp3" />
+      </audio>
+      <sceneparams>
+        <sceneparam name="frame">42</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene43" template="30_custom" mediatype="none">
+      <sceneparams>
+        <sceneparam name="frame">43</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene44" template="30_custom" mediatype="none">
+	  <audio>
+        <audiofile audio="media/e5l6_1.mp3" async="true"/>
+      </audio>
+      <sceneparams>
+        <sceneparam name="frame">44</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene45" template="30_custom" mediatype="none">
+	  <audio>
+        <audiofile audio="media/e5l6_2.mp3" />
+      </audio>
+	  	  <animations>
+        <animation time="1">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim01" />
+        </animation>
+      </animations>
+      <sceneparams>
+        <sceneparam name="frame">45</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene46" template="02_mainmenu" mediatype="none">
+	  <audio>
+        <audiofile audio="media/e6.mp3" />
+      </audio>
+      <menus>
+        <lesson sequence="sequence7_1" type="undefined" frame="47" image="icon_key" lessondescription="undefined" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;What&amp;apos;s the Value?&lt;/B&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="lesson1" />
+        <lesson sequence="sequence7_2" type="undefined" frame="48" image="icon_key" lessondescription="undefined" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;The Scenario&lt;/B&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="lesson2" />
+        <lesson sequence="sequence7_3" type="undefined" frame="50" image="icon_key" lessondescription="undefined" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;Demo: Setting Aging Alerts&lt;/B&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="lesson3" />
+        <lesson sequence="sequence7_4" type="undefined" frame="51" image="icon_key" lessondescription="undefined" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;Demo: Setting Appraisal Alerts&lt;/B&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="lesson4" />
+        <lesson sequence="sequence7_5" type="undefined" frame="52" image="icon_flag" lessondescription="undefined" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;Review&lt;/B&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="lesson5" />
+        <lesson sequence="sequence7_6" type="undefined" frame="53" image="icon_flag" lessondescription="undefined" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;Knowledge Check&lt;/B&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="lesson6" />
+      </menus>
+      <sceneparams>
+        <sceneparam name="frame">46</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene47" template="30_custom" mediatype="none">
+      <audio>
+        <audiofile audio="media/e6l2.mp3" />
+      </audio>
+	  <animations>
+        <animation time="5.25">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim02" />
+        </animation>
+		<animation time="8.75">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim03" />
+        </animation>
+		<animation time="24">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim04" />
+        </animation>
+		<animation time="49.25">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim05" />
+        </animation>
+		<animation time="67">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim06" />
+        </animation>
+		<animation time="70">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim07" />
+        </animation>
+		<animation time="72">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim08" />
+        </animation>
+		<animation time="84">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim09" />
+        </animation>
+      </animations>
+	  <sceneparams>
+        <sceneparam name="frame">47</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene48" template="30_custom" mediatype="none">
+	  <audio>
+        <audiofile audio="media/e6l1.mp3" />
+      </audio>
+      <sceneparams>
+        <sceneparam name="frame">48</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene49" template="30_custom" mediatype="none">
+	  <audio>
+        <audiofile audio="media/e6l2a.mp3" />
+      </audio>
+	  	  <animations>
+        <animation time="2">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim01" />
+        </animation>
+		<animation time="5">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim02" />
+        </animation>
+		<animation time="8">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim03" />
+        </animation>
+      </animations>
+      <sceneparams>
+        <sceneparam name="frame">49</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene50" template="30_custom" mediatype="none">
+      <sceneparams>
+        <sceneparam name="frame">50</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene51" template="30_custom" mediatype="none">
+      <sceneparams>
+        <sceneparam name="frame">51</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene52" template="18_quizdragdrop_v3" mediatype="none">
+      <dragdrop>
+        <targets id="bullet1" />
+        <targets id="bullet2" />
+        <draggers answer="1" id="drag1"></draggers>
+        <draggers answer="2" id="drag2"></draggers>
+        <draggers answer="2" id="drag3"></draggers>
+		<draggers answer="1" id="drag4"></draggers>
+		<draggers answer="1" id="drag5"></draggers>
+		<draggers answer="1" id="drag6"></draggers>
+		<draggers answer="2" id="drag7"></draggers>
+	</dragdrop>
+	  <audio>
+        <audiofile audio="media/e6l5.mp3" async="true"/>
+      </audio>
+      <sceneparams>
+        <sceneparam name="frame">52</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene53" template="30_custom" mediatype="none">
+	  <audio>
+        <audiofile audio="media/e6l6_1.mp3" async="true"/>
+      </audio>
+      <sceneparams>
+        <sceneparam name="frame">53</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene54" template="30_custom" mediatype="none">
+	   <audio>
+        <audiofile audio="media/e6l6_2.mp3" />
+      </audio>
+	  	<animations>
+        <animation time="1">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim01" />
+        </animation>
+      </animations>
+      <sceneparams>
+        <sceneparam name="frame">54</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene55" template="02_mainmenu" mediatype="none">
+	  <audio>
+        <audiofile audio="media/e7.mp3" />
+      </audio>
+      <menus>
+        <lesson sequence="sequence8_1" type="undefined" frame="56" image="icon_key" lessondescription="undefined" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;What&amp;apos;s the Value?&lt;/B&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="lesson1" />
+        <lesson sequence="sequence8_2" type="undefined" frame="57" image="icon_key" lessondescription="undefined" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;The Scenario&lt;/B&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="lesson2" />
+        <lesson sequence="sequence8_3" type="undefined" frame="59" image="icon_key" lessondescription="undefined" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;The Demo&lt;/B&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="lesson3" />
+        <lesson sequence="sequence8_4" type="undefined" frame="60" image="icon_steerwheel" lessondescription="undefined" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;Practice&lt;/B&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="lesson4" />
+        <lesson sequence="sequence8_5" type="undefined" frame="65" image="icon_flag" lessondescription="undefined" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;Review&lt;/B&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="lesson5" />
+        <lesson sequence="sequence8_6" type="undefined" frame="66" image="icon_flag" lessondescription="undefined" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;Knowledge Check&lt;/B&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="lesson6" />
+      </menus>
+      <sceneparams>
+        <sceneparam name="frame">55</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene56" template="30_custom" mediatype="none">
+      <audio>
+        <audiofile audio="media/e7l1.mp3" />
+      </audio>
+	  <animations>
+        <animation time="2.75">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim02" />
+        </animation>
+		<animation time="6.5">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim03" />
+        </animation>
+		<animation time="8.5">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim04" />
+        </animation>
+		<animation time="11">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim05" />
+        </animation>
+		<animation time="14.5">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim06" />
+        </animation>
+		<animation time="17.75">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim07" />
+        </animation>
+      </animations>
+	  <sceneparams>
+        <sceneparam name="frame">56</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene57" template="30_custom" mediatype="none">
+	  <audio>
+        <audiofile audio="media/e7l2_1.mp3" />
+      </audio>
+      <sceneparams>
+        <sceneparam name="frame">57</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene58" template="30_custom" mediatype="none">
+	  <audio>
+        <audiofile audio="media/e7l2_2.mp3" />
+      </audio>
+	  	  <animations>
+        <animation time="3">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim01" />
+        </animation>
+		<animation time="8">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim02" />
+        </animation>
+		<animation time="13">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim03" />
+        </animation>
+		<animation time="16">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim04" />
+        </animation>
+		<animation time="21">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim05" />
+        </animation>
+		<animation time="24">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim06" />
+        </animation>
+		<animation time="27">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim07" />
+        </animation>
+      </animations>
+      <sceneparams>
+        <sceneparam name="frame">58</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene59" template="30_custom" mediatype="none">
+      <sceneparams>
+        <sceneparam name="frame">59</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene60" template="30_custom" mediatype="none">
+	  <audio>
+        <audiofile audio="media/e7l4_1.mp3" />
+      </audio>
+      <sceneparams>
+        <sceneparam name="frame">60</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene61" template="30_custom" mediatype="none">
+	   <audio>
+        <audiofile audio="media/e7l4_2.mp3" async="true"/>
+      </audio>
+      <sceneparams>
+        <sceneparam name="frame">61</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene62" template="30_custom" mediatype="none">
+	   <audio>
+        <audiofile audio="media/e7l4_3.mp3" async="true"/>
+      </audio>
+      <sceneparams>
+        <sceneparam name="frame">62</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene63" template="30_custom" mediatype="none">
+	  <audio>
+        <audiofile audio="media/e7l4_4.mp3" async="true"/>
+      </audio>
+      <sceneparams>
+        <sceneparam name="frame">63</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene64" template="30_custom" mediatype="none">
+	  <audio>
+        <audiofile audio="media/e7l4_5.mp3" async="true"/>
+      </audio>
+      <sceneparams>
+        <sceneparam name="frame">64</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene65" template="18_quizdragdrop_v3" mediatype="none">
+      <dragdrop>
+        <targets id="bullet1" />
+        <targets id="bullet2" />
+        <draggers answer="2" id="drag1"></draggers>
+        <draggers answer="1" id="drag2"></draggers>
+        <draggers answer="2" id="drag3"></draggers>
+		<draggers answer="1" id="drag4"></draggers>
+		<draggers answer="1" id="drag5"></draggers>
+		<draggers answer="2" id="drag6"></draggers>
+		<draggers answer="1" id="drag7"></draggers>
+		<draggers answer="1" id="drag8"></draggers>
+	</dragdrop>
+	  <audio>
+        <audiofile audio="media/e7l5.mp3" async="true"/>
+      </audio>
+      <sceneparams>
+        <sceneparam name="frame">65</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene66" template="30_custom" mediatype="none">
+	  <audio>
+        <audiofile audio="media/e7l6_1.mp3" async="true"/>
+      </audio>
+      <sceneparams>
+        <sceneparam name="frame">66</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene67" template="30_custom" mediatype="none">
+	  <audio>
+        <audiofile audio="media/e7l6_2.mp3" />
+      </audio>
+	  	  <animations>
+        <animation time="1">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim01" />
+        </animation>
+      </animations>
+      <sceneparams>
+        <sceneparam name="frame">67</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene68" template="02_mainmenu" mediatype="none">
+	  <audio>
+        <audiofile audio="media/e8.mp3" />
+      </audio>
+      <menus>
+        <lesson sequence="sequence9_1" type="undefined" frame="69" image="icon_key" lessondescription="undefined" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;What&amp;apos;s the Value?&lt;/B&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="lesson1" />
+        <lesson sequence="sequence9_2" type="undefined" frame="70" image="icon_key" lessondescription="undefined" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;The Scenario&lt;/B&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="lesson2" />
+        <lesson sequence="sequence9_3" type="undefined" frame="72" image="icon_key" lessondescription="undefined" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;The Demo&lt;/B&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="lesson3" />
+        <lesson sequence="sequence9_4" type="undefined" frame="73" image="icon_steerwheel" lessondescription="undefined" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;Practice&lt;/B&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="lesson4" />
+        <lesson sequence="sequence9_5" type="undefined" frame="78" image="icon_flag" lessondescription="undefined" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;Knowledge Check&lt;/B&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="lesson5" />
+      </menus>
+      <sceneparams>
+        <sceneparam name="frame">68</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene69" template="30_custom" mediatype="none">
+      <audio>
+        <audiofile audio="media/e8l1.mp3" />
+      </audio>
+	  <animations>
+        <animation time="2">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim02" />
+        </animation>
+		<animation time="4">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim03" />
+        </animation>
+		<animation time="6">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim04" />
+        </animation>
+		<animation time="10.5">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim05" />
+        </animation>
+		<animation time="12.5">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim06" />
+        </animation>
+		<animation time="14.5">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim07" />
+        </animation>
+		<animation time="17.25">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim08" />
+        </animation>
+		<animation time="22">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim09" />
+        </animation>
+		<animation time="26.5">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim10" />
+        </animation>
+		<animation time="27.25">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim11" />
+        </animation>
+		<animation time="28.75">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim12" />
+        </animation>
+		<animation time="31.5">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim13" />
+        </animation>
+		<animation time="33">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim14" />
+        </animation>
+      </animations>
+	  <sceneparams>
+        <sceneparam name="frame">69</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene70" template="30_custom" mediatype="none">
+	  <audio>
+        <audiofile audio="media/e8l2_1.mp3" />
+      </audio>
+      <sceneparams>
+        <sceneparam name="frame">70</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene71" template="30_custom" mediatype="none">
+	  <audio>
+        <audiofile audio="media/e8l2_2.mp3" />
+      </audio>
+	  	  <animations>
+        <animation time="4">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim01" />
+        </animation>
+		<animation time="6">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim02" />
+        </animation>
+      </animations>
+      <sceneparams>
+        <sceneparam name="frame">71</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene72" template="30_custom" mediatype="none">
+      <sceneparams>
+        <sceneparam name="frame">72</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene73" template="30_custom" mediatype="none">
+	  <audio>
+        <audiofile audio="media/e8l4_1.mp3" />
+      </audio>
+      <sceneparams>
+        <sceneparam name="frame">73</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene74" template="30_custom" mediatype="none">
+	  <audio>
+        <audiofile audio="media/e8l4_2.mp3" async="true"/>
+      </audio>
+      <sceneparams>
+        <sceneparam name="frame">74</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene75" template="30_custom" mediatype="none">
+	  <audio>
+        <audiofile audio="media/e8l4_3.mp3" async="true"/>
+      </audio>
+      <sceneparams>
+        <sceneparam name="frame">75</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene76" template="30_custom" mediatype="none">
+	  <audio>
+        <audiofile audio="media/e8l4_4.mp3" async="true"/>
+      </audio>
+      <sceneparams>
+        <sceneparam name="frame">76</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene77" template="30_custom" mediatype="none">
+	  <audio>
+        <audiofile audio="media/e8l4_5.mp3" async="true"/>
+      </audio>
+      <sceneparams>
+        <sceneparam name="frame">77</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene78" template="30_custom" mediatype="none">
+	  <audio>
+        <audiofile audio="media/e8l5_1.mp3" async="true"/>
+      </audio>
+      <sceneparams>
+        <sceneparam name="frame">78</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene79" template="30_custom" mediatype="none">
+	  <audio>
+        <audiofile audio="media/e8l5_2.mp3" />
+      </audio>
+	  <animations>
+        <animation time="1">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim01" />
+        </animation>
+      </animations>
+      <sceneparams>
+        <sceneparam name="frame">79</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene80" template="02_mainmenu" mediatype="none">
+	  <audio>
+        <audiofile audio="media/e9.mp3" />
+      </audio>
+      <menus>
+        <lesson sequence="sequence10_1" type="undefined" frame="81" image="icon_key" lessondescription="undefined" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;Wrap It Up&lt;/B&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="lesson1" />
+        <lesson sequence="sequence10_2" type="undefined" frame="82" image="icon_key" lessondescription="undefined" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;What&amp;apos;s Next&lt;/B&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="lesson2" />
+      </menus>
+      <sceneparams>
+        <sceneparam name="frame">80</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene81" template="30_custom" mediatype="none">
+	  <audio>
+        <audiofile audio="media/e9l1.mp3" />
+      </audio>
+      <sceneparams>
+        <sceneparam name="frame">81</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene82" template="30_custom" mediatype="none">
+	  <audio>
+        <audiofile audio="media/e9l2_1.mp3" />
+      </audio>
+      <sceneparams>
+        <sceneparam name="frame">82</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene83" template="30_custom" mediatype="none">
+	  <audio>
+        <audiofile audio="media/e9l2.mp3" />
+      </audio>
+	  <animations>
+        <animation time="1">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim01" />
+        </animation>
+      </animations>
+      <sceneparams>
+        <sceneparam name="frame">83</sceneparam>
+      </sceneparams>
+    </scene>
+  </scenes>
+  <sequences>
+    <step desc="sequence" id="sequence1" type="menu" name="Home">
+      <step desc="scene" id="scene1" />
+    </step>
+    <step desc="sequence" id="sequence2" type="menu" name="Preparation Pit Stop">
+      <step desc="scene" id="scene2" />
+      <step desc="sequence" id="sequence2_1" name="Overview">
+        <step desc="scene" id="scene3" />
+      </step>
+      <step desc="sequence" id="sequence2_2" name="Content and Exercises">
+        <step desc="scene" id="scene4" />
+      </step>
+      <step desc="sequence" id="sequence2_3" name="Scenarios">
+        <step desc="scene" id="scene5" />
+      </step>
+    </step>
+    <step desc="sequence" id="sequence3" type="menu" name="Creating and Finding Appraisals">
+      <step desc="scene" id="scene6" />
+      <step desc="sequence" id="sequence3_1" name="What&amp;apos;s the Value?">
+        <step desc="scene" id="scene7" />
+      </step>
+      <step desc="sequence" id="sequence3_2" name="The Scenario">
+        <step desc="scene" id="scene8" />
+        <step desc="scene" id="scene9" />
+      </step>
+      <step desc="sequence" id="sequence3_3" name="The Demo">
+        <step desc="scene" id="scene10" />
+      </step>
+      <step desc="sequence" id="sequence3_4" name="Review">
+        <step desc="scene" id="scene11" />
+      </step>
+      <step desc="sequence" id="sequence3_5" name="Try It Yourself">
+        <step desc="scene" id="scene12" />
+        <step desc="scene" id="scene13" />
+      </step>
+      <step desc="sequence" id="sequence3_6" name="Knowledge Check">
+        <step desc="scene" id="scene14" />
+        <step desc="scene" id="scene15" />
+      </step>
+    </step>
+    <step desc="sequence" id="sequence4" type="menu" name="Managing Inventory via the Inventory List">
+      <step desc="scene" id="scene16" />
+      <step desc="sequence" id="sequence4_1" name="What&amp;apos;s the Value">
+        <step desc="scene" id="scene17" />
+      </step>
+      <step desc="sequence" id="sequence4_2" name="The Scenario">
+        <step desc="scene" id="scene18" />
+        <step desc="scene" id="scene19" />
+      </step>
+      <step desc="sequence" id="sequence4_3" name="The Demo">
+        <step desc="scene" id="scene20" />
+      </step>
+      <step desc="sequence" id="sequence4_4" name="Review">
+        <step desc="scene" id="scene21" />
+      </step>
+      <step desc="sequence" id="sequence4_5" name="Try It Yourself">
+        <step desc="scene" id="scene22" />
+        <step desc="scene" id="scene23" />
+      </step>
+      <step desc="sequence" id="sequence4_6" name="Knowledge Check">
+        <step desc="scene" id="scene24" />
+        <step desc="scene" id="scene25" />
+      </step>
+    </step>
+    <step desc="sequence" id="sequence5" type="menu" name="Creating a Buy List and Purchasing at Auction">
+      <step desc="scene" id="scene26" />
+      <step desc="sequence" id="sequence5_1" name="What&amp;apos;s the Value">
+        <step desc="scene" id="scene27" />
+      </step>
+      <step desc="sequence" id="sequence5_2" name="The Scenario">
+        <step desc="scene" id="scene28" />
+        <step desc="scene" id="scene29" />
+      </step>
+      <step desc="sequence" id="sequence5_3" name="The Demo">
+        <step desc="scene" id="scene30" />
+      </step>
+      <step desc="sequence" id="sequence5_4" name="Review">
+        <step desc="scene" id="scene31" />
+      </step>
+      <step desc="sequence" id="sequence5_5" name="Try It Yourself">
+        <step desc="scene" id="scene32" />
+        <step desc="scene" id="scene33" />
+      </step>
+      <step desc="sequence" id="sequence5_6" name="Knowledge Check">
+        <step desc="scene" id="scene34" />
+        <step desc="scene" id="scene35" />
+      </step>
+    </step>
+    <step desc="sequence" id="sequence6" type="menu" name="Identifying Vehicles for Disposition via Auction">
+      <step desc="scene" id="scene36" />
+      <step desc="sequence" id="sequence6_1" name="What&amp;apos;s the Value?">
+        <step desc="scene" id="scene37" />
+      </step>
+      <step desc="sequence" id="sequence6_2" name="The Scenario">
+        <step desc="scene" id="scene38" />
+        <step desc="scene" id="scene39" />
+      </step>
+      <step desc="sequence" id="sequence6_3" name="The Demo">
+        <step desc="scene" id="scene40" />
+      </step>
+      <step desc="sequence" id="sequence6_4" name="Review">
+        <step desc="scene" id="scene41" />
+      </step>
+      <step desc="sequence" id="sequence6_5" name="Try It Yourself">
+        <step desc="scene" id="scene42" />
+        <step desc="scene" id="scene43" />
+      </step>
+      <step desc="sequence" id="sequence6_6" name="Knowledge Check">
+        <step desc="scene" id="scene44" />
+        <step desc="scene" id="scene45" />
+      </step>
+    </step>
+    <step desc="sequence" id="sequence7" type="menu" name="Managing Inventory via Alerts">
+      <step desc="scene" id="scene46" />
+      <step desc="sequence" id="sequence7_1" name="What&amp;apos;s the Value?">
+        <step desc="scene" id="scene47" />
+      </step>
+      <step desc="sequence" id="sequence7_2" name="The Scenario">
+        <step desc="scene" id="scene48" />
+        <step desc="scene" id="scene49" />
+      </step>
+      <step desc="sequence" id="sequence7_3" name="Demo: Setting Aging Alerts">
+        <step desc="scene" id="scene50" />
+      </step>
+      <step desc="sequence" id="sequence7_4" name="Demo: Setting Appraisal Alerts">
+        <step desc="scene" id="scene51" />
+      </step>
+      <step desc="sequence" id="sequence7_5" name="Review">
+        <step desc="scene" id="scene52" />
+      </step>
+      <step desc="sequence" id="sequence7_6" name="Knowledge Check">
+        <step desc="scene" id="scene53" />
+        <step desc="scene" id="scene54" />
+      </step>
+    </step>
+    <step desc="sequence" id="sequence8" type="menu" name="Getting a Summary of the Health of your Dealership">
+      <step desc="scene" id="scene55" />
+      <step desc="sequence" id="sequence8_1" name="What&amp;apos;s the Value?">
+        <step desc="scene" id="scene56" />
+      </step>
+      <step desc="sequence" id="sequence8_2" name="The Scenario">
+        <step desc="scene" id="scene57" />
+        <step desc="scene" id="scene58" />
+      </step>
+      <step desc="sequence" id="sequence8_3" name="The Demo">
+        <step desc="scene" id="scene59" />
+      </step>
+      <step desc="sequence" id="sequence8_4" name="Practice">
+        <step desc="scene" id="scene60" />
+        <step desc="scene" id="scene61" />
+        <step desc="scene" id="scene62" />
+        <step desc="scene" id="scene63" />
+        <step desc="scene" id="scene64" />
+      </step>
+      <step desc="sequence" id="sequence8_5" name="Review">
+        <step desc="scene" id="scene65" />
+      </step>
+      <step desc="sequence" id="sequence8_6" name="Knowledge Check">
+        <step desc="scene" id="scene66" />
+        <step desc="scene" id="scene67" />
+      </step>
+    </step>
+    <step desc="sequence" id="sequence9" type="menu" name="Customizing User and Department Settings">
+      <step desc="scene" id="scene68" />
+      <step desc="sequence" id="sequence9_1" name="What&amp;apos;s the Value?">
+        <step desc="scene" id="scene69" />
+      </step>
+      <step desc="sequence" id="sequence9_2" name="The Scenario">
+        <step desc="scene" id="scene70" />
+        <step desc="scene" id="scene71" />
+      </step>
+      <step desc="sequence" id="sequence9_3" name="The Demo">
+        <step desc="scene" id="scene72" />
+      </step>
+      <step desc="sequence" id="sequence9_4" name="Practice">
+        <step desc="scene" id="scene73" />
+        <step desc="scene" id="scene74" />
+        <step desc="scene" id="scene75" />
+        <step desc="scene" id="scene76" />
+        <step desc="scene" id="scene77" />
+      </step>
+      <step desc="sequence" id="sequence9_5" name="Knowledge Check">
+        <step desc="scene" id="scene78" />
+        <step desc="scene" id="scene79" />
+      </step>
+    </step>
+    <step desc="sequence" id="sequence10" type="menu" name="The Road Ahead">
+      <step desc="scene" id="scene80" />
+      <step desc="sequence" id="sequence10_1" name="Wrap It Up">
+        <step desc="scene" id="scene81" />
+      </step>
+      <step desc="sequence" id="sequence10_2" name="What&amp;apos;s Next">
+        <step desc="scene" id="scene82" />
+        <step desc="scene" id="scene83" />
+      </step>
+    </step>
+  </sequences>
+</module>
