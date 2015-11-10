@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<module>
+  <administration>
+    <admin id="trading" menunavigation="nolesson" navigation="open" coursetitle="SalesMaker™ Special Finance" serverurl="/secured/course_certificate.aspx" coursedate="undefined,undefined,undefined" courseexpiration="356" coursetype="lms" courseversion="1.0" />
+  </administration>
+  <audio path="media/" />
+  <states>
+    <state name="default" enabledControls="exit, help, menu, caption, replay, back, pause, next, home, mediapause" />
+    <state name="menu" enabledControls="" />
+    <state name="content_admintext" enabledControls="exit, help, back, next, pause, play, caption, mediapause" />
+    <state name="content_main" enabledControls="exit, help, menu, caption, replay, back, pause, home, mediapause" />
+    <state name="content_courseconclusion" enabledControls="exit, help, home, mediapause" />
+    <state name="question_main" enabledControls="exit, help, menu, caption, replay, back, pause, next, home, mediapause" />
+    <state name="question_assessment" enabledControls="back, pause, next, home, mediapause" />
+    <state name="assessment_intro" enabledControls="exit, help, caption, replay, pause, home, mediapause" />
+    <state name="assessment_submit" enabledControls="exit, help" />
+    <state name="assessment_results" enabledControls="exit, help, next" />
+  </states>
+  <templates>
+    <template id="00_coursemainmenu" desc="Course Main Menu">
+      <type>menu</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.CourseMainMenu</renderer>
+    </template>
+    <template id="01_administrativetext" desc="Administrative Text">
+      <type>content</type>
+      <state>content_admintext</state>
+      <renderer>com.invision.client.renderers.AdministrativeText</renderer>
+    </template>
+    <template id="02_mainmenu" desc="Main Menu">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.MainMenu</renderer>
+    </template>
+    <template id="03_lessonoverview" desc="Lesson Overview">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.LessonOverview</renderer>
+    </template>
+    <template id="04_lessonObjectives" desc="Lesson Objectives">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.LessonObjectives</renderer>
+    </template>
+    <template id="05_imagehalfcircle" desc="Image Half Circle" showpagenumber="true" listid="pages">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.ImageHalfCircle</renderer>
+    </template>
+    <template id="06_imagetop" desc="Image Top" showpagenumber="true" listid="pages">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.ImageTop</renderer>
+    </template>
+    <template id="07_imagebottom" desc="Image Bottom" showpagenumber="true" listid="pages">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.ImageBottom</renderer>
+    </template>
+    <template id="08_imageleft" desc="Image Left" showpagenumber="true" listid="pages">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.ImageLeft</renderer>
+    </template>
+    <template id="09_imageright" desc="Image Right" showpagenumber="true" listid="pages">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.ImageRight</renderer>
+    </template>
+    <template id="10_imagefullscreen" desc="Image Full Screen" showpagenumber="true" listid="pages">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.ImageFullScreen</renderer>
+    </template>
+    <template id="11_video" desc="Video" showpagenumber="true" listid="pages">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.VideoPlayer</renderer>
+    </template>
+    <template id="12_clicktolearn" desc="Click To Learn" showpagenumber="true" listid="pages">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.ClickToLearn</renderer>
+    </template>
+    <template id="13_quizintroduction" desc="QUIZ">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.QuizIntroduction</renderer>
+    </template>
+    <template id="14_multiplechoice" desc="QUIZ">
+      <type>question</type>
+      <state>question_main</state>
+      <renderer>com.invision.client.renderers.MultipleChoice</renderer>
+    </template>
+    <template id="15_quiztruefalse" desc="QUIZ">
+      <type>question</type>
+      <state>question_main</state>
+      <renderer>com.invision.client.renderers.TrueFalse</renderer>
+    </template>
+    <template id="16_quizfillintheblank" desc="QUIZ">
+      <type>question</type>
+      <state>question_main</state>
+      <renderer>com.invision.client.renderers.FillInTheBlank</renderer>
+    </template>
+    <template id="17_quizexplore" desc="QUIZ">
+      <type>question</type>
+      <state>question_main</state>
+      <renderer>com.invision.client.renderers.Explore</renderer>
+    </template>
+    <template id="18_quizdragdrop" desc="QUIZ">
+      <type>question</type>
+      <state>question_main</state>
+      <renderer>com.invision.client.renderers.DragDrop</renderer>
+    </template>
+    <template id="18_quizdragdrop_v2" desc="QUIZ">
+      <type>question</type>
+      <state>question_main</state>
+      <renderer>com.invision.client.renderers.DragDropV2</renderer>
+    </template>
+    <template id="18_quizdragdrop_v3" desc="QUIZ">
+      <type>question</type>
+      <state>question_main</state>
+      <renderer>com.invision.client.renderers.DragDropV3</renderer>
+    </template>
+    <template id="19_rankorder" desc="QUIZ">
+      <type>question</type>
+      <state>question_main</state>
+      <renderer>com.invision.client.renderers.RankOrder</renderer>
+    </template>
+    <template id="20_lessonsummary" desc="LESSON SUMMARY">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.LessonSummary</renderer>
+    </template>
+    <template id="21_lessoncomplete" desc="LESSON COMPLETE">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.LessonComplete</renderer>
+    </template>
+    <template id="22_finalassesintro" desc="FINAL TEST">
+      <type>assessment_pre</type>
+      <state>assessment_intro</state>
+      <renderer>com.invision.client.renderers.FinalTestIntro</renderer>
+    </template>
+    <template id="23_finalasssubmit" desc="FINAL TEST">
+      <type>assessment_post</type>
+      <state>assessment_submit</state>
+      <renderer>com.invision.client.renderers.FinalTestSubmit</renderer>
+    </template>
+    <template id="24_finalassesresults" desc="FINAL TEST">
+      <type>assessment_post</type>
+      <state>assessment_results</state>
+      <renderer>com.invision.client.renderers.FinalTestResults</renderer>
+    </template>
+    <template id="25_courseconclusion" desc="FINAL">
+      <type>assessment_post</type>
+      <state>content_courseconclusion</state>
+      <renderer>com.invision.client.renderers.CourseConclusion</renderer>
+    </template>
+    <template id="26_custom" desc="CUSTOM">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.CustomContent</renderer>
+    </template>
+    <template id="27_multiplechoiceimage" desc="QUIZ">
+      <type>content</type>
+      <state>question_main</state>
+      <renderer>com.invision.client.renderers.MultipleChoice</renderer>
+    </template>
+    <template id="28_formsdiagrams" desc="Forms and Diagrams" showpagenumber="true" listid="pages">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.FormsDiagrams</renderer>
+    </template>
+    <template id="29_interactivesimulation" desc="Interactive Simulation" showpagenumber="true" listid="pages">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.InteractiveSimulation</renderer>
+    </template>
+    <template id="29_textonly" desc="Text Only" showpagenumber="true" listid="pages">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.TextOnly</renderer>
+    </template>
+    <template id="30_custom" desc="Custom" showpagenumber="true" listid="pages">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.CustomContent</renderer>
+    </template>
+    <template id="31_jobaid" desc="Job Aid">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.JobAid</renderer>
+    </template>
+    <template id="32_contemplative" desc="Contemplative" showpagenumber="true" listid="pages">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.Contemplative</renderer>
+    </template>
+    <template id="33_contemplativeprint" desc="Contemplative Print" showpagenumber="true" listid="pages">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.ContemplativePrint</renderer>
+    </template>
+  </templates>
+  <scenes>
+    <scene id="scene1" template="30_custom" mediatype="none">
+      <audio>
+      </audio>
+	  <animations>
+        <animation time="1">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim01" />
+        </animation>
+      </animations>
+	  <sceneparams>
+        <sceneparam name="frame">1</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene2" template="30_custom" mediatype="none">
+      <audio>
+      </audio>
+	  <animations>
+        <animation time="1">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim01" />
+        </animation>
+      </animations>
+	  <sceneparams>
+        <sceneparam name="frame">2</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene3" template="30_custom" mediatype="none">
+      <audio>
+      </audio>
+	  <sceneparams>
+        <sceneparam name="frame">3</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene4" template="18_quizdragdrop_v3" mediatype="none">
+      <dragdrop>
+        <targets id="bullet1" />
+        <targets id="bullet2" />
+        <targets id="bullet3" />
+        <targets id="bullet4" />
+        <targets id="bullet5" />
+        <targets id="bullet6" />
+        <targets id="bullet7" />
+        <targets id="bullet8" />
+        <targets id="bullet9" />
+        <targets id="bullet10" />
+        <targets id="bullet11" />													
+        <draggers answer="1" id="drag1" />
+        <draggers answer="2" id="drag2" />
+        <draggers answer="3" id="drag3" />
+        <draggers answer="4" id="drag4" />
+        <draggers answer="5" id="drag5" />
+        <draggers answer="6" id="drag6" />
+        <draggers answer="7" id="drag7" />
+        <draggers answer="8" id="drag8" />
+        <draggers answer="9" id="drag9" />
+        <draggers answer="10" id="drag10" />
+        <draggers answer="11" id="drag11" />														
+      </dragdrop>
+      <audio>
+      </audio>
+	  <animations>
+        <animation time="1">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim01" />
+        </animation>
+	  </animations>
+	  <sceneparams>
+        <sceneparam name="frame">5</sceneparam>
+      </sceneparams>
+    </scene>
+  </scenes>
+  <sequences>
+    <step desc="sequence" id="sequence1" type="menu" name="Home">
+      <step desc="scene" id="scene1" />
+    </step>
+    <step desc="sequence" id="sequence2" type="menu" name="Managing Special Packs Overview">
+      <step desc="scene" id="scene2" />
+	  <step desc="scene" id="scene3" />
+    </step>
+    <step desc="sequence" id="sequence3" type="menu" name="Special Packs Process">
+      <step desc="scene" id="scene4" />
+    </step>
+  </sequences>
+</module>
