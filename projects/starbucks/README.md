@@ -25,7 +25,7 @@ The `course design` folder contains design approaches, prototyping and sketching
 **`course design/sketching`** Folder contains template files used for sketch prototyping. More sketches can be found at: [http://dbiele.github.io/projects/newbalance/](http://dbiele.github.io/projects/newbalance/)
 
 ## Instructional Design ##
-The `instructional design/ID General Approach.docx` document highlights learning architecture and the design, approaches and models I like to use.
+The `instructional design/ID General Approach.docx` document highlights learning architecture, design, approaches and models I like to use.
 
 
 ## Course Management ##
