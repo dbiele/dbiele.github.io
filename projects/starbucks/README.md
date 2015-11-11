@@ -16,7 +16,7 @@ The `online-portal-china.psd` file contains the working graphics used to create 
 
 
 ## Course Design ##
-The `course design` folder design approaches, prototyping and sketching document used in the development on online learning.  
+The `course design` folder contains design approaches, prototyping and sketching documents used in the development of online learning.  
 
 **`design approach.docx`** My visual approach when designing for learning.  
 **`prototyping approach.docx`** My notes on Lean UX prototyping.  
