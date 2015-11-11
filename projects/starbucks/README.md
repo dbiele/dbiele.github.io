@@ -3,7 +3,7 @@
 Online Learning Ideas and Documentation
 -----------------------
 
-This GitHub repository contains files used from end-to-end on online learning development.
+This GitHub repository contains files used for end-to-end on online learning development.
 
 ## Prototype Diagram: Learning Portal - China ##
 
