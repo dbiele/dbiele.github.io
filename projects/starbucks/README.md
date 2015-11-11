@@ -43,3 +43,63 @@ The **`management course`** folder contains a number of ways I have managed the 
 **`management people\manager-to-managers`** Document used when communicating project status between managers. `communication between managers.docx` contains a general format, however files like `release elearning master project plan.xlsx` and SCRUM software can provide the real detail if necessary.
 
 **`management people\ninebox`** My notes on nine boxing and how to identify top talent. 
+
+
+##Sample Courses##
+
+**Course Name:**  
+New Balance Fit
+
+**Description:**  
+How to use a Brannock device and how the shape of the foot effects fit.  The goal was to use simulation, interactions and knowledge checks to engage the learner.  This course is small part of a large set of courses custom designed for New Balance.
+
+**Audience:**  
+- The audience for this courses is Internal New Balance associates.  
+- The audience for this course is 2,000 Retail Sales Associates (RSA’s) as well as internal New Balance associates.  
+- RSA’s are selling New Balance on behalf of a retailer (CitySports, etc.)  
+- This course may be leveraged with new hire training within New Balance Human Resources.  
+- Learners’ age ranges from 16-45.  
+- Courses may be viewed as part of the New Balance TEC and History Program, but may also be reviewed as reference materials for a quick refresher.  
+- This is considered an “internal audience.”  
+
+**Online Course:**  
+[http://dbiele.github.io/projects/newbalance/nbfit/index.html](http://dbiele.github.io/projects/newbalance/nbfit/index.html )  
+Note: You can enable the next page by pressing the space bar.
+
+-----------------
+
+**Course Name:**  
+DealerTrack Inventory Pro
+
+**Description:**  
+DealerTrack software is used in most dealerships in the united states.  This software is used to teach leaners about vehicle management strategies.  Extensive use of software simulations, scenarios and “try it yourself” allow the users to make mistakes   This course is small part of a larger set of courses custom designed to make selling cars with the help of DealerTrack software easier.
+
+**Audience:**  
+•	Dealership personnel, dealer general managers. 
+•	Audience has lack of time to take training so the structure needs be easy to get in and out.  
+•	High attrition of the learner.  May only work for 9 months.  
+•	8th grade reading level  
+•	Learners age range 25 - 55  
+
+**Online Course:**  
+[http://dbiele.github.io/projects/dealertrack/orientation/index.html](http://dbiele.github.io/projects/dealertrack/orientation/index.html) 
+
+
+-------------------
+
+**Course Name:**  
+SCJohnson Lean Overview
+
+**Description:**  
+S.C. Johnson had been providing classroom-led training programs.  The course is a part of SCJ’s Global Excellence program offered to employees globally.  The program had included instructor-led courses and on-the-job application activities. Due to budget cuts, SC Johnson was unable to offer this course on a consistent basis.  Additionally, there is increased demand globally for courses for managers.  Again, this course is a small part of SCJohnson online learning that I built for them.  This is a good example of gamification.
+
+**Audience:**  
+•	The audience for this courses is production employees.  Other courses varied in learning audiences from display stocking to finance.  
+•	The audience for this course will be entry-level employees as well as managers.  
+•	Global audience for some courses.  
+•	Courses may be viewed as part of the Global Excellence Program, but may also be reviewed as reference materials for a quick refresher.
+•	This is considered an “internal audience”.   
+•	The courses are intended for a global audience where English may be a second language.  
+
+**Online Course:**  
+[http://dbiele.github.io/projects/scjohnson/lean/index.html](http://dbiele.github.io/projects/scjohnson/lean/index.html )
