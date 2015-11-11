@@ -1,0 +1,1016 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<module>
+  <administration>
+    <admin id="trading" menunavigation="nolesson" navigation="open" coursetitle="Orientation Course" serverurl="/secured/course_certificate.aspx" coursedate="undefined,undefined,undefined" courseexpiration="356" coursetype="lms" courseversion="1.0" />
+  </administration>
+  <audio path="media/" />
+  <states>
+    <state name="default" enabledControls="exit, help, menu, caption, replay, back, pause, next, home, mediapause" />
+    <state name="menu" enabledControls="" />
+    <state name="content_admintext" enabledControls="exit, help, back, next, pause, play, caption, mediapause" />
+    <state name="content_main" enabledControls="exit, help, menu, caption, replay, back, pause, home, mediapause" />
+    <state name="content_courseconclusion" enabledControls="exit, help, home, mediapause" />
+    <state name="question_main" enabledControls="exit, help, menu, caption, replay, back, pause, next, home, mediapause" />
+    <state name="question_assessment" enabledControls="back, pause, next, home, mediapause" />
+    <state name="assessment_intro" enabledControls="exit, help, caption, replay, pause, home, mediapause" />
+    <state name="assessment_submit" enabledControls="" />
+    <state name="assessment_results" enabledControls="help, next" />
+  </states>
+  <templates>
+    <template id="00_coursemainmenu" desc="Course Main Menu">
+      <type>menu</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.CourseMainMenu</renderer>
+    </template>
+    <template id="01_administrativetext" desc="Administrative Text">
+      <type>content</type>
+      <state>content_admintext</state>
+      <renderer>com.invision.client.renderers.AdministrativeText</renderer>
+    </template>
+    <template id="02_mainmenu" desc="Main Menu">
+      <type>menu</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.MainMenu</renderer>
+    </template>
+    <template id="03_lessonoverview" desc="Lesson Overview">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.LessonOverview</renderer>
+    </template>
+    <template id="04_lessonObjectives" desc="Lesson Objectives">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.LessonObjectives</renderer>
+    </template>
+    <template id="05_imagehalfcircle" desc="Image Half Circle" showpagenumber="true" listid="pages">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.ImageHalfCircle</renderer>
+    </template>
+    <template id="06_imagetop" desc="Image Top" showpagenumber="true" listid="pages">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.ImageTop</renderer>
+    </template>
+    <template id="07_imagebottom" desc="Image Bottom" showpagenumber="true" listid="pages">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.ImageBottom</renderer>
+    </template>
+    <template id="08_imageleft" desc="Image Left" showpagenumber="true" listid="pages">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.ImageLeft</renderer>
+    </template>
+    <template id="09_imageright" desc="Image Right" showpagenumber="true" listid="pages">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.ImageRight</renderer>
+    </template>
+    <template id="10_imagefullscreen" desc="Image Full Screen" showpagenumber="true" listid="pages">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.ImageFullScreen</renderer>
+    </template>
+    <template id="11_video" desc="Video" showpagenumber="true" listid="pages">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.VideoPlayer</renderer>
+    </template>
+    <template id="12_clicktolearn" desc="Click To Learn" showpagenumber="true" listid="pages">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.ClickToLearn</renderer>
+    </template>
+    <template id="13_quizintroduction" desc="QUIZ">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.QuizIntroduction</renderer>
+    </template>
+    <template id="14_multiplechoice" desc="QUIZ">
+      <type>question</type>
+      <state>question_main</state>
+      <renderer>com.invision.client.renderers.MultipleChoice</renderer>
+    </template>
+    <template id="15_quiztruefalse" desc="QUIZ">
+      <type>question</type>
+      <state>question_main</state>
+      <renderer>com.invision.client.renderers.TrueFalse</renderer>
+    </template>
+    <template id="16_quizfillintheblank" desc="QUIZ">
+      <type>question</type>
+      <state>question_main</state>
+      <renderer>com.invision.client.renderers.FillInTheBlank</renderer>
+    </template>
+    <template id="17_quizexplore" desc="QUIZ">
+      <type>question</type>
+      <state>question_main</state>
+      <renderer>com.invision.client.renderers.Explore</renderer>
+    </template>
+    <template id="18_quizdragdrop" desc="QUIZ">
+      <type>question</type>
+      <state>question_main</state>
+      <renderer>com.invision.client.renderers.DragDrop</renderer>
+    </template>
+    <template id="18_quizdragdrop_v2" desc="QUIZ">
+      <type>question</type>
+      <state>question_main</state>
+      <renderer>com.invision.client.renderers.DragDropV2</renderer>
+    </template>
+    <template id="18_quizdragdrop_v3" desc="QUIZ">
+      <type>question</type>
+      <state>question_main</state>
+      <renderer>com.invision.client.renderers.DragDropV3</renderer>
+    </template>
+    <template id="19_rankorder" desc="QUIZ">
+      <type>question</type>
+      <state>question_main</state>
+      <renderer>com.invision.client.renderers.RankOrder</renderer>
+    </template>
+    <template id="20_lessonsummary" desc="LESSON SUMMARY">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.LessonSummary</renderer>
+    </template>
+    <template id="21_lessoncomplete" desc="LESSON COMPLETE">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.LessonComplete</renderer>
+    </template>
+    <template id="22_finalassesintro" desc="FINAL TEST">
+      <type>assessment_pre</type>
+      <state>assessment_intro</state>
+      <renderer>com.invision.client.renderers.FinalTestIntro</renderer>
+    </template>
+    <template id="23_finalasssubmit" desc="FINAL TEST">
+      <type>assessment_post</type>
+      <state>assessment_submit</state>
+      <renderer>com.invision.client.renderers.FinalTestSubmit</renderer>
+    </template>
+    <template id="24_finalassesresults" desc="FINAL TEST">
+      <type>assessment_post</type>
+      <state>assessment_results</state>
+      <renderer>com.invision.client.renderers.FinalTestResults</renderer>
+    </template>
+    <template id="25_courseconclusion" desc="FINAL">
+      <type>assessment_post</type>
+      <state>content_courseconclusion</state>
+      <renderer>com.invision.client.renderers.CourseConclusion</renderer>
+    </template>
+    <template id="26_custom" desc="CUSTOM">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.CustomContent</renderer>
+    </template>
+    <template id="27_multiplechoiceimage" desc="QUIZ">
+      <type>content</type>
+      <state>question_main</state>
+      <renderer>com.invision.client.renderers.MultipleChoice</renderer>
+    </template>
+    <template id="28_formsdiagrams" desc="Forms and Diagrams" showpagenumber="true" listid="pages">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.FormsDiagrams</renderer>
+    </template>
+    <template id="29_interactivesimulation" desc="Interactive Simulation" showpagenumber="true" listid="pages">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.InteractiveSimulation</renderer>
+    </template>
+    <template id="29_textonly" desc="Text Only" showpagenumber="true" listid="pages">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.TextOnly</renderer>
+    </template>
+    <template id="30_custom" desc="Custom" showpagenumber="true" listid="pages">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.CustomContent</renderer>
+    </template>
+    <template id="31_jobaid" desc="Job Aid">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.JobAid</renderer>
+    </template>
+    <template id="32_contemplative" desc="Contemplative" showpagenumber="true" listid="pages">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.Contemplative</renderer>
+    </template>
+    <template id="33_contemplativeprint" desc="Contemplative Print" showpagenumber="true" listid="pages">
+      <type>content</type>
+      <state>content_main</state>
+      <renderer>com.invision.client.renderers.ContemplativePrint</renderer>
+    </template>
+  </templates>
+  <scenes>
+    <scene id="scene1" template="02_mainmenu" mediatype="none">
+      <menus>
+        <course reminder="undefined" coursedescription="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;16&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;Welcome to the DealerTrack Orientation Couse.&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;16&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;Select a topic from the buttons to the right to begin.&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" />
+        <lesson sequence="sequence1_1" type="undefined" frame="2" image="icon_key" lessondescription="undefined" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;Mark O’Neil, CEO DealerTrack, Inc. &lt;/B&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="lesson1" />
+        <lesson sequence="sequence1_2" type="undefined" frame="5" image="icon_key" lessondescription="undefined" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;Company History&lt;/B&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="lesson2" />
+        <lesson sequence="sequence1_3" type="undefined" frame="8" image="icon_key" lessondescription="undefined" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;InsideTRAK&lt;/B&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="lesson3" />
+        <lesson sequence="sequence1_4" type="undefined" frame="27" image="icon_key" lessondescription="undefined" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;Industry&lt;/B&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="lesson4" />
+        <lesson sequence="sequence1_5" type="undefined" frame="31" image="icon_key" lessondescription="undefined" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;Day in the Life of a Dealer&lt;/B&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="lesson5" />
+        <lesson sequence="sequence1_6" type="undefined" frame="46" image="icon_key" lessondescription="undefined" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;Product Overview&lt;/B&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="lesson6" />
+        <lesson sequence="sequence1_7" type="undefined" frame="53" image="icon_key" lessondescription="undefined" lessonname="&lt;TEXTFORMAT LEADING=&quot;2&quot;&gt;&lt;P ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Myriad Pro&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;1&quot;&gt;&lt;B&gt;Who and Where&lt;/B&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;" id="lesson7" />
+      </menus>
+      <sceneparams>
+        <sceneparam name="frame">1</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene2" template="30_custom" mediatype="none">
+      <audio>
+      </audio>
+	  <sceneparams>
+        <sceneparam name="frame">2</sceneparam>
+      </sceneparams>
+    </scene>
+	<scene id="scene3" template="30_custom" mediatype="none">
+      <audio>
+      </audio>
+	  <sceneparams>
+        <sceneparam name="frame">3</sceneparam>
+      </sceneparams>
+    </scene>
+	<scene id="scene4" template="30_custom" mediatype="none">
+      <audio>
+        <audiofile audio="media/l1_p3.mp3" />
+      </audio>
+	  <animations>
+        <animation time="1">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim01" />
+        </animation>
+      </animations>
+	  <sceneparams>
+        <sceneparam name="frame">4</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene5" template="30_custom" mediatype="none">
+      <audio>
+        <audiofile audio="media/l2_p1.mp3" async="true"/>
+      </audio>
+	  <sceneparams>
+        <sceneparam name="frame">5</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene6" template="18_quizdragdrop_v3" mediatype="none">
+      <dragdrop>
+        <targets id="bullet1" />
+        <targets id="bullet2" />
+        <targets id="bullet3" />
+        <targets id="bullet4" />
+        <targets id="bullet5" />
+        <targets id="bullet6" />
+        <draggers answer="1" id="drag1"></draggers>
+        <draggers answer="2" id="drag2"></draggers>
+        <draggers answer="3" id="drag3"></draggers>
+        <draggers answer="4" id="drag4"></draggers>
+        <draggers answer="5" id="drag5"></draggers>
+        <draggers answer="6" id="drag6"></draggers>
+      </dragdrop>
+      <audio>
+        <audiofile audio="media/l2_p3.mp3" async="true" />
+      </audio>
+      <sceneparams>
+        <sceneparam name="frame">6</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene7" template="30_custom" mediatype="none">
+      <audio>
+        <audiofile audio="media/l2_p4.mp3" />
+      </audio>
+      <animations>
+        <animation time="1">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim01" />
+        </animation>
+      </animations>
+	  <sceneparams>
+        <sceneparam name="frame">7</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene8" template="30_custom" mediatype="none">
+      <audio>
+        <audiofile audio="media/l3_p1.mp3" />
+      </audio>
+      <sceneparams>
+        <sceneparam name="frame">8</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene9" template="30_custom" mediatype="none">
+      <audio>
+        <audiofile audio="media/l3_p2.mp3" />
+      </audio>
+	  <animations>
+        <animation time="5">
+          <keyframe movie="content_mc" action="gotoAndPlay" label="anim01" />
+        </animation>
+      </animations>
+	  <sceneparams>
+        <sceneparam name="frame">9</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene10" template="30_custom" mediatype="none">
+      <audio>
+        <audiofile audio="media/l3_p3.mp3" />
+      </audio>
+	  <animations>
+        <animation time="2">
+          <keyframe movie="content_mc" action="gotoAndPlay" label="anim01" />
+        </animation>
+      </animations>
+	  <sceneparams>
+        <sceneparam name="frame">10</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene11" template="30_custom" mediatype="none">
+      <audio>
+        <audiofile audio="media/l3_p4.mp3" />
+      </audio>
+	  <animations>
+        <animation time="7.25">
+          <keyframe movie="content_mc" action="gotoAndPlay" label="anim01" />
+        </animation>
+      </animations>
+	  <sceneparams>
+        <sceneparam name="frame">11</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene12" template="30_custom" mediatype="none">
+      <audio>
+        <audiofile audio="media/l3_p5.mp3" />
+      </audio>
+	  <animations>
+        <animation time="6">
+          <keyframe movie="content_mc" action="gotoAndPlay" label="anim01" />
+        </animation>
+      </animations>
+	  <sceneparams>
+        <sceneparam name="frame">12</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene13" template="30_custom" mediatype="none">
+      <audio>
+        <audiofile audio="media/l3_p6.mp3" />
+      </audio>
+	  <animations>
+        <animation time="1">
+          <keyframe movie="content_mc" action="gotoAndPlay" label="anim01" />
+        </animation>
+		<animation time="9">
+          <keyframe movie="content_mc" action="gotoAndPlay" label="anim02" />
+        </animation>
+		<animation time="11.5">
+          <keyframe movie="content_mc" action="gotoAndPlay" label="anim03" />
+        </animation>
+		<animation time="12.5">
+          <keyframe movie="content_mc" action="gotoAndPlay" label="anim04" />
+        </animation>
+      </animations>
+	  <sceneparams>
+        <sceneparam name="frame">13</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene14" template="30_custom" mediatype="none">
+      <audio>
+        <audiofile audio="media/l3_p7.mp3" />
+      </audio>
+	  <animations>
+        <animation time="2.5">
+          <keyframe movie="content_mc" action="gotoAndPlay" label="anim01" />
+        </animation>
+		<animation time="4.5">
+          <keyframe movie="content_mc" action="gotoAndPlay" label="anim02" />
+        </animation>
+		<animation time="9.5">
+          <keyframe movie="content_mc" action="gotoAndPlay" label="anim03" />
+        </animation>
+      </animations>
+	  <sceneparams>
+        <sceneparam name="frame">14</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene15" template="30_custom" mediatype="none">
+      <audio>
+        <audiofile audio="media/l3_p8.mp3" />
+      </audio>
+	  <animations>
+        <animation time="1.5">
+          <keyframe movie="content_mc" action="gotoAndPlay" label="anim01" />
+        </animation>
+		<animation time="4.25">
+          <keyframe movie="content_mc" action="gotoAndPlay" label="anim02" />
+        </animation>
+		<animation time="5.25">
+          <keyframe movie="content_mc" action="gotoAndPlay" label="anim03" />
+        </animation>
+      </animations>
+	  <sceneparams>
+        <sceneparam name="frame">15</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene16" template="30_custom" mediatype="none">
+      <audio>
+        <audiofile audio="media/l3_p9.mp3" />
+      </audio>
+	  <animations>
+        <animation time="1">
+          <keyframe movie="content_mc" action="gotoAndPlay" label="anim01" />
+        </animation>
+		<animation time="4.5">
+          <keyframe movie="content_mc" action="gotoAndPlay" label="anim02" />
+        </animation>
+		<animation time="7.5 ">
+          <keyframe movie="content_mc" action="gotoAndPlay" label="anim03" />
+        </animation>
+		<animation time="11">
+          <keyframe movie="content_mc" action="gotoAndPlay" label="anim05" />
+        </animation>
+		<animation time="12.25">
+          <keyframe movie="content_mc" action="gotoAndPlay" label="anim06" />
+        </animation>
+		<animation time="16.5">
+          <keyframe movie="content_mc" action="gotoAndPlay" label="anim07" />
+        </animation>
+		<animation time="18.5">
+          <keyframe movie="content_mc" action="gotoAndPlay" label="anim08" />
+        </animation>
+      </animations>
+	  <sceneparams>
+        <sceneparam name="frame">16</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene17" template="30_custom" mediatype="none">
+      <audio>
+        <audiofile audio="media/l3_p10.mp3" />
+      </audio>
+	  <animations>
+        <animation time="1">
+          <keyframe movie="content_mc" action="gotoAndPlay" label="anim01" />
+        </animation>
+      </animations>
+	  <sceneparams>
+        <sceneparam name="frame">17</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene18" template="30_custom" mediatype="none">
+      <audio>
+        <audiofile audio="media/l3_p11.mp3" />
+      </audio>
+	  <animations>
+        <animation time="1">
+          <keyframe movie="content_mc" action="gotoAndPlay" label="anim01" />
+        </animation>
+		<animation time="6.5">
+          <keyframe movie="content_mc" action="gotoAndPlay" label="anim02" />
+        </animation>
+		<animation time="8">
+          <keyframe movie="content_mc" action="gotoAndPlay" label="anim03" />
+        </animation>
+		<animation time="9.25">
+          <keyframe movie="content_mc" action="gotoAndPlay" label="anim04" />
+        </animation>
+		<animation time="11.25">
+          <keyframe movie="content_mc" action="gotoAndPlay" label="anim05" />
+        </animation>
+		<animation time="13">
+          <keyframe movie="content_mc" action="gotoAndPlay" label="anim06" />
+        </animation>
+      </animations>
+	  <sceneparams>
+        <sceneparam name="frame">18</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene19" template="30_custom" mediatype="none">
+      <audio>
+        <audiofile audio="media/l3_p12_1.mp3" async="true"/>
+      </audio>
+	  <animations>
+        <animation time="4.25">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim01" />
+        </animation>
+      </animations>
+	  <sceneparams>
+        <sceneparam name="frame">19</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene20" template="30_custom" mediatype="none">
+      <audio>
+        <audiofile audio="media/l3_p13.mp3" />
+      </audio>
+	  <animations>
+        <animation time="2.75">
+          <keyframe movie="content_mc" action="gotoAndPlay" label="anim01" />
+        </animation>
+      </animations>
+	  <sceneparams>
+        <sceneparam name="frame">20</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene21" template="30_custom" mediatype="none">
+      <audio>
+        <audiofile audio="media/l3_p14_1.mp3" async="true"/>
+      </audio>
+	  <animations>
+        <animation time="3.5">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim01" />
+        </animation>
+      </animations>
+	  <sceneparams>
+        <sceneparam name="frame">21</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene22" template="30_custom" mediatype="none">
+      <audio>
+        <audiofile audio="media/l3_p15.mp3" />
+      </audio>
+	  <animations>
+        <animation time="1">
+          <keyframe movie="content_mc" action="gotoAndPlay" label="anim01" />
+        </animation>
+		<animation time="4">
+          <keyframe movie="content_mc" action="gotoAndPlay" label="anim02" />
+        </animation>
+		<animation time="12.5">
+          <keyframe movie="content_mc" action="gotoAndPlay" label="anim03" />
+        </animation>
+		<animation time="20.5">
+          <keyframe movie="content_mc" action="gotoAndPlay" label="anim04" />
+        </animation>
+		<animation time="27">
+          <keyframe movie="content_mc" action="gotoAndPlay" label="anim05" />
+        </animation>
+      </animations>
+	  <sceneparams>
+        <sceneparam name="frame">22</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene23" template="30_custom" mediatype="none">
+      <audio>
+        <audiofile audio="media/l3_p16_1.mp3" async="true"/>
+      </audio>
+	  <animations>
+        <animation time="3.5">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim01" />
+        </animation>
+      </animations>
+	  <sceneparams>
+        <sceneparam name="frame">23</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene24" template="30_custom" mediatype="none">
+      <audio>
+        <audiofile audio="media/l3_p17.mp3" />
+      </audio>
+	  <animations>
+        <animation time="1">
+          <keyframe movie="content_mc" action="gotoAndPlay" label="anim01" />
+        </animation>
+		<animation time="2.25">
+          <keyframe movie="content_mc" action="gotoAndPlay" label="anim02" />
+        </animation>
+		<animation time="4">
+          <keyframe movie="content_mc" action="gotoAndPlay" label="anim03" />
+        </animation>
+		<animation time="5.25">
+          <keyframe movie="content_mc" action="gotoAndPlay" label="anim04" />
+        </animation>
+      </animations>
+	  <sceneparams>
+        <sceneparam name="frame">24</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene25" template="30_custom" mediatype="none">
+      <audio>
+        <audiofile audio="media/l3_p18.mp3" />
+      </audio>
+	  <animations>
+        <animation time="3">
+          <keyframe movie="content_mc" action="gotoAndPlay" label="anim01" />
+        </animation>
+      </animations>
+	  <sceneparams>
+        <sceneparam name="frame">25</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene26" template="30_custom" mediatype="none">
+      <audio>
+        <audiofile audio="media/l3_p19.mp3" />
+      </audio>
+	  <animations>
+        <animation time="1">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim01" />
+        </animation>
+      </animations>
+	  <sceneparams>
+        <sceneparam name="frame">26</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene27" template="30_custom" mediatype="none">
+      <audio>
+        <audiofile audio="media/l4_p1_1.mp3" async="true"/>
+      </audio>
+	  <sceneparams>
+        <sceneparam name="frame">27</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene28" template="30_custom" mediatype="none">
+      <audio>
+        <audiofile audio="media/l4_p2_1.mp3" async="true"/>
+      </audio>
+	  <sceneparams>
+        <sceneparam name="frame">28</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene29" template="18_quizdragdrop_v3" mediatype="none">
+      <dragdrop>
+        <targets id="bullet1" />
+        <targets id="bullet2" />
+        <targets id="bullet3" />
+        <targets id="bullet4" />
+        <draggers answer="1" id="drag1" />
+        <draggers answer="2" id="drag2" />
+        <draggers answer="3" id="drag3" />
+        <draggers answer="4" id="drag4" />
+      </dragdrop>
+      <audio>
+        <audiofile audio="media/l4_p3.mp3" async="true" />
+      </audio>
+	  <sceneparams>
+        <sceneparam name="frame">29</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene30" template="30_custom" mediatype="none">
+      <audio>
+        <audiofile audio="media/l4_p4.mp3" />
+      </audio>
+	  <animations>
+        <animation time="1">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim01" />
+        </animation>
+      </animations>
+	  <sceneparams>
+        <sceneparam name="frame">30</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene31" template="07_imagebottom" mediatype="none">
+      <audio>
+        <audiofile audio="media/l5_p1.mp3" />
+      </audio>
+	  <animations>
+        <animation time="1">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim01" />
+        </animation>
+      </animations>
+	  <sceneparams>
+        <sceneparam name="frame">31</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene32" template="07_imagebottom" mediatype="none">
+      <audio>
+        <audiofile audio="media/l5_p2.mp3" />
+      </audio>
+	  <animations>
+        <animation time="1">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim01" />
+        </animation>
+      </animations>
+	  <sceneparams>
+        <sceneparam name="frame">32</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene33" template="07_imagebottom" mediatype="none">
+      <audio>
+        <audiofile audio="media/l5_p3.mp3" />
+      </audio>
+	  <animations>
+        <animation time="1">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim01" />
+        </animation>
+      </animations>
+	  <sceneparams>
+        <sceneparam name="frame">33</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene34" template="07_imagebottom" mediatype="none">
+      <audio>
+        <audiofile audio="media/l5_p4.mp3" />
+      </audio>
+	  <animations>
+        <animation time="1">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim01" />
+        </animation>
+      </animations>
+	  <sceneparams>
+        <sceneparam name="frame">34</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene35" template="07_imagebottom" mediatype="none">
+      <audio>
+        <audiofile audio="media/l5_p5.mp3" />
+      </audio>
+	  <animations>
+        <animation time="1">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim01" />
+        </animation>
+      </animations>
+	  <sceneparams>
+        <sceneparam name="frame">35</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene36" template="07_imagebottom" mediatype="none">
+      <audio>
+        <audiofile audio="media/l5_p6.mp3" />
+      </audio>
+	  <animations>
+        <animation time="1">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim01" />
+        </animation>
+      </animations>
+	  <sceneparams>
+        <sceneparam name="frame">36</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene37" template="07_imagebottom" mediatype="none">
+      <audio>
+        <audiofile audio="media/l5_p7.mp3" />
+      </audio>
+	  <animations>
+        <animation time="1">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim01" />
+        </animation>
+      </animations>
+	  <sceneparams>
+        <sceneparam name="frame">37</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene38" template="18_quizdragdrop_v3" mediatype="none">
+      <dragdrop>
+        <targets id="bullet1" />
+        <targets id="bullet2" />
+        <targets id="bullet3" />
+        <targets id="bullet4" />
+        <targets id="bullet5" />
+        <targets id="bullet6" />
+        <draggers answer="1" id="drag1"></draggers>
+        <draggers answer="2" id="drag2"></draggers>
+        <draggers answer="3" id="drag3"></draggers>
+        <draggers answer="4" id="drag4"></draggers>
+        <draggers answer="5" id="drag5"></draggers>
+        <draggers answer="6" id="drag6"></draggers>
+      </dragdrop>
+      <audio>
+        <audiofile audio="media/l5_p8.mp3" async="true" />
+      </audio>
+	  <sceneparams>
+        <sceneparam name="frame">38</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene39" template="10_imagefullscreen" mediatype="none">
+      <audio>
+        <audiofile audio="media/l5_p9.mp3" />
+      </audio>
+	  <animations>
+        <animation time="6">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim01" />
+        </animation>
+		<animation time="10.25">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim02" />
+        </animation>
+		<animation time="13.25">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim03" />
+        </animation>
+		<animation time="19.5">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim04" />
+        </animation>
+      </animations>
+	  <sceneparams>
+        <sceneparam name="frame">39</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene40" template="10_imagefullscreen" mediatype="none">
+      <audio>
+        <audiofile audio="media/l5_p10.mp3" />
+      </audio>
+	  <animations>
+        <animation time="5.5">
+          <keyframe movie="content_mc" action="gotoAndPlay" label="anim01" />
+        </animation>
+		<animation time="8.5">
+          <keyframe movie="content_mc" action="gotoAndPlay" label="anim02" />
+        </animation>
+		<animation time="12">
+          <keyframe movie="content_mc" action="gotoAndPlay" label="anim03" />
+        </animation>
+      </animations>
+	  <sceneparams>
+        <sceneparam name="frame">40</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene41" template="10_imagefullscreen" mediatype="none">
+      <audio>
+        <audiofile audio="media/l5_p11.mp3" />
+      </audio>
+	  <animations>
+        <animation time="4">
+          <keyframe movie="content_mc" action="gotoAndPlay" label="anim01" />
+        </animation>
+      </animations>
+	  <sceneparams>
+        <sceneparam name="frame">41</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene42" template="10_imagefullscreen" mediatype="none">
+      <audio>
+        <audiofile audio="media/l5_p12.mp3" />
+      </audio>
+	  <animations>
+        <animation time="3">
+          <keyframe movie="content_mc" action="gotoAndPlay" label="anim01" />
+        </animation>
+      </animations>
+	  <sceneparams>
+        <sceneparam name="frame">42</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene43" template="10_imagefullscreen" mediatype="none">
+      <audio>
+        <audiofile audio="media/l5_p13.mp3" />
+      </audio>
+	  <animations>
+        <animation time="2">
+          <keyframe movie="content_mc" action="gotoAndPlay" label="anim01" />
+        </animation>
+      </animations>
+	  <sceneparams>
+        <sceneparam name="frame">43</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene44" template="10_imagefullscreen" mediatype="none">
+      <audio>
+        <audiofile audio="media/l5_p14.mp3" />
+      </audio>
+	  <animations>
+        <animation time="4.75">
+          <keyframe movie="content_mc" action="gotoAndPlay" label="anim01" />
+        </animation>
+        <animation time="6">
+          <keyframe movie="content_mc" action="gotoAndPlay" label="anim02" />
+        </animation>
+        <animation time="8.75">
+          <keyframe movie="content_mc" action="gotoAndPlay" label="anim03" />
+        </animation>
+	  </animations>
+	  <sceneparams>
+        <sceneparam name="frame">44</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene45" template="30_custom" mediatype="none">
+      <audio>
+        <audiofile audio="media/l5_p15.mp3" />
+      </audio>
+	  <animations>
+        <animation time="1">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim01" />
+        </animation>
+      </animations>
+	  <sceneparams>
+        <sceneparam name="frame">45</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene46" template="30_custom" mediatype="none">
+      <audio>
+        <audiofile audio="media/l6_p1.mp3" />
+      </audio>
+	  <sceneparams>
+        <sceneparam name="frame">46</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene47" template="30_custom" mediatype="none">
+      <audio>
+        <audiofile audio="media/l6_p2.mp3" />
+      </audio>
+	  <animations>
+        <animation time="1">
+          <keyframe movie="content_mc" action="gotoAndPlay" label="anim01" />
+        </animation>
+	  </animations>
+	  <sceneparams>
+        <sceneparam name="frame">47</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene48" template="30_custom" mediatype="none">
+      <audio>
+        <audiofile audio="media/l6_p3_1.mp3" async="true"/>
+      </audio>
+	  <sceneparams>
+        <sceneparam name="frame">48</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene49" template="18_quizdragdrop_v3" mediatype="none">
+      <dragdrop>
+        <targets id="bullet1" />
+        <targets id="bullet2" />
+        <targets id="bullet3" />
+        <targets id="bullet4" />
+        <targets id="bullet5" />
+        <targets id="bullet6" />				
+        <draggers answer="1" id="drag1" />
+        <draggers answer="2" id="drag2" />
+        <draggers answer="2" id="drag3" />
+        <draggers answer="2" id="drag4" />
+        <draggers answer="3" id="drag5" />
+        <draggers answer="4" id="drag6" />
+      </dragdrop>
+      <audio>
+        <audiofile audio="media/l6_p4.mp3" async="true" />
+      </audio>
+	  <sceneparams>
+        <sceneparam name="frame">49</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene50" template="30_custom" mediatype="none">
+      <audio>
+        <audiofile audio="media/l6_p5.mp3" />
+      </audio>
+	  <animations>
+        <animation time="6">
+          <keyframe movie="content_mc" action="gotoAndPlay" label="anim01" />
+        </animation>
+	  </animations>
+	  <sceneparams>
+        <sceneparam name="frame">50</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene51" template="30_custom" mediatype="none">
+      <audio>
+        <audiofile audio="media/l6_p6.mp3" />
+      </audio>
+	  <animations>
+        <animation time="2">
+          <keyframe movie="content_mc" action="gotoAndPlay" label="anim01" />
+        </animation>
+	  </animations>
+	  <sceneparams>
+        <sceneparam name="frame">51</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene52" template="30_custom" mediatype="none">
+      <audio>
+        <audiofile audio="media/l6_p7.mp3" />
+      </audio>
+	  <animations>
+        <animation time="1">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim01" />
+        </animation>
+      </animations>
+	  <sceneparams>
+        <sceneparam name="frame">52</sceneparam>
+      </sceneparams>
+    </scene>
+    <scene id="scene53" template="30_custom" mediatype="none">
+      <audio>
+        <audiofile audio="media/l7_p1.mp3" async="true"/>
+      </audio>
+	  <animations>
+        <animation time="1">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim01" />
+        </animation>
+		<animation time="3">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim02" />
+        </animation>
+	  </animations>
+	  <sceneparams>
+        <sceneparam name="frame">53</sceneparam>
+      </sceneparams>
+    </scene>
+	<scene id="scene54" template="30_custom" mediatype="none">
+      <audio>
+        <audiofile audio="media/l7_p2.mp3" />
+      </audio>
+	  <animations>
+        <animation time="1">
+          <keyframe movie="content_mc" action="gotoAndStop" label="anim01" />
+        </animation>
+	  </animations>
+	  <sceneparams>
+        <sceneparam name="frame">54</sceneparam>
+      </sceneparams>
+    </scene>
+  </scenes>
+  <sequences>
+    <step desc="sequence" id="sequence1" type="menu" name="Home">
+      <step desc="scene" id="scene1" />
+      <step desc="sequence" id="sequence1_1" name="Mark O'Neil, Chairman and CEO, DealerTrack Inc.">
+        <step desc="scene" id="scene2" />
+        <step desc="scene" id="scene3" />
+        <step desc="scene" id="scene4" />
+      </step>
+      <step desc="sequence" id="sequence1_2" name="Company History">
+        <step desc="scene" id="scene5" />
+        <step desc="scene" id="scene6" />
+        <step desc="scene" id="scene7" />
+      </step>
+    </step>
+  </sequences>
+</module>
