@@ -5,7 +5,7 @@ This GitHub repository contains files used for end-to-end online learning develo
 
 ## Prototype Diagram: Learning Portal - China ##
 
-I created a diagram to explain how Starbucks online learning can work reliably with unreliable/sporadic internet access.      
+Info diagram explaining in basic terms how Starbucks online learning can work reliably with unreliable/sporadic internet access.      
 
 Please click the link below to view the diagram.  
 [http://dbiele.github.io/projects/fd/online-portal-china.pdf](http://dbiele.github.io/projects/fd/online-portal-china.pdf)
