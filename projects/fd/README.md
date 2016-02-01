@@ -1,5 +1,3 @@
-# Starbucks  #
-
 Online Learning Ideas and Documentation
 -----------------------
 
@@ -10,7 +8,7 @@ This GitHub repository contains files used for end-to-end online learning develo
 I created a diagram to explain how Starbucks online learning can work reliably with unreliable/sporadic internet access.      
 
 Please click the link below to view the diagram.  
-[http://dbiele.github.io/projects/starbucks/online-portal-china.pdf](http://dbiele.github.io/projects/starbucks/online-portal-china.pdf)
+[http://dbiele.github.io/projects/fd/online-portal-china.pdf](http://dbiele.github.io/projects/fd/online-portal-china.pdf)
 
 The `online-portal-china.psd` file contains the working graphics used to create the diagram. This document can be leveraged as a template for future diagrams, info graphics, etc. 
 
