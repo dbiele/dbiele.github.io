@@ -3,16 +3,6 @@ Online Learning Ideas and Documentation
 
 This GitHub repository contains files used for end-to-end online learning development.
 
-## Prototype Diagram: Learning Portal - China ##
-
-Info diagram explaining in basic terms how Starbucks online learning can work reliably with unreliable/sporadic internet access.      
-
-Please click the link below to view the diagram.  
-[http://dbiele.github.io/projects/fd/online-portal-china.pdf](http://dbiele.github.io/projects/fd/online-portal-china.pdf)
-
-The `online-portal-china.psd` file contains the working graphics used to create the diagram. This document can be leveraged as a template for future diagrams, info graphics, etc. 
-
-
 ## Course Design ##
 The `course design` folder contains design approaches, prototyping and sketching documents used in the development of online learning.  
 
@@ -43,6 +33,20 @@ The **`management people\manager-to-managers`** folder contains files used when 
 However, files like `release elearning master project plan.xlsx`, `master project plan.xlsx ` and Agile/SCRUM software can provide the real detail if necessary.
 
 **`management people\ninebox`** My notes on nine boxing and how to identify top talent. 
+
+## Typical Day ##
+The document below contains a list of thoughts on a typical L&D work day, L&D Culture, and interaction with employees and learners.
+
+[L&D typical day.docx](typical-day/L&D typical day.docx)
+
+## Info/Graphics Diagram: Learning Portal - China ##
+
+Info diagram explaining in basic terms how Starbucks online learning can work reliably with unreliable/sporadic internet access.      
+
+Please click the link below to view the diagram.  
+[http://dbiele.github.io/projects/fd/online-portal-china.pdf](http://dbiele.github.io/projects/fd/online-portal-china.pdf)
+
+The `online-portal-china.psd` file contains the working graphics used to create the diagram. This document can be leveraged as a template for future diagrams, info graphics, etc. 
 
 ## LMS Review ##
 Information gathered on current LMS systems: 
