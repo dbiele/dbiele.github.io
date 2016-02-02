@@ -44,6 +44,11 @@ However, files like `release elearning master project plan.xlsx`, `master projec
 
 **`management people\ninebox`** My notes on nine boxing and how to identify top talent. 
 
+## LMS Review ##
+Information gathered on current LMS systems: 
+
+[LMS Review/LMS reviews.docx
+](LMS Review/)
 
 ##Sample Courses##
 
