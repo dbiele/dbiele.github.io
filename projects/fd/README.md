@@ -47,8 +47,7 @@ However, files like `release elearning master project plan.xlsx`, `master projec
 ## LMS Review ##
 Information gathered on current LMS systems: 
 
-[LMS Review/LMS reviews.docx
-](LMS Review/)
+[LMS reviews.docx](https://github.com/dbiele/dbiele.github.io/tree/master/projects/fd/lms%20review)
 
 ##Sample Courses##
 
